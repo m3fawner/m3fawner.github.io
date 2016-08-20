@@ -56,19 +56,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
-	var _helloWorld = __webpack_require__(10);
+	var _helloWorld = __webpack_require__(13);
 
 	var _helloWorld2 = _interopRequireDefault(_helloWorld);
 
-	var _index = __webpack_require__(21);
+	var _index = __webpack_require__(24);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _software = __webpack_require__(29);
+	var _software = __webpack_require__(32);
 
 	var _software2 = _interopRequireDefault(_software);
 
-	var _index3 = __webpack_require__(30);
+	var _index3 = __webpack_require__(33);
 
 	var _index4 = _interopRequireDefault(_index3);
 
@@ -130,7 +130,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 7 */,
 /* 8 */,
 /* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -139,11 +142,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _slideShow = __webpack_require__(11);
+	var _slideShow = __webpack_require__(14);
 
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 
-	var _slides = __webpack_require__(19);
+	var _slides = __webpack_require__(22);
 
 	var _slides2 = _interopRequireDefault(_slides);
 
@@ -152,7 +155,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _slideShow2.default;
 
 /***/ },
-/* 11 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -161,15 +164,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _reveal = __webpack_require__(12);
+	var _reveal = __webpack_require__(15);
 
 	var _reveal2 = _interopRequireDefault(_reveal);
 
-	var _index = __webpack_require__(13);
+	var _index = __webpack_require__(16);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _blood = __webpack_require__(17);
+	var _blood = __webpack_require__(20);
 
 	var _blood2 = _interopRequireDefault(_blood);
 
@@ -185,12 +188,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    keyboard: true,
 	    fragments: true,
 	    height: '100%',
-	    width: '100%'
+	    width: '100%',
+	    slideNumber: true,
+	    history: true
 	  });
 	};
 
 /***/ },
-/* 12 */
+/* 15 */
 /***/ function(module, exports) {
 
 	/*!
@@ -3579,16 +3584,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = Reveal;
 
 /***/ },
-/* 13 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(14);
+	var content = __webpack_require__(17);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(16)(content, {});
+	var update = __webpack_require__(19)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3605,10 +3610,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 14 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(15)();
+	exports = module.exports = __webpack_require__(18)();
 	// imports
 
 
@@ -3619,7 +3624,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 15 */
+/* 18 */
 /***/ function(module, exports) {
 
 	/*
@@ -3675,7 +3680,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 16 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -3927,16 +3932,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 17 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(18);
+	var content = __webpack_require__(21);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(16)(content, {});
+	var update = __webpack_require__(19)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3953,10 +3958,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 18 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(15)();
+	exports = module.exports = __webpack_require__(18)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);", ""]);
 
@@ -3967,16 +3972,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 19 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(20);
+	var content = __webpack_require__(23);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(16)(content, {});
+	var update = __webpack_require__(19)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3993,30 +3998,30 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 20 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(15)();
+	exports = module.exports = __webpack_require__(18)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".reveal .slides #camponile {\r\n    height: 300px;\r\n    width: auto;\r\n}\r\n.reveal .slides .intro img {\r\n    width: 95%;\r\n    height: auto;\r\n}\r\n.reveal .slides .who-am-i img {\r\n    max-height: 400px !important;\r\n}\r\n.reveal .slides img {    \r\n    border: none !important;\r\n}", ""]);
+	exports.push([module.id, ".reveal .slides #camponile {\r\n    height: 300px;\r\n    width: auto;\r\n}\r\n.reveal .slides .intro img {\r\n    width: 95%;\r\n    height: auto;\r\n}\r\n.reveal .slides img {\r\n    max-height: 600px !important;  \r\n    border: none !important;\r\n}\r\n.reveal .slides .who-am-i img {\r\n    max-height: 400px !important;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 21 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(22);
+	var pug = __webpack_require__(25);
 
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EHello, world!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(24).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(25).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(26).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(27).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(28).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EHello, world!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(27).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(28).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(29).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(30).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(31).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 22 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4249,7 +4254,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    throw err;
 	  }
 	  try {
-	    str = str || __webpack_require__(23).readFileSync(filename, 'utf8')
+	    str = str || __webpack_require__(26).readFileSync(filename, 'utf8')
 	  } catch (ex) {
 	    pug_rethrow(err, null, lineno)
 	  }
@@ -4276,58 +4281,58 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 23 */
+/* 26 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var pug = __webpack_require__(22);
-
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection class=\"who-am-i\"\u003E\u003Csection\u003E\u003Ch1\u003EWho am I?\u003C\u002Fh1\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EEvan Williams\u003C\u002Fh3\u003E\u003C\u002Fsection\u003E\u003Csection data-markdown\u003E\u003Ch3\u003EProgramming since 6th grade\u003C\u002Fh3\u003E\u003Cpre\u003Eif(location == 'home') {\n  if(directionChosen == 'north') {\n    print('You see a wild hog appear');\n  }\n  if(directionChosen == 'south') {\n    print('You enter the town square, only to be robbed blind!');\n  }\n  if(directionChosen == 'east') {\n    print('You see your home off in the distance');\n    if(directionChosen == 'east') {\n      print('You reach your doorstep');\n    }\n  }\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EGraduate of Iowa State University\u003C\u002Fh3\u003E\u003Cimg id=\"camponile\" src=\"assets\u002Fhello-world\u002Fcamponile.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EWork History\u003C\u002Fh3\u003E\u003Ch4 class=\"fragment\"\u003EMcDonalds!\u003C\u002Fh4\u003E\u003Ch4 class=\"fragment\"\u003EIntern at Fortune 500 insurance company\u003C\u002Fh4\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java 1.5\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EREST end point for Document Storage\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAutomated testing\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003ECurrent Position\u003C\u002Fh3\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java JMS services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBuilt a Wicket website for said services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMoved on to write a customer portal in Liferay using jQuery\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBegan work on Angular applications\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_1.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_2.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_3.jpg\"\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
-	module.exports = template;
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var pug = __webpack_require__(22);
-
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EAngular Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EDeveloped 7 applications\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E2 external applications (50,000 users)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E3 years of full time experience\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EParticipate in UI Best Practices group, determining direction of UI development\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
-	module.exports = template;
-
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var pug = __webpack_require__(22);
-
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ETeaching Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ETaught Angular training, replacing a vendor trainer\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EES6 syntax\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EWebpack\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EJade (now Pug)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003Eand many more!\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
-	module.exports = template;
-
-/***/ },
 /* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(22);
+	var pug = __webpack_require__(25);
 
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWhat will you learn watching my videos?*\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWeb Development process (tools, debugging, frameworks, ES6)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular, most importantly\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular best practices\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS (responsive design using Foundation)\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003Ch6 class=\"fragment\"\u003E* Topics are subject to change, I like to go on tangents!\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E** I currently do not have a schedule or order laid out, either\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection class=\"who-am-i\"\u003E\u003Csection\u003E\u003Ch1\u003EWho am I?\u003C\u002Fh1\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EEvan Williams\u003C\u002Fh3\u003E\u003C\u002Fsection\u003E\u003Csection data-markdown\u003E\u003Ch3\u003EProgramming since 6th grade\u003C\u002Fh3\u003E\u003Cpre\u003Eif(location == 'home') {\n  if(directionChosen == 'north') {\n    print('You see a wild hog appear');\n  }\n  if(directionChosen == 'south') {\n    print('You enter the town square, only to be robbed blind!');\n  }\n  if(directionChosen == 'east') {\n    print('You see your home off in the distance');\n    if(directionChosen == 'east') {\n      print('You reach your doorstep');\n    }\n  }\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EGraduate of Iowa State University\u003C\u002Fh3\u003E\u003Cimg id=\"camponile\" src=\"assets\u002Fhello-world\u002Fcamponile.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EWork History\u003C\u002Fh3\u003E\u003Ch4 class=\"fragment\"\u003EMcDonalds!\u003C\u002Fh4\u003E\u003Ch4 class=\"fragment\"\u003EIntern at Fortune 500 insurance company\u003C\u002Fh4\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java 1.5\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EREST end point for Document Storage\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAutomated testing\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003ECurrent Position\u003C\u002Fh3\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java JMS services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBuilt a Wicket website for said services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMoved on to write a customer portal in Liferay using jQuery\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBegan work on Angular applications\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_1.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_2.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_3.jpg\"\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
 /* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(22);
+	var pug = __webpack_require__(25);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EAngular Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EDeveloped 7 applications\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E2 external applications (50,000 users)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E3 years of full time experience\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EParticipate in UI Best Practices group, determining direction of UI development\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(25);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ETeaching Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ETaught Angular training, replacing a vendor trainer\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EES6 syntax\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EWebpack\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EJade (now Pug)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003Eand many more!\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(25);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWhat will you learn watching my videos?*\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWeb Development process (tools, debugging, frameworks, ES6)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular, most importantly\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular best practices\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS (responsive design using Foundation)\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003Ch6 class=\"fragment\"\u003E* Topics are subject to change, I like to go on tangents!\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E** I currently do not have a schedule or order laid out, either\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(25);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EContact Me\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fevan-williams-75485533\"\u003E\u003Cimg src=\".\u002Fassets\u002Flinkedin.png\"\u003E\u003C\u002Fa\u003E\u003Ca href=\"https:\u002F\u002Ftwitter.com\u002Fangular_evan\"\u003E\u003Cimg src=\".\u002Fassets\u002Ftwitter.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 29 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4336,7 +4341,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _slideShow = __webpack_require__(11);
+	var _slideShow = __webpack_require__(14);
 
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 
@@ -4345,12 +4350,39 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _slideShow2.default;
 
 /***/ },
-/* 30 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(22);
+	var pug = __webpack_require__(25);
 
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESoftware Being Used\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(28).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESoftware Being Used\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(34).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(31).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(25);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ENodeJS\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fnodejs.org\u002Fen\u002F\" target=\"_blank\"\u003E\u003Cimg src=\"assets\u002Fsoftware\u002Fnodejs-new-white-pantone.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is NodeJS?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ECross platform runtime environment (think JVM)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EDeveloped for writing server-side applications\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EModules are written in Javascript\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhy are we using it?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EModules written on node allow for significantly different development cycle\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAble to write applications in Javascript\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EWhen we start working with data calls, we'll utilize a NodeJS backend for ease of development\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EInstallation\u003C\u002Fh2\u003E\u003Col\u003E\u003Cli class=\"fragment\"\u003EDownload &amp; Install\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EEnsure you add it to your PATH variable\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EVerify installation using \u003Ccode\u003Enode --version\u003C\u002Fcode\u003E in a command window\u003C\u002Fli\u003E\u003C\u002Fol\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(25);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ENPM\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fnpmjs.com\"\u003E\u003Cimg src=\"assets\u002Fsoftware\u002Fnpm.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is NPM?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EPackage Manager for Javascript\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESimilar to the concept of Maven in Java\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EInstalls dependencies that will help build applications, as well as develop them\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhy are we using it?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EA great way to manage dependencies\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAll dependencies can be explicitly declared &amp; managed by NPM\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMany of our build tools would be extremely difficult to manage without it\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EInstallation Verification\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003ENPM is a default script included in NodeJS\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Ccode\u003Enpm --version\u003C\u002Fcode\u003E should respond with x.x.x version (currently 3.7.2)\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(25);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EVS Code\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fcode.visualstudio.com\u002F\"\u003E\u003Cimg src=\"assets\u002Fsoftware\u002Fvscode.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is VS Code?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EVisual Studios Code, Microsoft open source project\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EIDE for software development\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EProvides GIT interactions, third party plugins, auto complete etc.\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhy are we using it?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EIt's free\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EIt has all the features of a good web IDE\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EInstallation\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EDownload &amp; install on your machine\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EOpen the application\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EHit \u003Ccode\u003ECtrl + `\u003C\u002Fcode\u003E to open a command prompt inside the application\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EYou should be able to verify NPM &amp; NodeJS are both accessible\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExtensions Being Used\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EESLint\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EDracula Syntax Theme\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003Epuglint\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EDebugger For Chrome\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ }
