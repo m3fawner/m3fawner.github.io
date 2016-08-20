@@ -64,10 +64,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _index3 = __webpack_require__(30);
-
-	var _index4 = _interopRequireDefault(_index3);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var AVAILABLE_APPS = {
@@ -107,7 +103,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    });
 	    return match ? match.value : void 0;
 	};
-	document.write((0, _index4.default)());
 	var toLoad = AVAILABLE_APPS[getQueryVariable('sub-app')];
 	if (toLoad) {
 	    loadSubApp(toLoad);
@@ -4325,15 +4320,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var pug = __webpack_require__(20);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EContact Me\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fevan-williams-75485533\"\u003E\u003Cimg src=\".\u002Fassets\u002Flinkedin.png\"\u003E\u003C\u002Fa\u003E\u003Ca href=\"https:\u002F\u002Ftwitter.com\u002Fangular_evan\"\u003E\u003Cimg src=\".\u002Fassets\u002Ftwitter.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
-	module.exports = template;
-
-/***/ },
-/* 30 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var pug = __webpack_require__(20);
-
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Ccontainer\u003E\u003C\u002Fcontainer\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ }

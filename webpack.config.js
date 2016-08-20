@@ -40,5 +40,11 @@ module.exports = {
             }
         ]
     },
-    plugins: [new HtmlWebpackPlugin(), new CopyWebpackPlugin([{ from: './assets', to: './assets/' }])]
+    plugins: [new HtmlWebpackPlugin({
+        title: 'Evan Williams AngularJS Tutorial Site',
+        template: 'src/index.pug'
+    }), new CopyWebpackPlugin([{ 
+        from: './assets',
+        to: './assets/'
+    }])]
 };

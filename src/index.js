@@ -1,8 +1,6 @@
 import HelloWorld from  './hello-world/';
 import HelloWorldHTML from './hello-world/index.pug';
 
-import IndexHTML from './index.pug';
-
 const AVAILABLE_APPS = {
     'HelloWorld' : {
         pug: HelloWorldHTML,
@@ -32,7 +30,6 @@ const getQueryVariable = (variable) => {
     }).find((param) => param.key === variable);
     return match ? match.value : void 0;
 };
-document.write(IndexHTML());
 const toLoad = AVAILABLE_APPS[getQueryVariable('sub-app')];
 if(toLoad) {
     loadSubApp(toLoad);
