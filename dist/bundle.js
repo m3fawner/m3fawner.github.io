@@ -70,6 +70,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var AVAILABLE_APPS = {
+	    'HelloWorld': {
+	        pug: _index2.default,
+	        js: _helloWorld2.default
+	    }
+	};
 	var getNode = function getNode(pug) {
 	    for (var _len = arguments.length, locals = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
 	        locals[_key - 1] = arguments[_key];
@@ -84,11 +90,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	        locals[_key2 - 1] = arguments[_key2];
 	    }
 
-	    document.querySelector('container').appendChild(getNode.apply(undefined, [subApp].concat(locals)));
-	    (0, _helloWorld2.default)();
+	    document.querySelector('container').appendChild(getNode.apply(undefined, [subApp.pug].concat(locals)));
+	    subApp.js();
+	};
+	var getQueryVariable = function getQueryVariable(variable) {
+	    var query = window.location.search.substring(1);
+	    var vars = query.split('&');
+	    var match = vars.map(function (item) {
+	        var parts = item.split('=');
+	        return {
+	            key: decodeURIComponent(parts[0]),
+	            value: decodeURIComponent(parts[1])
+	        };
+	    }).find(function (param) {
+	        return param.key === variable;
+	    });
+	    return match ? match.value : void 0;
 	};
 	document.write((0, _index4.default)());
-	loadSubApp(_index2.default, _helloWorld2.default);
+	var toLoad = AVAILABLE_APPS[getQueryVariable('sub-app')];
+	if (toLoad) {
+	    loadSubApp(toLoad);
+	}
 
 /***/ },
 /* 1 */,
