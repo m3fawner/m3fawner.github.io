@@ -1,12 +1,19 @@
 import HelloWorld from  './hello-world/';
 import HelloWorldHTML from './hello-world/index.pug';
 
+import Software from './software/';
+import SoftwareHTML from './software/index.pug';
+
 const AVAILABLE_APPS = {
     'HelloWorld' : {
         pug: HelloWorldHTML,
         js: HelloWorld
+    },
+    'Software' : {
+        pug: SoftwareHTML,
+        js: Software
     }
-}
+};
 const getNode = (pug, ...locals) => {
     const div = document.createElement('div');
     div.innerHTML = pug(...locals);

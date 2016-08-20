@@ -1,12 +1,15 @@
-#camponile {
+.reveal .slides #camponile {
     height: 300px;
     width: auto;
 }
-.intro img {
+.reveal .slides .intro img {
     width: 95%;
     height: auto;
+}
+.reveal .slides img {
+    max-height: 600px !important;  
     border: none !important;
 }
-.who-am-i img {
+.reveal .slides .who-am-i img {
     max-height: 400px !important;
 }
