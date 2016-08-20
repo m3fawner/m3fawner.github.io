@@ -1,11 +1,11 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: __dirname,
+        path: 'dist',
         filename: 'bundle.js',
-        publicPath: '/',
         libraryTarget: 'umd'
     },
     resolve: {
@@ -40,5 +40,5 @@ module.exports = {
             }
         ]
     },
-    plugins: [new HtmlWebpackPlugin()]
+    plugins: [new HtmlWebpackPlugin(), new CopyWebpackPlugin([{ from: './assets', to: './assets/' }])]
 };

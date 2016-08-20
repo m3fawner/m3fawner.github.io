@@ -44,7 +44,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -56,46 +56,92 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
-	__webpack_require__(1);
+	var _helloWorld = __webpack_require__(9);
+
+	var _helloWorld2 = _interopRequireDefault(_helloWorld);
+
+	var _index = __webpack_require__(19);
+
+	var _index2 = _interopRequireDefault(_index);
+
+	var _index3 = __webpack_require__(30);
+
+	var _index4 = _interopRequireDefault(_index3);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getNode = function getNode(pug) {
+	    for (var _len = arguments.length, locals = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	        locals[_key - 1] = arguments[_key];
+	    }
+
+	    var div = document.createElement('div');
+	    div.innerHTML = pug.apply(undefined, locals);
+	    return div.firstChild;
+	};
+	var loadSubApp = function loadSubApp(subApp) {
+	    for (var _len2 = arguments.length, locals = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+	        locals[_key2 - 1] = arguments[_key2];
+	    }
+
+	    document.querySelector('container').appendChild(getNode.apply(undefined, [subApp].concat(locals)));
+	    (0, _helloWorld2.default)();
+	};
+	document.write((0, _index4.default)());
+	loadSubApp(_index2.default, _helloWorld2.default);
 
 /***/ },
-/* 1 */
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _reveal = __webpack_require__(2);
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _reveal = __webpack_require__(10);
 
 	var _reveal2 = _interopRequireDefault(_reveal);
 
-	var _slides = __webpack_require__(3);
+	var _slides = __webpack_require__(11);
 
 	var _slides2 = _interopRequireDefault(_slides);
 
-	var _index = __webpack_require__(7);
+	var _index = __webpack_require__(15);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _blood = __webpack_require__(9);
+	var _blood = __webpack_require__(17);
 
 	var _blood2 = _interopRequireDefault(_blood);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reveal2.default.initialize({
-	  margin: 0.1,
-	  minScale: 0.2,
-	  maxScale: 1.5,
-	  controlls: true,
-	  progress: true,
-	  keyboard: true,
-	  fragments: true,
-	  height: '100%',
-	  width: '100%'
-	});
+	exports.default = function () {
+	  return _reveal2.default.initialize({
+	    margin: 0.1,
+	    minScale: 0.2,
+	    maxScale: 1.5,
+	    controlls: true,
+	    progress: true,
+	    keyboard: true,
+	    fragments: true,
+	    height: '100%',
+	    width: '100%'
+	  });
+	};
 
 /***/ },
-/* 2 */
+/* 10 */
 /***/ function(module, exports) {
 
 	/*!
@@ -3484,16 +3530,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = Reveal;
 
 /***/ },
-/* 3 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(4);
+	var content = __webpack_require__(12);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(14)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3510,10 +3556,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 4 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(13)();
 	// imports
 
 
@@ -3524,7 +3570,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 5 */
+/* 13 */
 /***/ function(module, exports) {
 
 	/*
@@ -3580,7 +3626,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 6 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -3832,16 +3878,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 7 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(8);
+	var content = __webpack_require__(16);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(14)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3858,10 +3904,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 8 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(13)();
 	// imports
 
 
@@ -3872,16 +3918,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 9 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(10);
+	var content = __webpack_require__(18);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(14)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3898,10 +3944,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 10 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(13)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);", ""]);
 
@@ -3910,6 +3956,362 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	// exports
 
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + (null == (pug_interp = __webpack_require__(22).call(this, locals)) ? "" : pug_interp);;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var pug_has_own_property = Object.prototype.hasOwnProperty;
+
+	/**
+	 * Merge two attribute objects giving precedence
+	 * to values in object `b`. Classes are special-cased
+	 * allowing for arrays and merging/joining appropriately
+	 * resulting in a string.
+	 *
+	 * @param {Object} a
+	 * @param {Object} b
+	 * @return {Object} a
+	 * @api private
+	 */
+
+	exports.merge = pug_merge;
+	function pug_merge(a, b) {
+	  if (arguments.length === 1) {
+	    var attrs = a[0];
+	    for (var i = 1; i < a.length; i++) {
+	      attrs = pug_merge(attrs, a[i]);
+	    }
+	    return attrs;
+	  }
+
+	  for (var key in b) {
+	    if (key === 'class') {
+	      var valA = a[key] || [];
+	      a[key] = (Array.isArray(valA) ? valA : [valA]).concat(b[key] || []);
+	    } else if (key === 'style') {
+	      var valA = pug_style(a[key]);
+	      var valB = pug_style(b[key]);
+	      a[key] = valA + (valA && valB && ';') + valB;
+	    } else {
+	      a[key] = b[key];
+	    }
+	  }
+
+	  return a;
+	};
+
+	/**
+	 * Process array, object, or string as a string of classes delimited by a space.
+	 *
+	 * If `val` is an array, all members of it and its subarrays are counted as
+	 * classes. If `escaping` is an array, then whether or not the item in `val` is
+	 * escaped depends on the corresponding item in `escaping`. If `escaping` is
+	 * not an array, no escaping is done.
+	 *
+	 * If `val` is an object, all the keys whose value is truthy are counted as
+	 * classes. No escaping is done.
+	 *
+	 * If `val` is a string, it is counted as a class. No escaping is done.
+	 *
+	 * @param {(Array.<string>|Object.<string, boolean>|string)} val
+	 * @param {?Array.<string>} escaping
+	 * @return {String}
+	 */
+	exports.classes = pug_classes;
+	function pug_classes_array(val, escaping) {
+	  var classString = '', className, padding = '', escapeEnabled = Array.isArray(escaping);
+	  for (var i = 0; i < val.length; i++) {
+	    className = pug_classes(val[i]);
+	    if (!className) continue;
+	    escapeEnabled && escaping[i] && (className = pug_escape(className));
+	    classString = classString + padding + className;
+	    padding = ' ';
+	  }
+	  return classString;
+	}
+	function pug_classes_object(val) {
+	  var classString = '', padding = '';
+	  for (var key in val) {
+	    if (key && val[key] && pug_has_own_property.call(val, key)) {
+	      classString = classString + padding + key;
+	      padding = ' ';
+	    }
+	  }
+	  return classString;
+	}
+	function pug_classes(val, escaping) {
+	  if (Array.isArray(val)) {
+	    return pug_classes_array(val, escaping);
+	  } else if (val && typeof val === 'object') {
+	    return pug_classes_object(val);
+	  } else {
+	    return val || '';
+	  }
+	}
+
+	/**
+	 * Convert object or string to a string of CSS styles delimited by a semicolon.
+	 *
+	 * @param {(Object.<string, string>|string)} val
+	 * @return {String}
+	 */
+
+	exports.style = pug_style;
+	function pug_style(val) {
+	  if (!val) return '';
+	  if (typeof val === 'object') {
+	    var out = '', delim = '';
+	    for (var style in val) {
+	      /* istanbul ignore else */
+	      if (pug_has_own_property.call(val, style)) {
+	        out = out + delim + style + ':' + val[style];
+	        delim = ';';
+	      }
+	    }
+	    return out;
+	  } else {
+	    val = '' + val;
+	    if (val[val.length - 1] === ';') return val.slice(0, -1);
+	    return val;
+	  }
+	};
+
+	/**
+	 * Render the given attribute.
+	 *
+	 * @param {String} key
+	 * @param {String} val
+	 * @param {Boolean} escaped
+	 * @param {Boolean} terse
+	 * @return {String}
+	 */
+	exports.attr = pug_attr;
+	function pug_attr(key, val, escaped, terse) {
+	  if (val === false || val == null || !val && (key === 'class' || key === 'style')) {
+	    return '';
+	  }
+	  if (val === true) {
+	    return ' ' + (terse ? key : key + '="' + key + '"');
+	  }
+	  if (typeof val.toJSON === 'function') {
+	    val = val.toJSON();
+	  }
+	  if (typeof val !== 'string') {
+	    val = JSON.stringify(val);
+	    if (!escaped && val.indexOf('"') !== -1) {
+	      return ' ' + key + '=\'' + val.replace(/'/g, '&#39;') + '\'';
+	    }
+	  }
+	  if (escaped) val = pug_escape(val);
+	  return ' ' + key + '="' + val + '"';
+	};
+
+	/**
+	 * Render the given attributes object.
+	 *
+	 * @param {Object} obj
+	 * @param {Object} terse whether to use HTML5 terse boolean attributes
+	 * @return {String}
+	 */
+	exports.attrs = pug_attrs;
+	function pug_attrs(obj, terse){
+	  var attrs = '';
+
+	  for (var key in obj) {
+	    if (pug_has_own_property.call(obj, key)) {
+	      var val = obj[key];
+
+	      if ('class' === key) {
+	        val = pug_classes(val);
+	        attrs = pug_attr(key, val, false, terse) + attrs;
+	        continue;
+	      }
+	      if ('style' === key) {
+	        val = pug_style(val);
+	      }
+	      attrs += pug_attr(key, val, false, terse);
+	    }
+	  }
+
+	  return attrs;
+	};
+
+	/**
+	 * Escape the given string of `html`.
+	 *
+	 * @param {String} html
+	 * @return {String}
+	 * @api private
+	 */
+
+	var pug_match_html = /["&<>]/;
+	exports.escape = pug_escape;
+	function pug_escape(_html){
+	  var html = '' + _html;
+	  var regexResult = pug_match_html.exec(html);
+	  if (!regexResult) return _html;
+
+	  var result = '';
+	  var i, lastIndex, escape;
+	  for (i = regexResult.index, lastIndex = 0; i < html.length; i++) {
+	    switch (html.charCodeAt(i)) {
+	      case 34: escape = '&quot;'; break;
+	      case 38: escape = '&amp;'; break;
+	      case 60: escape = '&lt;'; break;
+	      case 62: escape = '&gt;'; break;
+	      default: continue;
+	    }
+	    if (lastIndex !== i) result += html.substring(lastIndex, i);
+	    lastIndex = i + 1;
+	    result += escape;
+	  }
+	  if (lastIndex !== i) return result + html.substring(lastIndex, i);
+	  else return result;
+	};
+
+	/**
+	 * Re-throw the given `err` in context to the
+	 * the pug in `filename` at the given `lineno`.
+	 *
+	 * @param {Error} err
+	 * @param {String} filename
+	 * @param {String} lineno
+	 * @param {String} str original source
+	 * @api private
+	 */
+
+	exports.rethrow = pug_rethrow;
+	function pug_rethrow(err, filename, lineno, str){
+	  if (!(err instanceof Error)) throw err;
+	  if ((typeof window != 'undefined' || !filename) && !str) {
+	    err.message += ' on line ' + lineno;
+	    throw err;
+	  }
+	  try {
+	    str = str || __webpack_require__(21).readFileSync(filename, 'utf8')
+	  } catch (ex) {
+	    pug_rethrow(err, null, lineno)
+	  }
+	  var context = 3
+	    , lines = str.split('\n')
+	    , start = Math.max(lineno - context, 0)
+	    , end = Math.min(lines.length, lineno + context);
+
+	  // Error context
+	  var context = lines.slice(start, end).map(function(line, i){
+	    var curr = i + start + 1;
+	    return (curr == lineno ? '  > ' : '    ')
+	      + curr
+	      + '| '
+	      + line;
+	  }).join('\n');
+
+	  // Alter exception message
+	  err.path = filename;
+	  err.message = (filename || 'Pug') + ':' + lineno
+	    + '\n' + context + '\n\n' + err.message;
+	  throw err;
+	};
+
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	/* (ignored) */
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E" + (null == (pug_interp = __webpack_require__(23).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(24).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(25).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(26).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(27).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(28).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(29).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection class=\"intro\"\u003E\u003Csection\u003E\u003Cimg src=\".\u002Fassets\u002Ffull logo.gif\"\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EHello, world!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection class=\"who-am-i\"\u003E\u003Csection\u003E\u003Ch1\u003EWho am I?\u003C\u002Fh1\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EEvan Williams\u003C\u002Fh3\u003E\u003C\u002Fsection\u003E\u003Csection data-markdown\u003E\u003Ch3\u003EProgramming since 6th grade\u003C\u002Fh3\u003E\u003Cpre\u003Eif(location == 'home') {\n  if(directionChosen == 'north') {\n    print('You see a wild hog appear');\n  }\n  if(directionChosen == 'south') {\n    print('You enter the town square, only to be robbed blind!');\n  }\n  if(directionChosen == 'east') {\n    print('You see your home off in the distance');\n    if(directionChosen == 'east') {\n      print('You reach your doorstep');\n    }\n  }\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EGraduate of Iowa State University\u003C\u002Fh3\u003E\u003Cimg id=\"camponile\" src=\"assets\u002Fcamponile.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EWork History\u003C\u002Fh3\u003E\u003Ch4 class=\"fragment\"\u003EMcDonalds!\u003C\u002Fh4\u003E\u003Ch4 class=\"fragment\"\u003EIntern at Fortune 500 insurance company\u003C\u002Fh4\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java 1.5\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EREST end point for Document Storage\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAutomated testing\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003ECurrent Position\u003C\u002Fh3\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java JMS services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBuilt a Wicket website for said services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMoved on to write a customer portal in Liferay using jQuery\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBegan work on Angular applications\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fme_1.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fme_2.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fme_3.jpg\"\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EAngular Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EDeveloped 7 applications\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E2 external applications (50,000 users)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E3 years of full time experience\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EParticipate in UI Best Practices group, determining direction of UI development\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ETeaching Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ETaught Angular training, replacing a vendor trainer\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EES6 syntax\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EWebpack\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EJade (now Pug)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003Eand many more!\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWhat will you learn watching my videos?*\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWeb Development process (tools, debugging, frameworks, ES6)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular, most importantly\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular best practices\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS (responsive design using Foundation)\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003Ch6 class=\"fragment\"\u003E* Topics are subject to change, I like to go on tangents!\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E** I currently do not have a schedule or order laid out, either\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EContact Me\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fevan-williams-75485533\"\u003E\u003Cimg src=\".\u002Fassets\u002Flinkedin.png\"\u003E\u003C\u002Fa\u003E\u003Ca href=\"https:\u002F\u002Ftwitter.com\u002Fangular_evan\"\u003E\u003Cimg src=\".\u002Fassets\u002Ftwitter.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(20);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Ccontainer\u003E\u003C\u002Fcontainer\u003E";;return pug_html;};
+	module.exports = template;
 
 /***/ }
 /******/ ])
