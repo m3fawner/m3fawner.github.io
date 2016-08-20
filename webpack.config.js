@@ -1,7 +1,7 @@
 var path = require('path');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
         path: __dirname,
         filename: 'bundle.js',
@@ -13,6 +13,9 @@ module.exports = {
           path.resolve('./src'),
           path.resolve('./node_modules')
         ],
+        alias: {
+            './~reveal/': 'reveal'
+        }
     },
     module: {
         loaders: [
@@ -30,7 +33,12 @@ module.exports = {
                 loaders: [
                   'babel'
                 ]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file?name=public/fonts/[name].[ext]'
             }
         ]
-    }
+    },
+    plugins: [new HtmlWebpackPlugin()]
 };

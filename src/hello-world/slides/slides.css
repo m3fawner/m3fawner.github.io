@@ -1,0 +1,12 @@
+#camponile {
+    height: 300px;
+    width: auto;
+}
+.intro img {
+    width: 95%;
+    height: auto;
+    border: none !important;
+}
+.who-am-i img {
+    max-height: 400px !important;
+}
