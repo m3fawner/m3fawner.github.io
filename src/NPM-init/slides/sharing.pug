@@ -1,0 +1,11 @@
+section
+    section
+        h2 Sharing your NPM module
+    section
+        code npm publish
+        p.fragment This will make your module available at #[code https://www.npmjs.com/package/{your package name}]
+        p.fragment Other NPM users can now npm install your module!
+    section
+        h4 .npmignore
+        p.fragment Similar to a #[strong .gitignore] file, #[strong .npmignore] will contain the files &amp; directories you do not want to publish.
+        p.fragment Your #[strong .npmignore] file should, at minimum, contain #[strong /node_modules/]. Those will be installed when an #[code npm install] is executed.

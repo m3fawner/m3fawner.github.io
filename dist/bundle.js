@@ -56,68 +56,80 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
-	var _helloWorld = __webpack_require__(13);
+	var _helloWorld = __webpack_require__(18);
 
 	var _helloWorld2 = _interopRequireDefault(_helloWorld);
 
-	var _index = __webpack_require__(24);
+	var _index = __webpack_require__(29);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _software = __webpack_require__(32);
+	var _software = __webpack_require__(37);
 
 	var _software2 = _interopRequireDefault(_software);
 
-	var _index3 = __webpack_require__(33);
+	var _index3 = __webpack_require__(38);
 
 	var _index4 = _interopRequireDefault(_index3);
+
+	var _NPMInit = __webpack_require__(42);
+
+	var _NPMInit2 = _interopRequireDefault(_NPMInit);
+
+	var _index5 = __webpack_require__(43);
+
+	var _index6 = _interopRequireDefault(_index5);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var AVAILABLE_APPS = {
-	    'HelloWorld': {
-	        pug: _index2.default,
-	        js: _helloWorld2.default
-	    },
-	    'Software': {
-	        pug: _index4.default,
-	        js: _software2.default
-	    }
+	  HelloWorld: {
+	    pug: _index2.default,
+	    js: _helloWorld2.default
+	  },
+	  Software: {
+	    pug: _index4.default,
+	    js: _software2.default
+	  },
+	  'NPM-init': {
+	    pug: _index6.default,
+	    js: _NPMInit2.default
+	  }
 	};
 	var getNode = function getNode(pug) {
-	    for (var _len = arguments.length, locals = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	        locals[_key - 1] = arguments[_key];
-	    }
+	  for (var _len = arguments.length, locals = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	    locals[_key - 1] = arguments[_key];
+	  }
 
-	    var div = document.createElement('div');
-	    div.innerHTML = pug.apply(undefined, locals);
-	    return div.firstChild;
+	  var div = document.createElement('div');
+	  div.innerHTML = pug.apply(undefined, locals);
+	  return div.firstChild;
 	};
 	var loadSubApp = function loadSubApp(subApp) {
-	    for (var _len2 = arguments.length, locals = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-	        locals[_key2 - 1] = arguments[_key2];
-	    }
+	  for (var _len2 = arguments.length, locals = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+	    locals[_key2 - 1] = arguments[_key2];
+	  }
 
-	    document.querySelector('container').appendChild(getNode.apply(undefined, [subApp.pug].concat(locals)));
-	    subApp.js();
+	  document.querySelector('container').appendChild(getNode.apply(undefined, [subApp.pug].concat(locals)));
+	  subApp.js();
 	};
 	var getQueryVariable = function getQueryVariable(variable) {
-	    var query = window.location.search.substring(1);
-	    var vars = query.split('&');
-	    var match = vars.map(function (item) {
-	        var parts = item.split('=');
-	        return {
-	            key: decodeURIComponent(parts[0]),
-	            value: decodeURIComponent(parts[1])
-	        };
-	    }).find(function (param) {
-	        return param.key === variable;
-	    });
-	    return match ? match.value : void 0;
+	  var query = window.location.search.substring(1);
+	  var vars = query.split('&');
+	  var match = vars.map(function (item) {
+	    var parts = item.split('=');
+	    return {
+	      key: decodeURIComponent(parts[0]),
+	      value: decodeURIComponent(parts[1])
+	    };
+	  }).find(function (param) {
+	    return param.key === variable;
+	  });
+	  return match ? match.value : void 0;
 	};
 	var toLoad = AVAILABLE_APPS[getQueryVariable('sub-app')];
 	if (toLoad) {
-	    loadSubApp(toLoad);
+	  loadSubApp(toLoad);
 	}
 
 /***/ },
@@ -133,7 +145,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 10 */,
 /* 11 */,
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -142,11 +159,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _slideShow = __webpack_require__(14);
+	var _slideShow = __webpack_require__(19);
 
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 
-	var _slides = __webpack_require__(22);
+	var _slides = __webpack_require__(27);
 
 	var _slides2 = _interopRequireDefault(_slides);
 
@@ -155,7 +172,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _slideShow2.default;
 
 /***/ },
-/* 14 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -164,15 +181,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _reveal = __webpack_require__(15);
+	var _reveal = __webpack_require__(20);
 
 	var _reveal2 = _interopRequireDefault(_reveal);
 
-	var _index = __webpack_require__(16);
+	var _index = __webpack_require__(21);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _blood = __webpack_require__(20);
+	var _blood = __webpack_require__(25);
 
 	var _blood2 = _interopRequireDefault(_blood);
 
@@ -195,7 +212,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 15 */
+/* 20 */
 /***/ function(module, exports) {
 
 	/*!
@@ -3584,16 +3601,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = Reveal;
 
 /***/ },
-/* 16 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(17);
+	var content = __webpack_require__(22);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(19)(content, {});
+	var update = __webpack_require__(24)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3610,10 +3627,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 17 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(18)();
+	exports = module.exports = __webpack_require__(23)();
 	// imports
 
 
@@ -3624,7 +3641,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 18 */
+/* 23 */
 /***/ function(module, exports) {
 
 	/*
@@ -3680,7 +3697,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 19 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -3932,16 +3949,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 20 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(21);
+	var content = __webpack_require__(26);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(19)(content, {});
+	var update = __webpack_require__(24)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3958,10 +3975,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 21 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(18)();
+	exports = module.exports = __webpack_require__(23)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);", ""]);
 
@@ -3972,16 +3989,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 22 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(23);
+	var content = __webpack_require__(28);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(19)(content, {});
+	var update = __webpack_require__(24)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -3998,10 +4015,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 23 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(18)();
+	exports = module.exports = __webpack_require__(23)();
 	// imports
 
 
@@ -4012,16 +4029,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 24 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EHello, world!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(27).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(28).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(29).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(30).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(31).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EHello, world!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(32).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(33).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(34).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 25 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4254,7 +4271,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    throw err;
 	  }
 	  try {
-	    str = str || __webpack_require__(26).readFileSync(filename, 'utf8')
+	    str = str || __webpack_require__(31).readFileSync(filename, 'utf8')
 	  } catch (ex) {
 	    pug_rethrow(err, null, lineno)
 	  }
@@ -4281,58 +4298,58 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 26 */
+/* 31 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 27 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection class=\"who-am-i\"\u003E\u003Csection\u003E\u003Ch1\u003EWho am I?\u003C\u002Fh1\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EEvan Williams\u003C\u002Fh3\u003E\u003C\u002Fsection\u003E\u003Csection data-markdown\u003E\u003Ch3\u003EProgramming since 6th grade\u003C\u002Fh3\u003E\u003Cpre\u003Eif(location == 'home') {\n  if(directionChosen == 'north') {\n    print('You see a wild hog appear');\n  }\n  if(directionChosen == 'south') {\n    print('You enter the town square, only to be robbed blind!');\n  }\n  if(directionChosen == 'east') {\n    print('You see your home off in the distance');\n    if(directionChosen == 'east') {\n      print('You reach your doorstep');\n    }\n  }\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EGraduate of Iowa State University\u003C\u002Fh3\u003E\u003Cimg id=\"camponile\" src=\"assets\u002Fhello-world\u002Fcamponile.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003EWork History\u003C\u002Fh3\u003E\u003Ch4 class=\"fragment\"\u003EMcDonalds!\u003C\u002Fh4\u003E\u003Ch4 class=\"fragment\"\u003EIntern at Fortune 500 insurance company\u003C\u002Fh4\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java 1.5\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EREST end point for Document Storage\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAutomated testing\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch3\u003ECurrent Position\u003C\u002Fh3\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWrote Java JMS services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBuilt a Wicket website for said services\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMoved on to write a customer portal in Liferay using jQuery\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EBegan work on Angular applications\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_1.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_2.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002Fhello-world\u002Fme_3.jpg\"\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 28 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EAngular Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EDeveloped 7 applications\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E2 external applications (50,000 users)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E3 years of full time experience\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EParticipate in UI Best Practices group, determining direction of UI development\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 29 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ETeaching Experience\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ETaught Angular training, replacing a vendor trainer\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EES6 syntax\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EWebpack\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EJade (now Pug)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003Eand many more!\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 30 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWhat will you learn watching my videos?*\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EWeb Development process (tools, debugging, frameworks, ES6)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular, most importantly\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAngular best practices\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESASS (responsive design using Foundation)\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003Ch6 class=\"fragment\"\u003E* Topics are subject to change, I like to go on tangents!\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E** I currently do not have a schedule or order laid out, either\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 31 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EContact Me\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fevan-williams-75485533\"\u003E\u003Cimg src=\".\u002Fassets\u002Flinkedin.png\"\u003E\u003C\u002Fa\u003E\u003Ca href=\"https:\u002F\u002Ftwitter.com\u002Fangular_evan\"\u003E\u003Cimg src=\".\u002Fassets\u002Ftwitter.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 32 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4341,7 +4358,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _slideShow = __webpack_require__(14);
+	var _slideShow = __webpack_require__(19);
 
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 
@@ -4350,39 +4367,102 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _slideShow2.default;
 
 /***/ },
-/* 33 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESoftware Being Used\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(34).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(31).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESoftware Being Used\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(39).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(40).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(41).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 34 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ENodeJS\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fnodejs.org\u002Fen\u002F\" target=\"_blank\"\u003E\u003Cimg src=\"assets\u002Fsoftware\u002Fnodejs-new-white-pantone.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is NodeJS?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ECross platform runtime environment (think JVM)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EDeveloped for writing server-side applications\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EModules are written in Javascript\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhy are we using it?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EModules written on node allow for significantly different development cycle\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAble to write applications in Javascript\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EWhen we start working with data calls, we'll utilize a NodeJS backend for ease of development\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EInstallation\u003C\u002Fh2\u003E\u003Col\u003E\u003Cli class=\"fragment\"\u003EDownload &amp; Install\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EEnsure you add it to your PATH variable\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EVerify installation using \u003Ccode\u003Enode --version\u003C\u002Fcode\u003E in a command window\u003C\u002Fli\u003E\u003C\u002Fol\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 35 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ENPM\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fnpmjs.com\"\u003E\u003Cimg src=\"assets\u002Fsoftware\u002Fnpm.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is NPM?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EPackage Manager for Javascript\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESimilar to the concept of Maven in Java\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EInstalls dependencies that will help build applications, as well as develop them\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhy are we using it?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EA great way to manage dependencies\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAll dependencies can be explicitly declared &amp; managed by NPM\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMany of our build tools would be extremely difficult to manage without it\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EInstallation Verification\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003ENPM is a default script included in NodeJS\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Ccode\u003Enpm --version\u003C\u002Fcode\u003E should respond with x.x.x version (currently 3.7.2)\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 36 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(25);
+	var pug = __webpack_require__(30);
 
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EVS Code\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fcode.visualstudio.com\u002F\"\u003E\u003Cimg src=\"assets\u002Fsoftware\u002Fvscode.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is VS Code?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EVisual Studios Code, Microsoft open source project\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EIDE for software development\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EProvides GIT interactions, third party plugins, auto complete etc.\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhy are we using it?\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EIt's free\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EIt has all the features of a good web IDE\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EInstallation\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EDownload &amp; install on your machine\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EOpen the application\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EHit \u003Ccode\u003ECtrl + `\u003C\u002Fcode\u003E to open a command prompt inside the application\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EYou should be able to verify NPM &amp; NodeJS are both accessible\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExtensions Being Used\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EESLint\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EDracula Syntax Theme\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003Epuglint\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EDebugger For Chrome\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 42 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _slideShow = __webpack_require__(19);
+
+	var _slideShow2 = _interopRequireDefault(_slideShow);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _slideShow2.default;
+
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(30);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EAnatomy of an NPM \u003Ccode\u003Epackage.json\u003C\u002Fcode\u003E File\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(44).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(45).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(46).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(47).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(30);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EGenerate an NPM Baseline\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003E\u003Ccode\u003E\u003C\u002Fcode\u003E npm init\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EThe above command will begin the initialization process\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIt will ask you to provide the following\u003C\u002Fp\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EThe name of your project (defaults to your directory name)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EVersion (defaults to 1.0.0, see \u003Ca href=\"http:\u002F\u002Fsemver.org\u002F\" target=\"_blank\"\u003Ethis link for more details\u003C\u002Fa\u003E)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EDescription\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EEntry Point (this is where your application lives)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ETest Command (aka if you have a test suite, how to execute it)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003Egit repository (if you perform a \u003Ccode\u003Egit init\u003C\u002Fcode\u003E prior to this step, it will pick up the repo)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EKeywords (for NPM searching)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EAuthor\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ELicense (defaults to \u003Ca href=\"https:\u002F\u002Fopensource.org\u002Flicenses\u002FISC\"\u003EISC\u003C\u002Fa\u003E)\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(30);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ENPM Dependencies\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EInstallation\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003E\u003Ccode\u003Enpm install dependency-name\u003C\u002Fcode\u003E - Performs a one time installation of a module\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Ccode\u003Enpm install -g dependency-name\u003C\u002Fcode\u003E - Installs to your global NPM installation\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Ccode\u003Enpm install --save dependency-name\u003C\u002Fcode\u003E - Installs to your project &amp; and updates the \u003Cstrong\u003Edependencies\u003C\u002Fstrong\u003E list\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Ccode\u003Enpm install --save-dev dependency-name\u003C\u002Fcode\u003E - Installs to your project &amp; and updates the \u003Cstrong\u003EdevDependencies\u003C\u002Fstrong\u003E list\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EDependencies vs. Dev Dependencies\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EDependencies are intended to be packaged with your application and are needed to execute the application by other modules\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EDev Dependencies are used in order to develop or test your application\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EStarting with a pre-written project\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EYour first step is to perform an \u003Cnpm\u003Einstall\u003C\u002Fnpm\u003E\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EBoth dev dependencies and project dependencies will be installed\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EPeer Dependencies\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EMost NPM modules will have dependencies of their own\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003ELuckily, NPM handles that for us! It will not only download your dependency, but its dependencies, as well.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EAll peer dependencies will be sibling directories of your dependency\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EYou will not need to explicitly denote those modules in the \u003Ccode\u003Epackage.json\u003C\u002Fcode\u003E file.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(30);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EScripts\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp class=\"fragment\"\u003EThese are used to abstract the underlying dependencies\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EFor instance, if your testing framework changes from mocha to jasmine, your test command will still be \u003Cstrong\u003Enpm test\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EAvailable npm-scripts properties can be found \u003Ca href=\"https:\u002F\u002Fdocs.npmjs.com\u002Fmisc\u002Fscripts\"\u003Ehere\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(30);
+
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ESharing your NPM module\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ccode\u003Enpm publish\u003C\u002Fcode\u003E\u003Cp class=\"fragment\"\u003EThis will make your module available at \u003Ccode\u003Ehttps:\u002F\u002Fwww.npmjs.com\u002Fpackage\u002F{your package name}\u003C\u002Fcode\u003E\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EOther NPM users can now npm install your module!\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch4\u003E.npmignore\u003C\u002Fh4\u003E\u003Cp class=\"fragment\"\u003ESimilar to a \u003Cstrong\u003E.gitignore\u003C\u002Fstrong\u003E file, \u003Cstrong\u003E.npmignore\u003C\u002Fstrong\u003E will contain the files &amp; directories you do not want to publish.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EYour \u003Cstrong\u003E.npmignore\u003C\u002Fstrong\u003E file should, at minimum, contain \u003Cstrong\u003E\u002Fnode_modules\u002F\u003C\u002Fstrong\u003E. Those will be installed when an \u003Ccode\u003Enpm install\u003C\u002Fcode\u003E is executed.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ }

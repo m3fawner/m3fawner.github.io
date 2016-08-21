@@ -1,0 +1,23 @@
+section
+    section
+        h2 NPM Dependencies
+    section
+        h2 Installation
+        p.fragment #[code npm install dependency-name] - Performs a one time installation of a module
+        p.fragment #[code npm install -g dependency-name] - Installs to your global NPM installation
+        p.fragment #[code npm install --save dependency-name] - Installs to your project &amp; and updates the #[strong dependencies] list
+        p.fragment #[code npm install --save-dev dependency-name] - Installs to your project &amp; and updates the #[strong devDependencies] list
+    section
+        h2 Dependencies vs. Dev Dependencies
+        p.fragment Dependencies are intended to be packaged with your application and are needed to execute the application by other modules
+        p.fragment Dev Dependencies are used in order to develop or test your application
+    section
+        h2 Starting with a pre-written project
+        p.fragment Your first step is to perform an #[npm install]
+        p.fragment Both dev dependencies and project dependencies will be installed
+    section
+        h2 Peer Dependencies
+        p.fragment Most NPM modules will have dependencies of their own
+        p.fragment Luckily, NPM handles that for us! It will not only download your dependency, but its dependencies, as well.
+        p.fragment All peer dependencies will be sibling directories of your dependency
+        p.fragment You will not need to explicitly denote those modules in the #[code package.json] file.
