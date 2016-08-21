@@ -9,6 +9,16 @@ section
         p.fragment #[code npm install --save-dev dependency-name] - Installs to your project &amp; and updates the #[strong devDependencies] list
     section
         h2 Dependencies vs. Dev Dependencies
+        code.
+            "dependencies": {
+                "reveal": "0.0.4"
+            },
+            "devDependencies": {
+                "babel-core": "^6.13.2",
+                ...
+                "webpack": "^1.13.2",
+                "webpack-dev-server": "^1.14.1"
+            }
         p.fragment Dependencies are intended to be packaged with your application and are needed to execute the application by other modules
         p.fragment Dev Dependencies are used in order to develop or test your application
     section
