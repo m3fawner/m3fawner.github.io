@@ -1,0 +1,19 @@
+section
+    section
+        h2 Dependency Versioning
+    section
+        h2 ^
+        p.fragment Indicates that any minor version of the dependency will do
+        p.fragment #[code ^3.2.5] means anything #[code ^3.x.x] is valid
+    section
+        h2 ~
+        p.fragment Indicates that any patch version of the dependency is acceptable
+        p.fragment #[code ~3.2.5] means anything #[code ^3.2.x] is valid
+    section
+        h2 No Proceeding Modifier
+        p.fragment This means this version, and this version only, is acceptable
+        p.fragment #[code 3.2.5] means ONLY #[code 3.2.5] is valid
+    section
+        h2 Why can't I automatically pick up #[strong major] version changes?
+        p.fragment According to SEMVER, major changes are those that cause a breaking change
+        p.fragment This means changes to an API or syntax that breaks reverse compatibility
