@@ -1,0 +1,50 @@
+section
+  section
+    h2 What is Webpack?
+  section
+    h2 1000 foot view
+    img#webpack-logo-1000ft(src="assets/webpack/webpack-logo.jpg")
+  section
+    p.
+      Webpack is a module bundler for Javascript applications. It is an NPM module that we will be utilizing 
+      for our development.
+    p.fragment.
+      Using loaders, processors, and plugins, it makes developing a complex application 
+      much simpler than it would be to manage global scoping and file load order.
+    p.fragment.
+      Previously, we had to load files in the proper order to ensure that global objects were 
+      available to the scripts following a given script.
+    p.fragment.
+      For instance, if we're attemping to declare an #[code angular.module] in file A, and angular is 
+      loaded second as file B, angular will not be defined when file A is executed.
+  section
+    p.
+      Previous solutions included means of managing file loading order by a term called #[strong blobs].
+    p.fragment.
+      These blobs were expressions that would match a given set of file patterns. They could then be loaded 
+      in the proper order. The problem is, certain blobs tie you to the framework you've chosen (for instance,
+      we named angular module declarations #[em my-component.module.js]).
+  section
+    h2 Enter Webpack
+    h6 100 foot view
+    img#webpack-logo-100ft(src="assets/webpack/webpack-logo.jpg")
+  section
+    p.
+      To eliminate the messiness of the blobs, webpack allows for the use of ES6 modules.
+    p.
+      These import &amp; export statements allow for the proper ordering of files (and makes for a much more
+       easily understood application!)
+  section
+    h2 But wait!
+    h2.fragment There's more!
+  section
+    p.
+      Webpack also handles the following:
+    ul
+      li.fragment Stylings (css, sass, less etc.)
+      li.fragment Image loading
+      li.fragment Transpiling
+      li.fragment Source Mapping
+      li.fragment File copying &amp; Manipulation
+      li.fragment Hosting Content
+  

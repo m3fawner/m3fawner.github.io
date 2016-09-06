@@ -1,0 +1,23 @@
+section
+  section
+    h2 Resolve object
+  section
+    p.
+      The resolve object handles file names within your application. If you're attempting to import a file that is extremely 
+      long, or you import many files from a directory, you can use this object to make that easier.
+  section
+    h2 root
+    p.fragment.
+      The root collection tells webpack to look for file names in a given set of directories. This is useful when you import many 
+      files from a directory.
+    pre.fragment.
+      root: [
+        path.resolve('./src'),
+        path.resolve('./node_modules')
+      ]
+  section
+    h2 alias
+    p.fragment.
+      Aliases are for mapping a given import statement to a specific file location. This is useful for projects that don't have a #[code main] property 
+      in their package.json file. Webpack attempts to load the main file described in the package.json for a given directory name. If it doesn't find it, 
+      you'll get a #[strong module not found] error.

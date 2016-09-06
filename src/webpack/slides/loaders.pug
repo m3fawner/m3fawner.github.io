@@ -1,0 +1,52 @@
+section
+  section
+    h2 Loaders
+    img(src="assets/webpack/loading.gif")
+  section
+    h2 What is a loader?
+    p.fragment.
+      A loader is a set of code that transforms a given source file in your application.
+    p.fragment.
+      They run in the Node environment and are typically installed via NPM.
+    p.fragment.
+      Loaders can be chained together to perform multiple transformations before being bundled into the application.
+    p.fragment.
+      #[em Note:] When installing loaders, they will typically be named something-#[em loader]. The #[em loader] portion is 
+      dropped when interacting with the loader.
+  section
+    h2 Examples of Loaders
+    ul
+      li.fragment Babel - Used to transpile ES6 into ES5.
+      li.fragment CSS - Allows for the importing of CSS, which then gets appended to the head of your index page
+      li.fragment File - Copies over files from a given directory into the distribution directory
+      li.fragment Pug - Allows for the use of the Pug language
+  section
+    h2 Anatomy of a Loader Configuration
+    ul
+      li.fragment #[strong test] - The regular expression used to identify the file
+      li.fragment #[strong loader] - The loader string representing what loader to perform
+      li.fragment #[strong loaders] - A collection of loader string declarations. Performed in order of declaration
+  section
+    h2 A loader string
+    p.fragment.
+      A loader string can be simply the name of the loader.
+    p.fragment.
+      It can also take query parameters. These query parameters modify the behavior of a given loader.
+  section
+    h2 Examples
+    pre.
+     {
+        test: /\.pug$/,
+        loader: 'pug'
+      },
+      {
+        test: /\.(es6|js)$/,
+        exclude: /node_modules/,
+        loaders: [
+          'babel'
+        ]
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file?name=public/fonts/[name].[ext]'
+      }

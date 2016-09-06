@@ -1,0 +1,16 @@
+section
+    section
+        h2 const
+    section
+        h2 let
+    section
+        h2 var
+        p.fragment #[code var] should no longer be used
+        pre.
+            function variableHoisting() {
+                for(var i = 0; i < 10; i++) {
+                    console.log(i);
+                }
+                console.log(i); //i is defined here, still!
+            }
+        p.fragment Variable hoisting was a strange behavior and most developers were unaware of its existance

@@ -7,6 +7,9 @@ import SoftwareHTML from './software/index.pug';
 import NPM from './NPM-init/';
 import NPMHTML from './NPM-init/index.pug';
 
+import Webpack from './webpack/';
+import WebpackHTML from './webpack/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -19,6 +22,10 @@ const AVAILABLE_APPS = {
   'NPM-init': {
     pug: NPMHTML,
     js: NPM
+  },
+  webpack: {
+    pug: WebpackHTML,
+    js: Webpack
   }
 };
 const getNode = (pug, ...locals) => {

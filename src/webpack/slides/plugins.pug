@@ -1,0 +1,21 @@
+section
+  section
+    h2 Plugins
+  section
+    p.
+      A plugin is extremely similar to that of a loader. The difference is, a plugin applies to the bundled application, 
+      and not a particular file type. It can also listen into the build process of webpack.
+  section
+    p.
+      Setting up plugins is much easier. You simply create a new instance of the plugin and configure it as you'd like, adding it 
+      to the plugins collection of the configuration (more on this in the next video).
+  section
+    h2 Examples of Plugins
+    pre.
+      plugins: [new HtmlWebpackPlugin({
+        title: 'Evan Williams AngularJS Tutorial Site',
+        template: 'src/index.pug'
+      }), new CopyWebpackPlugin([{
+        from: './assets',
+        to: './assets/'
+      }]), new webpack.optimize.OccurrenceOrderPlugin(), new webpack.HotModuleReplacementPlugin()]

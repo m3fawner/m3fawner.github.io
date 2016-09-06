@@ -1,0 +1,19 @@
+section
+  section
+    h2 Output
+  section
+    pre.
+      {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
+      }
+    p.fragment.
+      Path indicates the output directory.
+    p.fragment.
+      #[strong __dirname] represents a NodeJS variable that stores the current directory in which the script is executing.
+    p.fragment.
+      #[strong path] is another NPM module used to do path manipulation. Here, we are telling it to resolve the "dist" directory of our current directory.
+    p.fragment.
+      It will create the necessary folder if it does not exist.
+    p.fragment.
+      Finally, the filename is the output bundle from the webpack build process. We will call it "bundle.js" for now.

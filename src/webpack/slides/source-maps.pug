@@ -1,0 +1,23 @@
+section
+  section
+    h2 Sourcemaps
+  section
+    h2 Overview
+    p.fragment.
+      A source map, generally speaking, is a way to take a transpiled code base, and display the source that produced it.
+    p.fragment.
+      This can apply to more than just our Javascript, but also SASS and other transpiled code.
+  section
+    h2 Importance of Sourcemaps
+    p.fragment.
+      Sourcemaps are important because you'll want to debug your source, not your transpiled code.
+    pre.fragment.
+      function(e,t){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children=[],e.webpackPolyfill=1),e}},function(e,t){}]);
+    p.fragment.
+      This is extremely important with transpiled code, as Babel and all the other webpack processes will modify your code to a completely unreadable state.
+  section
+    h2 Implementing Sourcemaps in webpack
+    p.fragment.
+      #[strong devtool] property is what you will want to set in your webpack configuration.
+    p.fragment.
+      I personally use "source-map" as my devtool, as it provides the greatest functionality, and my application is currently jokingly small.
