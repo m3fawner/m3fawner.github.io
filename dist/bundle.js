@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b8652db3ee365abb448d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "873982dfb4e90c008486"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -907,7 +907,7 @@
 	    throw err;
 	  }
 	  try {
-	    str = str || __webpack_require__(45).readFileSync(filename, 'utf8')
+	    str = str || __webpack_require__(46).readFileSync(filename, 'utf8')
 	  } catch (ex) {
 	    pug_rethrow(err, null, lineno)
 	  }
@@ -943,15 +943,15 @@
 	  value: true
 	});
 	
-	var _reveal = __webpack_require__(40);
+	var _reveal = __webpack_require__(41);
 	
 	var _reveal2 = _interopRequireDefault(_reveal);
 	
-	var _index = __webpack_require__(41);
+	var _index = __webpack_require__(42);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	var _blood = __webpack_require__(42);
+	var _blood = __webpack_require__(43);
 	
 	var _blood2 = _interopRequireDefault(_blood);
 	
@@ -1381,7 +1381,7 @@
 	
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 	
-	var _slides = __webpack_require__(43);
+	var _slides = __webpack_require__(44);
 	
 	var _slides2 = _interopRequireDefault(_slides);
 
@@ -1421,7 +1421,7 @@
 	
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 	
-	__webpack_require__(44);
+	__webpack_require__(45);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1577,7 +1577,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EWebpack\u003C\u002Fh2\u003E\u003Ch6 class=\"fragment\"\u003Eand all its glory\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E...and its confusion\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(34).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(37).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(38).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(39).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(4).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EWebpack\u003C\u002Fh2\u003E\u003Ch6 class=\"fragment\"\u003Eand all its glory\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E...and its confusion\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(38).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(39).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(37).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(34).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(40).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(4).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -1586,7 +1586,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is Webpack?\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003E1000 foot view\u003C\u002Fh2\u003E\u003Cimg id=\"webpack-logo-1000ft\" src=\"assets\u002Fwebpack\u002Fwebpack-logo.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EWebpack is a module bundler for Javascript applications. It is an NPM module that we will be utilizing \nfor our development.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EUsing loaders, processors, and plugins, it makes developing a complex application \nmuch simpler than it would be to manage global scoping and file load order.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EPreviously, we had to load files in the proper order to ensure that global objects were \navailable to the scripts following a given script.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EFor instance, if we're attemping to declare an \u003Ccode\u003Eangular.module\u003C\u002Fcode\u003E in file A, and angular is \nloaded second as file B, angular will not be defined when file A is executed.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EPrevious solutions included means of managing file loading order by a term called \u003Cstrong\u003Eblobs\u003C\u002Fstrong\u003E.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThese blobs were expressions that would match a given set of file patterns. They could then be loaded \nin the proper order. The problem is, certain blobs tie you to the framework you've chosen (for instance,\nwe named angular module declarations \u003Cem\u003Emy-component.module.js\u003C\u002Fem\u003E).\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EEnter Webpack\u003C\u002Fh2\u003E\u003Ch6\u003E100 foot view\u003C\u002Fh6\u003E\u003Cimg id=\"webpack-logo-100ft\" src=\"assets\u002Fwebpack\u002Fwebpack-logo.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003ETo eliminate the messiness of the blobs, webpack allows for the use of ES6 modules.\u003C\u002Fp\u003E\u003Cp\u003EThese import &amp; export statements allow for the proper ordering of files (and makes for a much more\n easily understood application!)\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EBut wait!\u003C\u002Fh2\u003E\u003Ch2 class=\"fragment\"\u003EThere's more!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EWebpack also handles the following:\u003C\u002Fp\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EStylings (css, sass, less etc.)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EImage loading\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ETranspiling\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESource Mapping\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EFile copying &amp; Manipulation\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EHosting Content\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EHow to install webpack\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003ENPM\u003C\u002Fh2\u003E\u003Cp\u003EExecute the command \u003Ccode\u003Enpm install -g --save-dev webpack\u003C\u002Fcode\u003E.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThat's it. Remember, though, we want to \u003Ccode\u003E--save-dev\u003C\u002Fcode\u003E to ensure we note that \nwe are requiring that dependency for development purposes.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EAlso note the \u003Ccode\u003E-g\u003C\u002Fcode\u003E. The webpack NPM module comes with an executable bat script that \nwill interface with your filesystem natively.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIf you execute \u003Ccode\u003Ewebpack\u003C\u002Fcode\u003E in your directory, you should see it output the usage information.\nWe'll expand on how to configure webpack in the next video.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -1595,7 +1595,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ELoaders\u003C\u002Fh2\u003E\u003Cimg src=\"assets\u002Fwebpack\u002Floading.gif\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is a loader?\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EA loader is a set of code that transforms a given source file in your application.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThey run in the Node environment and are typically installed via NPM.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003ELoaders can be chained together to perform multiple transformations before being bundled into the application.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Cem\u003ENote:\u003C\u002Fem\u003E When installing loaders, they will typically be named something-\u003Cem\u003Eloader\u003C\u002Fem\u003E. The \u003Cem\u003Eloader\u003C\u002Fem\u003E portion is \ndropped when interacting with the loader.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExamples of Loaders\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EBabel - Used to transpile ES6 into ES5.\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ECSS - Allows for the importing of CSS, which then gets appended to the head of your index page\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EFile - Copies over files from a given directory into the distribution directory\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EPug - Allows for the use of the Pug language\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EAnatomy of a Loader Configuration\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003E\u003Cstrong\u003Etest\u003C\u002Fstrong\u003E - The regular expression used to identify the file\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E\u003Cstrong\u003Eloader\u003C\u002Fstrong\u003E - The loader string representing what loader to perform\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E\u003Cstrong\u003Eloaders\u003C\u002Fstrong\u003E - A collection of loader string declarations. Performed in order of declaration\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EA loader string\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EA loader string can be simply the name of the loader.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIt can also take query parameters. These query parameters modify the behavior of a given loader.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExamples\u003C\u002Fh2\u003E\u003Cpre\u003E{\n   test: \u002F\\.pug$\u002F,\n   loader: 'pug'\n },\n {\n   test: \u002F\\.(es6|js)$\u002F,\n   exclude: \u002Fnode_modules\u002F,\n   loaders: [\n     'babel'\n   ]\n },\n {\n   test: \u002F\\.(eot|svg|ttf|woff|woff2)$\u002F,\n   loader: 'file?name=public\u002Ffonts\u002F[name].[ext]'\n }\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is Webpack?\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003E1000 foot view\u003C\u002Fh2\u003E\u003Cimg id=\"webpack-logo-1000ft\" src=\"assets\u002Fwebpack\u002Fwebpack-logo.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EWebpack is a module bundler for Javascript applications. It is an NPM module that we will be utilizing \nfor our development.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EUsing loaders, processors, and plugins, it makes developing a complex application \nmuch simpler than it would be to manage global scoping and file load order.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EPreviously, we had to load files in the proper order to ensure that global objects were \navailable to the scripts following a given script.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EFor instance, if we're attemping to declare an \u003Ccode\u003Eangular.module\u003C\u002Fcode\u003E in file A, and angular is \nloaded second as file B, angular will not be defined when file A is executed.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EPrevious solutions included means of managing file loading order by a term called \u003Cstrong\u003Eblobs\u003C\u002Fstrong\u003E.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThese blobs were expressions that would match a given set of file patterns. They could then be loaded \nin the proper order. The problem is, certain blobs tie you to the framework you've chosen (for instance,\nwe named angular module declarations \u003Cem\u003Emy-component.module.js\u003C\u002Fem\u003E).\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EEnter Webpack\u003C\u002Fh2\u003E\u003Ch6\u003E100 foot view\u003C\u002Fh6\u003E\u003Cimg id=\"webpack-logo-100ft\" src=\"assets\u002Fwebpack\u002Fwebpack-logo.jpg\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003ETo eliminate the messiness of the blobs, webpack allows for the use of ES6 modules.\u003C\u002Fp\u003E\u003Cp\u003EThese import &amp; export statements allow for the proper ordering of files (and makes for a much more\n easily understood application!)\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EBut wait!\u003C\u002Fh2\u003E\u003Ch2 class=\"fragment\"\u003EThere's more!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EWebpack also handles the following:\u003C\u002Fp\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EStylings (css, sass, less etc.)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EImage loading\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ETranspiling\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESource Mapping\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EFile copying &amp; Manipulation\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EHosting Content\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -1604,7 +1604,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EOutput\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cpre\u003E{\n  path: path.resolve(__dirname, 'dist'),\n  filename: 'bundle.js'\n}\u003C\u002Fpre\u003E\u003Cp class=\"fragment\"\u003EPath indicates the output directory.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Cstrong\u003E__dirname\u003C\u002Fstrong\u003E represents a NodeJS variable that stores the current directory in which the script is executing.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Cstrong\u003Epath\u003C\u002Fstrong\u003E is another NPM module used to do path manipulation. Here, we are telling it to resolve the \"dist\" directory of our current directory.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIt will create the necessary folder if it does not exist.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EFinally, the filename is the output bundle from the webpack build process. We will call it \"bundle.js\" for now.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ELoaders\u003C\u002Fh2\u003E\u003Cimg src=\"assets\u002Fwebpack\u002Floading.gif\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWhat is a loader?\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EA loader is a set of code that transforms a given source file in your application.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThey run in the Node environment and are typically installed via NPM.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003ELoaders can be chained together to perform multiple transformations before being bundled into the application.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Cem\u003ENote:\u003C\u002Fem\u003E When installing loaders, they will typically be named something-\u003Cem\u003Eloader\u003C\u002Fem\u003E. The \u003Cem\u003Eloader\u003C\u002Fem\u003E portion is \ndropped when interacting with the loader.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExamples of Loaders\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EBabel - Used to transpile ES6 into ES5.\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ECSS - Allows for the importing of CSS, which then gets appended to the head of your index page\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EFile - Copies over files from a given directory into the distribution directory\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EPug - Allows for the use of the Pug language\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EAnatomy of a Loader Configuration\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003E\u003Cstrong\u003Etest\u003C\u002Fstrong\u003E - The regular expression used to identify the file\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E\u003Cstrong\u003Eloader\u003C\u002Fstrong\u003E - The loader string representing what loader to perform\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E\u003Cstrong\u003Eloaders\u003C\u002Fstrong\u003E - A collection of loader string declarations. Performed in order of declaration\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EA loader string\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EA loader string can be simply the name of the loader.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIt can also take query parameters. These query parameters modify the behavior of a given loader.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExamples\u003C\u002Fh2\u003E\u003Cpre\u003E{\n   test: \u002F\\.pug$\u002F,\n   loader: 'pug'\n },\n {\n   test: \u002F\\.(es6|js)$\u002F,\n   exclude: \u002Fnode_modules\u002F,\n   loaders: [\n     'babel'\n   ]\n },\n {\n   test: \u002F\\.(eot|svg|ttf|woff|woff2)$\u002F,\n   loader: 'file?name=public\u002Ffonts\u002F[name].[ext]'\n }\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -1613,7 +1613,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EPlugins\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EA plugin is extremely similar to that of a loader. The difference is, a plugin applies to the bundled application, \nand not a particular file type. It can also listen into the build process of webpack.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003ESetting up plugins is much easier. You simply create a new instance of the plugin and configure it as you'd like, adding it \nto the plugins collection of the configuration (more on this in the next video).\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExamples of Plugins\u003C\u002Fh2\u003E\u003Cpre\u003Eplugins: [new HtmlWebpackPlugin({\n  title: 'Evan Williams AngularJS Tutorial Site',\n  template: 'src\u002Findex.pug'\n}), new CopyWebpackPlugin([{\n  from: '.\u002Fassets',\n  to: '.\u002Fassets\u002F'\n}]), new webpack.optimize.OccurrenceOrderPlugin(), new webpack.HotModuleReplacementPlugin()]\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EOutput\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cpre\u003E{\n  path: path.resolve(__dirname, 'dist'),\n  filename: 'bundle.js'\n}\u003C\u002Fpre\u003E\u003Cp class=\"fragment\"\u003EPath indicates the output directory.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Cstrong\u003E__dirname\u003C\u002Fstrong\u003E represents a NodeJS variable that stores the current directory in which the script is executing.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003E\u003Cstrong\u003Epath\u003C\u002Fstrong\u003E is another NPM module used to do path manipulation. Here, we are telling it to resolve the \"dist\" directory of our current directory.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIt will create the necessary folder if it does not exist.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EFinally, the filename is the output bundle from the webpack build process. We will call it \"bundle.js\" for now.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -1622,7 +1622,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EResolve object\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EThe resolve object handles file names within your application. If you're attempting to import a file that is extremely \nlong, or you import many files from a directory, you can use this object to make that easier.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003Eroot\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EThe root collection tells webpack to look for file names in a given set of directories. This is useful when you import many \nfiles from a directory.\u003C\u002Fp\u003E\u003Cpre class=\"fragment\"\u003Eroot: [\n  path.resolve('.\u002Fsrc'),\n  path.resolve('.\u002Fnode_modules')\n]\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003Ealias\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EAliases are for mapping a given import statement to a specific file location. This is useful for projects that don't have a \u003Ccode\u003Emain\u003C\u002Fcode\u003E property \nin their package.json file. Webpack attempts to load the main file described in the package.json for a given directory name. If it doesn't find it, \nyou'll get a \u003Cstrong\u003Emodule not found\u003C\u002Fstrong\u003E error.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EPlugins\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EA plugin is extremely similar to that of a loader. The difference is, a plugin applies to the bundled application, \nand not a particular file type. It can also listen into the build process of webpack.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003ESetting up plugins is much easier. You simply create a new instance of the plugin and configure it as you'd like, adding it \nto the plugins collection of the configuration (more on this in the next video).\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EExamples of Plugins\u003C\u002Fh2\u003E\u003Cpre\u003Eplugins: [new HtmlWebpackPlugin({\n  title: 'Evan Williams AngularJS Tutorial Site',\n  template: 'src\u002Findex.pug'\n}), new CopyWebpackPlugin([{\n  from: '.\u002Fassets',\n  to: '.\u002Fassets\u002F'\n}]), new webpack.optimize.OccurrenceOrderPlugin(), new webpack.HotModuleReplacementPlugin()]\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -1631,11 +1631,20 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWrap-Up\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ca href=\"https:\u002F\u002Fwebpack.github.io\u002Fdocs\u002Fconfiguration.html\"\u003EMore information on Webpack Configurations\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EResolve object\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EThe resolve object handles file names within your application. If you're attempting to import a file that is extremely \nlong, or you import many files from a directory, you can use this object to make that easier.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003Eroot\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EThe root collection tells webpack to look for file names in a given set of directories. This is useful when you import many \nfiles from a directory.\u003C\u002Fp\u003E\u003Cpre class=\"fragment\"\u003Eroot: [\n  path.resolve('.\u002Fsrc'),\n  path.resolve('.\u002Fnode_modules')\n]\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003Ealias\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EAliases are for mapping a given import statement to a specific file location. This is useful for projects that don't have a \u003Ccode\u003Emain\u003C\u002Fcode\u003E property \nin their package.json file. Webpack attempts to load the main file described in the package.json for a given directory name. If it doesn't find it, \nyou'll get a \u003Cstrong\u003Emodule not found\u003C\u002Fstrong\u003E error.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
 /* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(1);
+	
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWrap-Up\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ca href=\"https:\u002F\u002Fwebpack.github.io\u002Fdocs\u002Fconfiguration.html\"\u003EMore information on Webpack Configurations\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 41 */
 /***/ function(module, exports) {
 
 	/*!
@@ -5024,7 +5033,7 @@
 	module.exports = Reveal;
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5050,7 +5059,7 @@
 	}
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5076,7 +5085,7 @@
 	}
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5102,7 +5111,7 @@
 	}
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5128,7 +5137,7 @@
 	}
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
