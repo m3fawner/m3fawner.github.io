@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "873982dfb4e90c008486"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b2a1873b620c59976562"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -907,7 +907,7 @@
 	    throw err;
 	  }
 	  try {
-	    str = str || __webpack_require__(46).readFileSync(filename, 'utf8')
+	    str = str || __webpack_require__(47).readFileSync(filename, 'utf8')
 	  } catch (ex) {
 	    pug_rethrow(err, null, lineno)
 	  }
@@ -943,15 +943,15 @@
 	  value: true
 	});
 	
-	var _reveal = __webpack_require__(41);
+	var _reveal = __webpack_require__(42);
 	
 	var _reveal2 = _interopRequireDefault(_reveal);
 	
-	var _index = __webpack_require__(42);
+	var _index = __webpack_require__(43);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	var _blood = __webpack_require__(43);
+	var _blood = __webpack_require__(44);
 	
 	var _blood2 = _interopRequireDefault(_blood);
 	
@@ -1381,7 +1381,7 @@
 	
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 	
-	var _slides = __webpack_require__(44);
+	var _slides = __webpack_require__(45);
 	
 	var _slides2 = _interopRequireDefault(_slides);
 
@@ -1421,7 +1421,7 @@
 	
 	var _slideShow2 = _interopRequireDefault(_slideShow);
 	
-	__webpack_require__(45);
+	__webpack_require__(46);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1577,7 +1577,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EWebpack\u003C\u002Fh2\u003E\u003Ch6 class=\"fragment\"\u003Eand all its glory\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E...and its confusion\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(38).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(39).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(37).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(34).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(40).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(4).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EWebpack\u003C\u002Fh2\u003E\u003Ch6 class=\"fragment\"\u003Eand all its glory\u003C\u002Fh6\u003E\u003Ch6 class=\"fragment\"\u003E...and its confusion\u003C\u002Fh6\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(38).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(39).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(37).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(40).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(34).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(41).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(4).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -1640,11 +1640,20 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWrap-Up\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ca href=\"https:\u002F\u002Fwebpack.github.io\u002Fdocs\u002Fconfiguration.html\"\u003EMore information on Webpack Configurations\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ESourcemaps\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EOverview\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003EA source map, generally speaking, is a way to take a transpiled code base, and display the source that produced it.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThis can apply to more than just our Javascript, but also SASS and other transpiled code.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EImportance of Sourcemaps\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003ESourcemaps are important because you'll want to debug your source, not your transpiled code.\u003C\u002Fp\u003E\u003Cpre class=\"fragment\"\u003Efunction(e,t){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children=[],e.webpackPolyfill=1),e}},function(e,t){}]);\u003C\u002Fpre\u003E\u003Cp class=\"fragment\"\u003EThis is extremely important with transpiled code, as Babel and all the other webpack processes will modify your code to a completely unreadable state.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EImplementing Sourcemaps in webpack\u003C\u002Fh2\u003E\u003Cp class=\"fragment\"\u003E\u003Cstrong\u003Edevtool\u003C\u002Fstrong\u003E property is what you will want to set in your webpack configuration.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EI personally use \"source-map\" as my devtool, as it provides the greatest functionality, and my application is currently jokingly small.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
 /* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(1);
+	
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EWrap-Up\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ca href=\"https:\u002F\u002Fwebpack.github.io\u002Fdocs\u002Fconfiguration.html\"\u003EMore information on Webpack Configurations\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
+/* 42 */
 /***/ function(module, exports) {
 
 	/*!
@@ -5033,7 +5042,7 @@
 	module.exports = Reveal;
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5059,7 +5068,7 @@
 	}
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5085,7 +5094,7 @@
 	}
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5111,7 +5120,7 @@
 	}
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -5137,7 +5146,7 @@
 	}
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
