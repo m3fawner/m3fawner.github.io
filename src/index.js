@@ -10,6 +10,12 @@ import NPMHTML from './NPM-init/index.pug';
 import Webpack from './webpack/';
 import WebpackHTML from './webpack/index.pug';
 
+import es6intro from './es6/es6-intro';
+import es6introHTML from './es6/es6-intro/index.pug';
+
+import es6VariableDeclaration from './es6/variable-declaration';
+import es6VariableDeclarationHTML from './es6/variable-declaration/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -26,6 +32,14 @@ const AVAILABLE_APPS = {
   webpack: {
     pug: WebpackHTML,
     js: Webpack
+  },
+  'es6-intro': {
+    pug: es6introHTML,
+    js: es6intro
+  },
+  'es6-variable-declaration': {
+    pug: es6VariableDeclarationHTML,
+    js: es6VariableDeclaration
   }
 };
 const getNode = (pug, ...locals) => {

@@ -1,12 +1,10 @@
 section
     section
-        h2 const
-    section
-        h2 let
+        h2 Variable Declarations
     section
         h2 var
         p.fragment #[code var] should no longer be used
-        pre.
+        pre.fragment.
             function variableHoisting() {
                 for(var i = 0; i < 10; i++) {
                     console.log(i);
@@ -14,3 +12,18 @@ section
                 console.log(i); //i is defined here, still!
             }
         p.fragment Variable hoisting was a strange behavior and most developers were unaware of its existance
+    section
+        h2 let
+        p.fragment.
+            Behaves how one would expect #[code var] to behave. This is to be used for mutable variables.
+    section
+        h2 const
+        p.
+            #[code const] is short for constant. These are immutable varaibles, ones that are not intended to change value (or reference).
+        p.fragment.
+            You can declare an object a const, yet still modify its properties. This is because you aren't changing the object's reference,
+            but just the properties of the object.
+        pre.fragment.
+            const testObject = {};
+            testObject.value = 42;
+            testObject = {}; //ESLint Error

@@ -1,0 +1,17 @@
+section
+  section
+    h2 Rest Parameters
+  section
+    p.
+      This is the same syntax as spread operators, but performs the reverse operation.
+    p.fragment.
+      It will condense the remainder of a collection into a single variable.
+  section
+    h2 Basic Syntax
+    pre.fragment.
+      function multiplyBy(multiplier, ...values) {
+        const result = [];
+        for(let i = 0; i < values.length; i++) result.push(values[i] * multiplier); // Array.prototype.map will be covered in another video :)
+        return result;
+      }
+      multiplyBy(5, 1, 2, 3, 4, 5); // [5, 10, 15, 20, 25];

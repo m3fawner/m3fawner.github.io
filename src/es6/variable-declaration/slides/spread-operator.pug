@@ -1,0 +1,16 @@
+section
+  section
+    h2 Spread Operator
+  section
+    h2 Basic Syntax
+    pre.fragment.
+      const first5 = [1, 2, 3, 4, 5];
+      const next5 = [6, 7, 8, 9, 10];
+      const all10 = [...first5, ...next5];
+      console.log(all10); // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+  section
+    h2 Used with #[code push]
+    pre.fragment.
+      const blank = [];
+      const toCopy = [1, 2, 3, 4, 5];
+      blank.push(...toCopy); // blank.push(1, 2, 3, 4, 5);

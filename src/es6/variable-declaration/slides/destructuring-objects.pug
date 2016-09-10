@@ -1,0 +1,63 @@
+section
+  section
+    h2 Object Destructuring
+  section
+    p.
+      Destructuring an object is breaking down an object and assigning properties of the object to variables.
+    .fragment
+      p.
+        Basic syntax
+      pre.
+        const { toAssignTo } = {
+          toAssignTo: 42
+        };
+  section
+    h2 Multiple Variable Declarations
+    pre.
+      const { valueA, valueB, valueD } = {
+        valueA: 42,
+        valueB: 63,
+        valueC: 85
+      };
+      console.log(valueA, valueB, valueD); // 42, 63, undefined
+    p.fragment.
+      This also works on object references.
+  section
+    h2 Transpiled ES5
+    pre.
+      var objectReference = {
+        valueA: 42,
+        valueB: 63,
+        valueC: 85
+      };
+      var valueA = objectReference.valueA;
+      var valueB = objectReference.valueB;
+      var valueD = objectReference.valueD;
+  section
+    h2 Parameter Destructuring
+    pre.fragment.
+      const person = {
+        name: 'Evan Williams',
+        occupation: 'Project Engineer',
+        twitterHandle: '@angular_evan'
+      };
+      function getCapitalizedName({ name }) {
+        return name.toUpperCase();
+      }
+    pre.fragment.
+      function getCapitalizedName(obj) {
+        var name = obj.name;
+        return name.toUpperCase();
+      }
+  section
+    h2 Array (iterable object) Destructuring
+    pre.fragment.
+      const [first, second, third] = [1, 2, 3];
+      console.log(first, second, third); //1, 2, 3
+    p.fragment.
+      You can skip over assigning elements in the array by putting two commas in a row (or emitting the first variable name). You also don't have to match the length of the array.
+    pre.fragment.
+      function outputEveryOtherArgument(first, second, third, fourth, fifth) {
+        const [ , b, , d] = arguments;
+        console.log(b, d);
+      }

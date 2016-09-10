@@ -1,0 +1,26 @@
+section
+  section
+    h2 Simplified Object Declaration
+  section
+    p.
+      If variable names match the name of the property on an object, the need for a key/value pair is eliminated.
+    p.fragment.
+      One can simply express the pair as a single property.
+    pre.fragment.
+      const someVariable = 'Test';
+      const obj = {
+        someVariable
+      };
+      console.log(obj);
+    pre.fragment.
+      {
+        someVariable: 'Test'
+      }
+    .fragment
+      p.
+        ES5 equivalent:
+      pre.fragment.
+        var someVariable = 'Test';
+        var obj = {
+          someVariable: someVariable
+        };

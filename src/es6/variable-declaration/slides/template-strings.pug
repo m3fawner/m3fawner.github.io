@@ -1,0 +1,35 @@
+section
+  section
+    h2 Template Strings
+  section
+    pre.
+      const aVariable = 'test';
+      let string = 'Some String: ' + aVariable + '.';
+      string += '\n Another string added on a new line';
+    p.fragment.
+      Does this mess look familiar?
+  section
+    h2 Enter Template Strings!
+  section
+    h4 Basic Notation
+    p.fragment.
+      #[code `] (backticks) are used to denote a template string.
+    p.fragment.
+      #[code ${ someVariable }] Represents interpolating the someVariable variable into the string.
+      Note: These are javascript expressions. Variables, as well as other javascript (such as ternary operators) are valid.
+    p.fragment.
+      Formatting is maintained in a tempalte string. If you add a new line, and your IDE indents that new line, those indentations
+      will be in your compiled string.
+  section
+    pre.
+      const aVariable = 'test';
+      const string = `Some String: ${aVariable}.
+      Another string added on a new line.`;
+    p.fragment.
+      This is useful if your javascript framework uses inline HTML declarations (e.x. React, Angular)
+    pre.fragment.
+      export default {
+        template: `&lt;div&gt;
+                      &lt;strong&gtHello World!&lt;/strong&gt
+                   &lt;/div&gt;`,
+      };
