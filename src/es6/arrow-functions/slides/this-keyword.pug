@@ -1,0 +1,14 @@
+section
+  section
+    h2 #[code this] Keyword
+  section
+    p.fragment.
+      Arrow functions use the contextual `this` of its parent function.
+    pre.fragment.
+      function Name(first, middle, last) {
+        this.nameString = `${first} ${middle} ${last}`;
+        setTimeout(() => console.log(`Hello, ${this.nameString}`), 100); // Hello, Evan M. Williams
+        setTimeout(function() {
+          console.log(`Hello, ${this.nameString}`); // Hello, undefined
+        }, 250);
+      }

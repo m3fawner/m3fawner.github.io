@@ -1,8 +1,37 @@
 section
     section
+        h2 Array Methods
+    section
         h2 Find
+        p.fragment.
+            Basic Syntax:
+            array.find(callback); //Callback determines the criteria to match
+        pre.fragment.
+            const array = [{
+                a: 42
+            }, {
+                a: 55
+            }];
+            console.log(array.find((item) => item.a === 42)); //Outputs the first element
+        p.fragment.
+            If there are more than one element matches in the collection, it will return the first instance of the match. Think of this like 
+            performing an "if matches, break" in a for loop.
     section
         h2 Filter
+        p.fragment.
+            Similar to how find works, but returns a collection of all the matching elements.
+        pre.fragment.
+            const array = [2, 4, 5, 6];
+            array.filter((item) => item % 2 === 0); // [2, 4, 6]
     section
         h2 Array.from
-        
+        p.fragment.
+            Converts an iterable object into an Array
+        p.fragment.
+            This is useful for accessing Array prototype methods on a collection that was not previously an Array type.
+        pre.fragment.
+            const divs = document.querySelectorAll('div');
+            divs.map((item) => item.id); // Will not work, map is not on the NodeList prototype
+        pre.fragment.
+            const divs = Array.from(document.querySelectorAll('div'));
+            divs.map((item) => item.id); // Works! Grabs all the IDs of the divs

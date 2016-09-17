@@ -1,0 +1,40 @@
+section
+  section
+    h2 Object.assign
+  section
+    p.
+      #[strong Object.assign] is useful to assign multiple properties onto an object in an easier to read fashion.
+    p.fragment.
+      Basic concept: Merges right most objects onto their left object, joining properties when there is no overlap, and overriding when there 
+      is an overlap.
+    pre.fragment.
+      const toCopyA = {
+          a: 42
+        }, toCopyB = {
+          a: 63,
+          b: 42
+        };
+      const combined = Object.assign({ c: 42 }, toCopyB, toCopyA);
+    p.fragment.
+      All properties (a, b, c) are put onto the first object.
+       It returns the reference to the leftmost object (in this case { 
+         c: 42 
+      }).
+  section
+    h2 Ok...but why is it "easier to read?"
+    pre.fragment.
+      function MyObject(a, b, c, d) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+      }
+      MyObject.prototype.outputParams = function() {
+        console.log(this.a, this.b, this.c, this.d);
+      }
+    pre.fragment.
+      function MyObjectES6(a, b, c, d) {
+        Object.assign(this, {
+          a, b, c, d
+        });
+      }

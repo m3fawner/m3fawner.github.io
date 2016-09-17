@@ -1,7 +1,29 @@
 section
     section
         h2 startsWith
+        p.fragment.
+            It's pretty self explanatory, whether or not a string starts with a string to match.
+        p.fragment.
+            The second parameter can be used to give it an index to start at within the string. It defaults to 0.
+        pre.fragment.
+            console.log('Evan'.startsWith('E')); // true
+            console.log('Evan'.startsWith('B')); // false
+            console.log('Evan'.startsWith('E', 1)); // false
     section
         h2 endsWith
+        p.fragment.
+            The same as starts with, but in reverse!
     section
         h2 includes
+        p.fragment.
+            The same as startsWith, or endsWith, but applies to the full string.
+    section
+        h2 Why are these handy?
+        p.fragment.
+            These replace the need to use "indexOf" statements such as:
+        pre.fragment.
+            console.log('Evan'.indexOf('E') === 0); // starts with
+            console.log('Evan'.indexOf('n') === 'Evan'.length - 1); // ends with
+            console.log('Evan'.indexOf('a') !== -1); // includes
+        p.fragment.
+            This is nice because you don't have to remember what is returned when it's not found, or compare against the length of the string.

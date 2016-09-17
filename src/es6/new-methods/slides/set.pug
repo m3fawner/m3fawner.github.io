@@ -1,0 +1,26 @@
+section
+  section
+    h2 Set
+  section
+    p.
+      A set is a collection that contains unique elements.
+    p.fragment.
+      Uniqueness is determined by reference for objects and values for primitives.
+    pre.fragment.
+      const set = new Set([1, 4, 5, 3, 1]);
+      set.forEach((item) => console.log(item)); //1, 4, 5, 3
+  section
+    h2 Methods
+    ul.fragment
+      li.
+        #[strong add] - Adds an element to the Set, does not error if attempting to add duplicate value
+      li.fragment.
+        #[strong clear] - Empties the set
+      li.fragment.
+        #[strong delete] - Removes a given value
+      li.fragment.
+        #[strong forEach] - Iterates over the set, performing the callback for each element.
+      li.fragment.
+        #[strong has] - Whether or not a set contains a reference or value.
+      li.fragment
+        a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set") Full API

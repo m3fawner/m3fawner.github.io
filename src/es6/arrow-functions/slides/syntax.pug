@@ -1,0 +1,38 @@
+section
+  section
+    h2 Basic Syntax
+  section
+    pre.
+      const helloWorld = () => {
+        console.log('Hello World');
+      }
+      const oldHelloWorld = function() {
+        console.log('Hello World');
+      }
+  section
+    h2 Inline Return
+    pre.
+      const getGreeting = (name) => `Hello, ${name}!`;
+      console.log(getGreeting());
+    p.fragment.
+      By removing the curly braces, it will return the result of the expression inside the arrow function.
+    p.fragment.
+      Note: You are unable to perform more than 1 line of code in these inlined arrow functions.
+  section
+    h2 Inline Object Returns
+    pre.
+      const makeNameObject = (first, middle, last) => ({
+        first, middle, last
+      });
+      console.log(makeNameObject('Evan', 'M.', 'Williams')); // { first: 'Evan', middle: 'M.', last: 'Williams' }
+  section
+    h2 Single Parameter Notation
+    p.fragment.
+      Before I show this syntax, I suggest not to use it. Single parameter notation blends into the code more so than using the ()
+    pre.fragment.
+      const collection = [1, 2, 3];
+      collection.map(item => item * 2);
+    p.fragment.
+      My preference would be to define the arrow function as:
+    pre.fragment.
+      collection.map((item) => item * 2);

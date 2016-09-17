@@ -1,0 +1,41 @@
+section
+  section
+    h2 Maps
+  section
+    p.
+      But wait...a map is a set of keys/values, right? Aren't Javascript Objects...keys...and values?
+    p.fragment.
+      Well, yes...but...
+    p.fragment.
+      Maps are better for mapping for these reasons
+  section
+    div Maps do not have a set of properties when you create a new instance. Objects do because they are a prototypical object.
+    pre.
+      const obj = {};
+      console.log(obj.toString); // Outputs the function
+      const map = new Map();
+      console.log(map.get('toString')); // Undefined
+      map.set('toString', () => 'I\'m a map!');
+      console.log(map.get('toString')); // I'm a map!
+  section
+    div Keys can be anything you want!
+    div.fragment NaN? 
+    span.fragment Yes!
+    div.fragment 1? 
+    span.fragment Yes!
+    div.fragment Do I have to use strings to represent those? 
+    span.fragment Nope!
+  section
+    div Maps also have the ability to tell you how many elements have been inserted
+    pre.
+      const map = new Map();
+      map.set('name', 'Evan Williams');
+      console.log(map.size) // 1
+  section
+    div Methods
+    div.fragment.
+      The methods that apply to Set also apply to Map, i.e. has, forEach, delete, clear.
+    div.fragment.
+      #[strong set] is used to add to the map. Given a key and a value, it pushes the key/value pair to the map. It is then accessible via get at that key.
+    div.fragment
+      a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map") Full API
