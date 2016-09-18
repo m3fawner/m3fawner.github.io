@@ -25,6 +25,9 @@ import es6ArrowFunctionsHTML from './es6/arrow-functions/index.pug';
 import es6Classes from './es6/classes/';
 import es6ClassesHTML from './es6/classes/index.pug';
 
+import es6Defaults from './es6/parameter-defaults';
+import es6DefaultsHTML from './es6/parameter-defaults/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -61,6 +64,10 @@ const AVAILABLE_APPS = {
   'es6-classes': {
     pug: es6ClassesHTML,
     js: es6Classes
+  },
+  'es6-default-parameters': {
+    pug: es6DefaultsHTML,
+    js: es6Defaults
   }
 };
 const getNode = (pug, ...locals) => {

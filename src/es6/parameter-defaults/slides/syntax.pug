@@ -1,7 +1,27 @@
 section
-    section
-        h2 Basic Syntax
-    section
-        h2 With destructuring
-    section
-        h2 Caveat
+  section
+    h2 Basic Syntax
+    p.fragment.
+      Adding an #[strong =] after a parameter in a function declaration will declare the default.
+    p.fragment.
+      Default values are assigned to the parameter variable name if, and only if, #[strong undefined] is passed to that
+      parameter.
+    pre.fragment.
+      function logParams(a = 5, b, c = {}) {
+        console.log(a, b, c);
+      }
+      logParams(); // 5, undefined, [object Object]
+      logParams(1, 1, 1); // 1, 1, 1
+      logParams(null, null, null); // null, null, null
+  section
+    h2 With Destructuring
+    p.fragment.
+      You can declare a default parameter on a destructured parameter.
+    pre.fragment.
+      function greet({ name: name = 'Evan' }) {
+        console.log(`Hello, ${name}.`);
+      }
+      greet({}); // Hello, Evan.
+      greet({
+        name: 'Ellie'
+      }); // Hello, Ellie.

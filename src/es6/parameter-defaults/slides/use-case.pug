@@ -1,7 +1,34 @@
 section
-    section
-        h2 Why use default parameters?
-    section
-        h2 As a way of documentation
-    section
-        h2 Prevent unexpected javascript errors
+  section
+    h2 Why use default parameters?
+    p.fragment.
+      Defaults are useful when a use case has a clearly defined base level. For instance, a rating on a 1 to 10 scale
+      should be a number between 1-10.
+    pre.fragment.
+      function setRating(rating = 1) {
+        this.rating = rating;
+      }
+  section
+    h2 As a way of documentation
+    p.fragment.
+      ES6 is typeless, making it unknown to developers what is necessarily expected in a function call. Most code should make
+      it obvious, but to a new developer, it may not be.
+    p.fragment.
+      By defining a default parameter as, say, an empty string, you can notate the expected data type.
+    pre.fragment.
+      function logNumberString(str = '') {
+        console.log(Number.parseInt(str));
+      }
+  section
+    h2 Prevent unexpected javascript errors
+    p.fragment.
+      In ES5, most developers would do a defined check on an argument prior to performing an operation.
+    p.fragment.
+      With ES6 defaults, an undefined can be forced to be a defined value with the proper type for the function body.
+    pre.fragment.
+      function ES5Way(str) {
+        return (str || '').toUppercase();
+      }
+      function defaults(str = '') {
+        return str.toUppercase();
+      }
