@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d816659b012272d58e85"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a01b1172b7977cd5ce28"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -1644,7 +1644,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003E\u003Ccode\u003Ethis\u003C\u002Fcode\u003E Keyword\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp class=\"fragment\"\u003EThe \u003Cstrong\u003Ethis\u003C\u002Fstrong\u003E keyword, in ES5, is assigned to the context of each function. In strict mode, it would return\nundefined.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThis was handled in ES5 by aliasing the \u003Cstrong\u003Ethis\u003C\u002Fstrong\u003E variable outside the context of the interior function.\u003C\u002Fp\u003E\u003Cpre class=\"fragment\"\u003Efunction Name(first, middle, last) {\n  const self = this;\n  self.nameString = `${first} ${middle} ${last}`;\n  setTimeout(function() {\n    console.log(`Hello, ${self.nameString}`); \u002F\u002F Hello, Evan M. Williams\n  }, 250);\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp class=\"fragment\"\u003EArrow functions use the contextual `this` of its parent function.\u003C\u002Fp\u003E\u003Cpre class=\"fragment\"\u003Efunction Name(first, middle, last) {\n  this.nameString = `${first} ${middle} ${last}`;\n  setTimeout(() =\u003E console.log(`Hello, ${this.nameString}`), 100); \u002F\u002F Hello, Evan M. Williams\n  setTimeout(function() {\n    console.log(`Hello, ${this.nameString}`); \u002F\u002F Hello, undefined\n  }, 250);\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003E\u003Ccode\u003Ethis\u003C\u002Fcode\u003E Keyword\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EThe \u003Cstrong\u003Ethis\u003C\u002Fstrong\u003E keyword, in ES5, is assigned to the context of each function. In strict mode, it would return\nundefined.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThis was handled in ES5 by aliasing the \u003Cstrong\u003Ethis\u003C\u002Fstrong\u003E variable outside the context of the interior function.\u003C\u002Fp\u003E\u003Cpre class=\"fragment\"\u003Efunction Name(first, middle, last) {\n  const self = this;\n  self.nameString = `${first} ${middle} ${last}`;\n  setTimeout(function() {\n    console.log(`Hello, ${self.nameString}`); \u002F\u002F Hello, Evan M. Williams\n  }, 250);\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EArrow functions use the contextual `this` of its parent function.\u003C\u002Fp\u003E\u003Cpre class=\"fragment\"\u003Efunction Name(first, middle, last) {\n  this.nameString = `${first} ${middle} ${last}`;\n  setTimeout(() =\u003E console.log(`Hello, ${this.nameString}`), 100); \u002F\u002F Hello, Evan M. Williams\n  setTimeout(function() {\n    console.log(`Hello, ${this.nameString}`); \u002F\u002F Hello, undefined\n  }, 250);\n}\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
