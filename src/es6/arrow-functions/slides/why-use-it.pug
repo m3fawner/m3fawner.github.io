@@ -1,0 +1,27 @@
+section
+  section
+    h2 So, why use Arrow Functions?
+  section
+    p.
+      They're more concise.
+    pre.fragment.
+      const myCollection = [1, 5, 10, 100];
+      console.log(myCollection.map((i) => i * i));
+      console.log(myCollection.map(function(i) {
+        return i * i;
+      }));
+  section
+    p.
+      The #[strong this] variable is easier to understand.
+    pre.fragment.
+      function MyType() {
+        this.name = 'MyType';
+        setTimeout(() => console.log(this.name), 250);
+      }
+      function MyType() {
+        const self = this;
+        self.name = 'MyType';
+        setTimeout(function() {
+          console.log(self.name);
+        }, 250);
+      }

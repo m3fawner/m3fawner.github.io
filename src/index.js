@@ -19,6 +19,9 @@ import es6VariableDeclarationHTML from './es6/variable-declaration/index.pug';
 import es6NewMethods from './es6/new-methods';
 import es6NewMethodsHTML from './es6/new-methods/index.pug';
 
+import es6ArrowFunctions from './es6/arrow-functions';
+import es6ArrowFunctionsHTML from './es6/arrow-functions/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -47,6 +50,10 @@ const AVAILABLE_APPS = {
   'es6-new-methods': {
     pug: es6NewMethodsHTML,
     js: es6NewMethods
+  },
+  'es6-arrow-functions': {
+    pug: es6ArrowFunctionsHTML,
+    js: es6ArrowFunctions
   }
 };
 const getNode = (pug, ...locals) => {

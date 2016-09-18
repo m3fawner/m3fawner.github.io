@@ -3,6 +3,20 @@ section
     h2 #[code this] Keyword
   section
     p.fragment.
+      The #[strong this] keyword, in ES5, is assigned to the context of each function. In strict mode, it would return
+      undefined.
+    p.fragment.
+      This was handled in ES5 by aliasing the #[strong this] variable outside the context of the interior function.
+    pre.fragment.
+      function Name(first, middle, last) {
+        const self = this;
+        self.nameString = `${first} ${middle} ${last}`;
+        setTimeout(function() {
+          console.log(`Hello, ${self.nameString}`); // Hello, Evan M. Williams
+        }, 250);
+      }
+  section
+    p.fragment.
       Arrow functions use the contextual `this` of its parent function.
     pre.fragment.
       function Name(first, middle, last) {
