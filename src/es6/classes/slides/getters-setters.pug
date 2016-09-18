@@ -1,0 +1,50 @@
+section
+  section
+    h2 Getters and Setters
+  section
+    p.
+      You can always access and set properties on an instance of a class as you would any object.
+    pre.fragment.
+      class Clazz {
+        constructor() {
+          this.property = 'prop';
+        }
+      }
+      console.log(new Clazz().property); // prop
+  section
+    p.
+      ES6 classes introduced getters and setters on the class definition.
+    pre.fragment.
+      class Clazz {
+        get property() {
+          return this._property;
+        }
+        set property(property) {
+          this._property = property;
+        }
+      }
+    p.fragment.
+      Using the standard property accessor syntax (dot notation or array notation) on a class instance will
+      call the #[strong get] and #[strong set] functions matching that name.
+  section
+    pre.
+     class Clazz {
+        get property() {
+          return this._property;
+        }
+        set property(property) {
+          console.log(`Setting property to: ${property}`);
+          this._property = property;
+        }
+      }
+      const clazz = new Clazz();
+      clazz.property = 'Test'; // Setting property to Test
+      console.log(clazz.property); // Test
+  section
+    p.
+      This is useful for executing some sort of data transformation on incoming properties or type checking and validation.
+    p.fragment.
+      If you noticed, I used an underscore to name the property on the #[strong this] keyword. This is because if you 
+      attempt to name the property on the instance the same as the name of the property, you'll get an infinite loop.
+    p.fragment.
+      The infinite loop is caused by calling the setter when you attempt to set it within the #[strong set {property}] function itself.

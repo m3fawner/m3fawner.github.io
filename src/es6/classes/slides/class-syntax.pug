@@ -1,0 +1,43 @@
+section
+  section
+    h2 ES6 Class Syntax
+  section
+    h2 Definition
+    pre.fragment.
+      class Clazz {
+      }
+  section
+    h2 Constructor
+    pre.fragment.
+      class Clazz {
+        constructor(name) {
+          this.name = name; // this references the instance
+        }
+      }
+  section
+    h2 Methods
+    pre.fragment.
+      class Clazz {
+        constructor(name) {
+          this.name = name;
+        }
+        sayHello() {
+          console.log(`Hello, ${this.name}`); // Hello, name from constructor
+        }
+      }
+  section
+    h2 Static Methods
+    pre.fragment.
+      class RegexUtility {
+        static isNumber(str) {
+          return /\d+/.test(str);
+        }
+      }
+      RegexUtility.isNumber('12'); // true
+    p.fragment.
+      These are super useful for utility functions such as manipulating objects or performing a standard behavior.
+  section
+    h2 Instantiating a Class
+    pre.fragment.
+      const clazz = new Clazz('Evan M. Williams');
+      clazz.sayHello();

@@ -1,0 +1,46 @@
+section
+  section
+    h2 The concept of classes in ES5
+  section
+    h2 Prototypical Objects
+    p.fragment.
+      Objects in Javascript are prototypical, meaning they are created from a "prototype" declaration.
+    p.fragment.
+      All objects of that type will have the same properties as the prototype when created. For instance, a new object 
+      will have "toString" method already available when defining it.
+  section
+    h2 Defining Classes as Functions
+    p.fragment.
+      In ES5, you could create a class-like object by defining it as a function and then calling new on that function.
+    pre.fragment.
+      function Person(name, age) {
+        const self = this;
+        self.name = name;
+        self.age = age;
+      }
+      Person.prototype.sayHello = function() {
+        console.log(`Hello, ${this.name}`);
+      }
+      new Person('Evan Williams', 27).sayHello(); // Hello, Evan Williams
+  section
+    p.
+      A ES6 class will be transpiled into a function similar to above, but instead of using prototypes, it manually sets
+      each property onto the returned object.
+    p.fragment.
+      You can see all the extra fluff that gets added by #[a(href="https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&code=class%20Person%20%7B%0D%0A%20%20constructor%20(name%2C%20age)%20%7B%0D%0A%20%20%20%20this.name%20%3D%20name%3B%0D%0A%20%20%20%20this.age%20%3D%20age%3B%0D%0A%20%20%7D%0D%0A%20%20sayHello%20()%20%7B%0D%0A%20%20%20%20console.log(%60Hello%2C%20%24%7Bthis.name%7D%60)%3B%0D%0A%20%20%7D%0D%0A%7D)") viewing this link].
+  section
+    h2 Why prototypical inheritance is potentially dangerous
+  section
+    p.
+      The reason classes don't use prototypes, is prototypes can potentially be modified outside the context of the class.
+    pre.fragment.
+      Object.prototype.toString = () => console.log(`Didn't expect this, did you?`);
+      const test = {};
+      test.toString(); // Didn't expect this, did you?
+    p.fragment.
+      Modifying the prototype even changes the behavior of already defined objects.
+    pre.fragment.
+      const test = {};
+      test.toString(); // [object Object]      
+      Object.prototype.toString = () => console.log(`Didn't expect this, did you?`);
+      test.toString(); // Didn't expect this, did you?

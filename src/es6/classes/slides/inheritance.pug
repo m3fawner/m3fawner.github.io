@@ -1,0 +1,60 @@
+section
+  section
+    h2 Class Inheritance
+  section
+    pre.
+      class Animal {
+        makeNoise() {
+          console.log(this.sound);
+        }        
+      }
+      class Dog extends Animal {
+        constructor() {
+          super(); // Required in a constructor
+          this.sound = 'Woof!';
+        }
+      }
+      new Dog().makeNoise(); // Woof!
+  section
+    p.
+      You can access parent function by using the #[strong super] keyword.
+    pre.fragment.
+      class Animal {
+        eat(food) {
+          console.log(`The animal just ate ${food}`);
+        }
+      }
+      class Dog extends Animal {
+        beFed() {
+          super.eat('dog food');
+        }
+      }
+      new Dog().beFed(); // The animal just ate dog food.
+  section
+    h2 Expression based Inheritance
+  section
+    pre.
+      class Animal {
+        makeNoise() {
+          console.log(this.noise);
+        }
+      }
+      class Dog extends Animal {
+        constructor() {
+          super();
+          this.noise = 'woof';
+        }
+      }
+      class Puppy extends Dog {
+        constructor() {
+          super();
+          this.noise = 'yipe';
+        }
+      }
+      const defineCanine = (age) => age < 1.0 ? Puppy : Dog;
+      class Canine extends defineCanine(0.5) {
+        constructor() {
+          super(); 
+        }
+      }
+      new Canine().makeNoise(); // yipe
