@@ -1,0 +1,18 @@
+section
+  section
+    h2 Progrommatically Rejecting/Resolving in a then Block
+  section
+    p.
+      Within a then block, you can force the route of the resolution of the promise by returning either
+      an already successfully resolved promise to the next then handler, or an already rejected promise.
+    p.fragment.
+      This is done by returning a #[strong Promise.resolve()] or a #[strong Promise.reject()].
+  section
+    pre.
+      new Promise((resolve, reject) => {
+        // Resolve Logic
+      })
+      .then((data) => {
+        return data.isSuccessful ? Promise.resolve(data.name) : Promise.reject();
+      })
+      .then((name) => console.log(`Hello, ${name}`), () => console.log(`I don't know your name!`));

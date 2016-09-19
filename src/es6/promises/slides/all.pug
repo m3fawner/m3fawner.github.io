@@ -1,3 +1,22 @@
 section
-    section
-        h2 Promise.all
+  section
+    h2 Promise.all
+  section
+    p.
+      #[strong Promise.all] is used to manage multiple promises in one promise chain.
+    p.fragment.
+      It will wait until all promises have been resolved to perform the #[strong then] callbacks.
+    p.fragment.
+      If even one promise fails, they all enter the reject portion of the promise chain.
+    p.fragment.
+      Only the data from the first rejected promise is passed into the rejection handler.
+  section
+    pre.
+      const getPromise = (item) => new Promise((resolve, reject) => {
+        resolve(item);
+      });
+      const promises = [1,2,3,4,5].map(getPromise);
+      Promise.all(promises)
+        .then((data) => {
+          console.log(data);
+        });

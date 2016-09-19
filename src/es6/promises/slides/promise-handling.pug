@@ -1,5 +1,25 @@
 section
-    section
-        h2 then
-    section
-        h2 finally
+  section
+    h2 then
+    p.fragment.
+      Takes two parameters, a success callback and an error callback.
+    p.fragment.
+      The first parameter is executed on success, the second on error.
+    p.fragment.
+      Neither is necessarily required, but using then without any parameters will not perform anything on resolution
+      of the promise.
+    pre.fragment.
+      const success = (data) => console.log(`Success! ${data}`),
+            error = (data) => console.log(`An error occurred: ${data}`);
+      new Promise((resolve, reject) => {
+        // Resolve logic
+      })
+      .then(success, error);
+  section
+    h2 finally
+    p.fragment.
+      Finally is performed after the promise has gone through the full chain of resolve functions. It is executed
+      regardless of success or failure.
+    p.fragment.
+      This is handy for setting up objects that need to exist regardless of the state of the promise or for cleaning
+      up resources that may have been created during the promise.

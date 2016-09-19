@@ -1,7 +1,31 @@
 section
-    section
-        h2 Basic Syntax
-    section
-        h2 Resolve Function
-    section
-        h2 Reject Function
+  section
+    h2 Basic Syntax
+    p.fragment.
+      The Promise constructor takes a callback function to determine success and to perform the asynchronous 
+      function call. It is passed a resolve &amp; reject function to let the remainder of the code know if it was
+      successful.
+    pre.fragment.
+      new Promise((resolve, reject) => {
+        // Body of promise to determine success
+      });
+  section
+    h2 Resolve Function
+    p.fragment.
+      The resolve function is used to represent a successful operation. The first parameter passed to the resolve 
+      function gets sent to the success callback of the promise.
+  section
+    h2 Reject Function
+    p.fragment.
+      The reject function is similar to that of the resolve. Instead of entering the successful callback, it performs the 
+      error case.
+  section
+    h2 Empty Promise Body
+    p.fragment.
+      If a promise never resolves or rejects, nothing in the promise lifecycle is executed other than the construction of 
+      the object.
+    pre.fragment.
+      new Promise((resolve, reject) => {
+        // Do nothing, for science.
+      })
+      .then(() => console.log('Resolve executed'), () => console.log('Reject executed'));

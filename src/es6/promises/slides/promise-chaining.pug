@@ -1,0 +1,36 @@
+section
+  section
+    h2 Promise Chaining
+  section
+    p.
+      The #[strong then] method returns another promise to the next function. Therefore, if there is a multi-step
+      process to be performed based on the result, it can be split into multiple parts.
+    pre.fragment.
+      new Promise((resolve, reject) => {
+        // Resolve logic
+      })
+      .then((data) => {
+        if (data.success) {
+          return data;
+        } else {
+          Promise.reject();
+        }
+      })
+      .then((data) => {
+        console.log(`Successfully resolved data: ${data}`);
+      }, () => console.error('Failure occurred'));
+    section
+      p.
+        It is also possible to return another promise within the #[strong then] block of the promise. The next #[strong then] 
+        of the chain will wait until that promise is resolved to continue the promise chain.
+      pre.fragment.
+        new Promise((resolve, reject) => {
+          resolve('Hello World');
+        })
+        .then((str) => {
+          console.log(str);
+          return new Promise((resolve, reject) => {
+            resolve(`It's nice to meet you.`);
+          });
+        })
+        .then((str) => console.log(str));
