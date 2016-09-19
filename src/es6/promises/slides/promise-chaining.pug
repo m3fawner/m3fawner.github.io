@@ -19,18 +19,18 @@ section
       .then((data) => {
         console.log(`Successfully resolved data: ${data}`);
       }, () => console.error('Failure occurred'));
-    section
-      p.
-        It is also possible to return another promise within the #[strong then] block of the promise. The next #[strong then] 
-        of the chain will wait until that promise is resolved to continue the promise chain.
-      pre.fragment.
-        new Promise((resolve, reject) => {
-          resolve('Hello World');
-        })
-        .then((str) => {
-          console.log(str);
-          return new Promise((resolve, reject) => {
-            resolve(`It's nice to meet you.`);
-          });
-        })
-        .then((str) => console.log(str));
+  section
+    p.
+      It is also possible to return another promise within the #[strong then] block of the promise. The next #[strong then] 
+      of the chain will wait until that promise is resolved to continue the promise chain.
+    pre.fragment.
+      new Promise((resolve, reject) => {
+        resolve('Hello World');
+      })
+      .then((str) => {
+        console.log(str);
+        return new Promise((resolve, reject) => {
+          resolve(`It's nice to meet you.`);
+        });
+      })
+      .then((str) => console.log(str));
