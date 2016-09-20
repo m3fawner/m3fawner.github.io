@@ -1,0 +1,32 @@
+section
+  section
+    h2 Export Syntax
+  section
+    p.
+      Export statements are relatively straight forward.
+    p.fragment.
+      You can export a newly declared variable...
+    pre.fragment.
+      export const MY_URL = 'https://m3fawner.github.io/';
+  section
+    p.
+      You can export #[strong default] exports, which you'll see how to import later.
+    pre.fragment.
+      export default class {
+        ...
+      };
+  section
+    p.
+      You can also mix the use of new variable declarations and defaults.
+    pre.fragment.
+      export default class {
+
+      };
+      export const TEST = 'Hello World';
+  section
+    p.
+      You cannot, however, export pre-defined variables without aliasing them under
+      a new name.
+    pre.fragment.
+      const toExport = 'Test';
+      export toExport; // Invalid

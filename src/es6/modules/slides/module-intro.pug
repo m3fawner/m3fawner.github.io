@@ -1,0 +1,30 @@
+section
+  section
+    h2 ES6 Modules
+  section
+    p.
+      To solve this, ES6 standards introduced #[strong modules].
+    p.fragment.
+      They are called modules because they are isolated sections of code.
+    p.fragment.
+      Each module is wrapped in an #[em immediately invoked function expression] to ensure that there
+      is no global object bleed.
+  section
+    p.
+      At this point in time, no browser has native support of module loading.
+    p.fragment.
+      We will be using Webpack and Babel to perform the transpiling needed to give us access to import &amp; export 
+      statements.
+  section
+    p.
+      When importing a module, you are basically assigning an object representing the exported values of the module to a 
+      variable.
+    p.fragment.
+      If a file does not export anything, it will assign undefined to the variable name.
+  section
+    p.
+      Files will be exected on initial import, meaning if an object is not explicitly defined in the module, but instead constructed,
+       that construction process will execute before assigning it to the variable in the import statement.
+    p.fragment.
+      This means, if a file modifies global objects, or creates a global object, simply importing that file will generate those global
+      objects for use.

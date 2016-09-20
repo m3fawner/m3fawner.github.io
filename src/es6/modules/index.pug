@@ -1,8 +1,10 @@
-extends ../common/slide-show/slide-show.pug
+extends ../../common/slide-show/slide-show.pug
 block slides
     include ./slides/topic.pug
-    include ./slides/who-am-i.pug
-    include ./slides/angular-experience.pug
-    include ./slides/teaching.pug
-    include ./slides/what-you-will-learn.pug
-    include ../common/slide-show/contact-me.pug
+    include ../schedule.pug
+    include ./slides/history.pug
+    include ./slides/module-intro.pug
+    include ./slides/export-syntax.pug
+    include ./slides/import-syntax.pug
+    include ./slides/modules-with-webpack.pug
+    include ../../common/slide-show/contact-me.pug

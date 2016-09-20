@@ -1,0 +1,25 @@
+section
+  section
+    h2 Historical Reference
+  section
+    p.
+      Accessing objects between files has been a particularly interesting problem. Until recently, the majority of 
+      web applications used global objects.
+    p.fragment.
+      This meant ensuring file load order, timing, and that objects are created sequencially in the script.
+  section
+    h2 Build Tools
+    p.fragment.
+      With the introduction of build tools such as grunt &amp; gulp, this became easier to manage.
+    p.fragment.
+      Files could be loaded in order by using wild cards and injected in an automated fashion into the HTML.
+  section
+    p.
+      It was, however, imperfect. Wildcards could grab all javascript files from a source directory, but what if a 
+      file needs to be loaded to construct an object first?
+    p.fragment.
+      This lead to spaghetti code being used to load a given set of files first, then another, then another. It tied you
+      to a standard file name, which commonly reflected the framework you were using, tying you closely to that framework.
+  section
+    p.
+      There have been a few solutions (AMD, CommonJS) developed to modularize javascript, but until ES6 it was not widely used.

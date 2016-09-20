@@ -1,0 +1,48 @@
+section
+  section
+    h2 Import Syntax
+  section
+    h2 Simple Execution import
+    p.fragment.
+      To simply execute the imported script, importing the file location as follows will suffice.
+    pre.fragment.
+      import '../dir/file';
+    p.fragment.
+      The paths are all relative to the file importing the module.
+    p.fragment.
+      The file extension #[strong js] can be ommitted in the import statement.
+  section
+    p.
+      Since we are importing an object representation of an import, we can destructure the exports.
+    pre.fragment.
+      import { someExport } from '../dir/file';
+    p.fragment.
+      This will grab just the #[strong someExport] export from the module.
+  section
+    p.
+      If destructuring is not used in the import statement, it will assign the default export to the variable.
+    pre.fragment.
+      import defaultExport from '../dir/file';
+    p.fragment.
+      If no default is defined, the #[strong defaultExport] variable will be set to undefined.
+  section
+    p.
+      If you want to access the full object, you can use #[strong *] as your import. The object will be set to the variable
+      following "as" in that statement.
+    pre.fragment. 
+      import * as Module from '../dir/file';
+    p.fragment.
+      All exports, including #[strong default], are available as properties of the "Module" object.
+  section
+    p.
+      In addition, if you would like to alias the imported variable name, you can destructure the object and use #[strong as] 
+      to alias.
+    pre.fragment.
+      import { test as TEST } from '../dir/file';
+  section
+    p.
+      These statements can be mixed and matched.
+    pre.fragment.
+      import Test, { TestSupport } from '../dir/test';
+    p.fragment.
+      This assigns the default export to "Test", but also imports the exported "TestSupport" variable from the module.

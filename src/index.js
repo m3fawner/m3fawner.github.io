@@ -31,6 +31,9 @@ import es6DefaultsHTML from './es6/parameter-defaults/index.pug';
 import es6Promises from './es6/promises';
 import es6PromisesHTML from './es6/promises/index.pug';
 
+import es6Modules from './es6/modules';
+import es6ModulesHTML from './es6/modules/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -75,6 +78,10 @@ const AVAILABLE_APPS = {
   'es6-promises': {
     pug: es6PromisesHTML,
     js: es6Promises
+  },
+  'es6-modules': {
+    pug: es6ModulesHTML,
+    js: es6Modules
   }
 };
 const getNode = (pug, ...locals) => {

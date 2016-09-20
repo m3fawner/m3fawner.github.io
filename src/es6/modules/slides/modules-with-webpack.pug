@@ -1,0 +1,34 @@
+section
+  section
+    h2 Modules with Webpack
+  section
+    p.
+      For the sake of our project, webpack handles the transpiling.
+    p.fragment.
+      From my previous video, we discussed how to add "root" directories to our webpack configuration.
+    p.fragment.
+      This allows us to eliminate unnecessarily duplicated paths, such as #[strong node_modules] for our 
+      dependencies and #[strong src] for our source files.
+    pre.fragment.
+      resolve: {
+        root: [
+          path.resolve('src'),
+          path.resolve('node_modules')
+        ]
+      }
+  section
+    p.
+      In addition, we use aliases for those files that are not able to be imported because they are not properly
+      configured in their package.json.
+    pre.fragment.
+      resolve: {
+        root: [
+          path.resolve('src'),
+          path.resolve('node_modules')
+        ],
+        resolve: {
+          './~reveal/': 'reveal'
+        }
+      }
+    p.fragment.
+      The import #[strong import 'reveal';] can now function.
