@@ -1,0 +1,30 @@
+section
+  section
+    h2 Using Pug
+  section
+    p.
+      Once you've defined your pug file, you can import it as you would a javascript module.
+    p.fragment.
+      You'll want to include the file extension, both because it's required &amp; for clarity's sake.
+  section
+    p.
+      The imported function represents the callback to render the pug template into an HTML string.
+    p.fragment.
+      You can provide it with a contextual object for interpolation.
+    pre.fragment.
+      //test.pug
+      p Hello, \#{name}
+      //JS
+      import Test from './test.pug';
+      const testHTML = Test({
+        name: 'Evan'
+      });
+      console.log(testHTML); // &lt;p&gt; Hello, Evan &lt;/p&gt;
+    p.fragment.
+      Note: If you have included files, the context still is applicable to all included templates, as well.
+      You don't have to worry about passing the right variables through to the child templates.
+  section
+    p.
+      We will be using this in order to define our templates for components.
+    p.fragment.
+      Angular, and other frameworks, allows for the inlining of HTML during the declaration of components.    

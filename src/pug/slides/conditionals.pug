@@ -1,0 +1,32 @@
+section
+  section
+    h2 Conditionals and Cases
+  section
+    h2 Conditionals
+    p.fragment.
+      if / else if / else can be used, using Javascript to modify templates dynamically.
+    p.fragment.
+      Variables can be used by defining them with the #[strong - var test = 'Something';] notation. They can also be
+      passed into mixins.
+    pre.fragment.
+      - var useFirst = true
+      if useFirst
+        span If useFirst is true, this will be used.
+      else
+        span Otherwise, this will.
+  section
+    h2 Cases
+    p.fragment.
+      Cases are switch functions based on a given input.
+    pre.fragment.
+      mixin show-bananas(bananas)
+        case bananas
+          when 0
+            span You have no bananas.
+          when 1
+            span You have a banana.
+          default
+            span You have #{bananas} bananas.
+      +show-bananas(0)
+    pre.fragment
+      = '<span>You have no bananas</span>'

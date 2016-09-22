@@ -1,0 +1,19 @@
+section
+  section
+    h2 Iteration
+  section
+    p.
+      Iteration can be done over an array in order to output many of a given template.
+    p.fragment.
+      As you'll see in the #[strong Using Pug] slide, you'll be able to render the template with
+      an object representing the context, in which you can include an array.
+  section
+    pre.
+      h4 Hello to my following subscribers!
+      ul
+        each item in names
+          li item
+    h4 Hello to my following subscribers!
+    ul
+      each item in names
+        li #{item}  

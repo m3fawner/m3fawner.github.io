@@ -1,0 +1,19 @@
+section
+  section
+    h2 Interpolation
+  section
+    p.
+      Similar to template strings, interpolation can be done in Pug.
+    pre.fragment.
+      p \#{name}, you rock!
+    p.fragment.
+      When rendering the template above with a contextual object containing a property #[strong name], 
+      it will render as the name you chose, you rock.
+  section
+    pre.
+      import YouRockTemplate from './you-rock.pug';
+      console.log(YouRockTemplate({
+        name: 'Evan'
+      })); // Evan, you rock!
+    p.fragment.
+      This is quite useful for conditionals and iterations, which we will discuss later.

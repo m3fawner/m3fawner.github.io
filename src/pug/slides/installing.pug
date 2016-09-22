@@ -1,0 +1,22 @@
+section
+  section
+    h2 Installing Pug
+  section
+    p.
+      We'll be adding pug to our NPM dependencies, as well as its loader.
+    pre.fragment.
+      npm install --save-dev pug pug-lint pug-loader
+    p.fragment.
+      I've installed pug-lint, but this is optional. I use it in tandem with my VSCode plugin for pug-linting.
+  section
+    p.
+      Now we'll have to tell webpack to register the pug loader for all #[strong .pug] extensions.
+    pre.fragment.
+      loaders: [
+        {
+          test: /\.pug$/,
+          loader: 'pug'
+        }
+      ]
+    p.fragment.
+      Pug can now be imported into javascript files via import statements.

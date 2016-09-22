@@ -1,0 +1,19 @@
+section
+  section
+    h2 Including Templates
+  section
+    p.
+      Including templates allows for amazing reuse. It's the reason I fell in love with Pug.
+    p.fragment.
+      Include also works to include Pug files containing mixins, allowing for the reuse of those
+      mixins, as well.
+    p.fragment.
+      File paths are relative to the pug file, so prepare to use ../ a lot
+  section
+    pre.
+      include ../mixins/profile.pug
+      // Using the profile mixin from the profile.pug file
+      +profile('Evan Williams')
+      p.
+        Some Text
+      include ../templates/contact-me.pug

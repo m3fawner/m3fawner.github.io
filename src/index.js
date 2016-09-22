@@ -34,6 +34,9 @@ import es6PromisesHTML from './es6/promises/index.pug';
 import es6Modules from './es6/modules';
 import es6ModulesHTML from './es6/modules/index.pug';
 
+import pug from './pug';
+import pugHTML from './pug/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -82,6 +85,13 @@ const AVAILABLE_APPS = {
   'es6-modules': {
     pug: es6ModulesHTML,
     js: es6Modules
+  },
+  'pug': {
+    pug: pugHTML,
+    js: pug,
+    context: {
+      names: ['Daniel', 'Jacob', 'Ben']
+    }
   }
 };
 const getNode = (pug, ...locals) => {
@@ -89,10 +99,10 @@ const getNode = (pug, ...locals) => {
   div.innerHTML = pug(...locals);
   return div.firstChild;
 };
-const loadSubApp = (subApp, ...locals) => {
+const loadSubApp = (subApp) => {
   document
         .querySelector('container')
-        .appendChild(getNode(subApp.pug, ...locals));
+        .appendChild(getNode(subApp.pug, subApp.context));
   subApp.js();
 };
 const getQueryVariable = (variable) => {

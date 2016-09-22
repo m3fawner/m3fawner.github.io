@@ -1,0 +1,31 @@
+section
+  section
+    h2 Mixins
+  section
+    p.
+      Mixins are a way to create dynamic templates.
+    p.fragment.
+      They are basically function calls with a set of parameters that implementing templates
+      can use to change the behavior of the mixin.
+    p.fragment.
+      It's also a convenient way to group several like templates into one file and being able to choose
+      which portions of that file you'd like to use.
+    p.fragment.
+      Mixins must be defined prior to usage.
+  section
+    pre.
+      // Defining the mixin
+      mixin profile(name, age)
+        span Hello, \#{name}!
+        span I hear you're \#{age}...that is 
+        if age > 20
+          span old!
+        else
+          span young!
+      // Using the mixin
+      +profile('Evan', 27)
+    pre.fragment
+      = '<span>Hello, Evan</span>'
+      = '<span>I hear you\'re 27...that is</span>'
+      = '<span>old</span>'
+      

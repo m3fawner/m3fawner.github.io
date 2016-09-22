@@ -1,0 +1,24 @@
+section
+  section
+    h2 Filters
+  section
+    p.
+      Filters are used to take a given set of code and transpile it into HTML.
+    p.fragment.
+      This allows for the transpiling of many languages included SASS, CoffeeScript, Babel, and Markdown.
+    p.fragment.
+      We'll show how to add Markdown transpiling to your app here.
+  section
+    pre.
+      npm install --save-dev jstransformer-markdown-it
+    pre.
+      // index.pug
+      :markdown-it()
+        ### Header
+        [Test](https://www.youtube.com/user/m3fawner)
+  section
+    p.
+      That's all it takes!
+    p.fragment.
+      I personally only use markdown filters, because it is easier to do embedded Javascript notation and 
+      HTML for these slides.

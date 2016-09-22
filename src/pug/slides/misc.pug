@@ -1,0 +1,47 @@
+section
+  section
+    h2 Misc. Features
+  section
+    h2 Code
+    p.fragment.
+      You can imbed code using #[strong =]. I will say, it is a bit finicky.
+    pre.fragment.
+      p
+        = '&lt;div&gt;This is some HTML, but as code&lt;/div&gt;'
+    p.fragment.
+      You'll have to surround the code in a single quote.
+    p.fragment.
+      If the syntax is incorrect, I've noticed that the pug-loader dies and will have to be restarted.
+  section
+    h2 Inline Tags
+    p.fragment.
+      There are common cases where you will want to use HTML tags to highlight a piece of text.
+    p.fragment.
+      For that, you can use inline tag declarations to keep your text formatted rather well in your source code.
+    pre.fragment.
+      p This is \#[strong some really important] text.
+    p.fragment.
+      This will compile down to make #[strong some really important] bold. In fact, that's in this slide's code!
+  section
+    h2 Comments
+    p.fragment.
+      Comments in Pug are notated similar to javascript.
+    pre.fragment.
+      p Hello, world // Cliche and overused, I know
+    pre.fragment.
+      p Hello, world //- This does not get added as an HTML comment.
+    pre.fragment.
+      p Hello, world
+      //
+        Block comments can be
+        stated like this.
+  section
+    h2 Piping
+    p.fragment.
+      Piping is allowing the text to be on a new line or multiple lines without
+      creating additional elements.
+    pre.fragment.
+      p.
+        Some text inside the p element.
+      p
+        | This is also inside the p element.

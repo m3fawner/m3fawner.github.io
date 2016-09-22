@@ -1,0 +1,50 @@
+section
+  section
+    h2 Defining Elements
+  section
+    h2 Elements
+    p.fragment.
+      Elements are declared by providing the tag name.
+    pre.fragment.
+      div
+        span
+          section
+    pre.fragment.
+      &lt;div&gt;
+        &lt;span&gt;
+          &lt;section&gt;
+          &lt;/section&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+  section
+    h2 Class Notation
+    p.fragment.
+      You can also use .class-name to add a class to an element.
+    pre.fragment.
+      span.bold
+    pre.fragment.
+      &lt;span class="bold"&gt;&lt;/span&gt;
+    p.fragment.
+      If you have a div with classes on it, you can actually drop the div tag and just use #[strong .class-name].
+    pre.fragment.
+      .class-name
+    pre.fragment
+      = '<div class="class-name"></div>'
+  section
+    h2 IDs
+    p.fragment.
+      IDs can be defined on an element using CSS selectors, as you would with class names.
+    pre.fragment.
+      #some-id
+    pre.fragment
+      = '<div id="some-id"></div>'
+  section
+    h2 Attributes
+    p.fragment.
+      Attributes are declared basically as you would in HTML, but instead using parenthesis.
+    pre.fragment
+      = 'p(my-attr="test") Hello, Evan'
+    pre.fragment
+      = '<p my-attr="test"> Hello, Evan</p>'
+    p.fragment.
+      Any number of attributes can be added, separated by a space or a comma.

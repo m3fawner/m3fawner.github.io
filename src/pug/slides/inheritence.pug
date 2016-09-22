@@ -1,0 +1,28 @@
+section
+  section
+    h2 Inheritence
+  section
+    p.
+      Inheritence is as you would expect for any object oriented language.
+    p.fragment.
+      Stating that a given HTML element extends a template will pull in the content of that file.
+    p.fragment.
+      There are customizable chunks of the template called #[strong blocks] that the implementing template
+      can modify
+  section
+    pre.
+      my-parent-template
+        p.common.
+          This is common to every template that implements this.
+        block specific-details
+        p.common.
+          You can even surround blocks with other elements and have multiple blocks.
+        block additional-details
+        block optional-block
+    pre.
+      my-child-template
+        extends ../templates/my-parent-template.pug
+          block specific-details
+            p My name is Evan Williams
+          block additional-details
+            p I prefer Pug over HTML!
