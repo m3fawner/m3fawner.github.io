@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e5feb1197eea88d6808d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0f5e7e4e20a73f0be99d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -2279,7 +2279,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EIntroduction to Pug\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EPug is a HTML-like language. It represents HTML tags, but uses a different syntax and a \nwebpack loader to transpile it into HTML.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThe main features of Pug are CSS selector element definitions, file includes, mixins, expressions, \nextensibility...etc.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EPug used to be called \"Jade\" until it got sued for naming rights. It renamed itself to Pug, but the two\nnames are pretty synonomous at this point.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThe full API can be found at \u003Ca href=\"https:\u002F\u002Fpugjs.org\"\u003Epugjs.org\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EIntroduction to Pug\u003C\u002Fh2\u003E\u003Cimg src=\"assets\u002Fpug.svg\" style=\"max-height: 400px !important\"\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EPug is a HTML-like language. It represents HTML tags, but uses a different syntax and a \nwebpack loader to transpile it into HTML.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThe main features of Pug are CSS selector element definitions, file includes, mixins, expressions, \nextensibility...etc.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EPug used to be called \"Jade\" until it got sued for naming rights. It renamed itself to Pug, but the two\nnames are pretty synonomous at this point.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThe full API can be found at \u003Ca href=\"https:\u002F\u002Fpugjs.org\"\u003Epugjs.org\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
