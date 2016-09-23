@@ -24,8 +24,11 @@ section
           span young!
       // Using the mixin
       +profile('Evan', 27)
-    pre.fragment
-      = '<span>Hello, Evan</span>'
-      = '<span>I hear you\'re 27...that is</span>'
-      = '<span>old</span>'
+    span.fragment
+      :markdown-it()
+        ```html
+        <span>Hello, Evan</span>
+        <span>I hear you're 27...that is</span>
+        <span>old</span>
+        ```
       

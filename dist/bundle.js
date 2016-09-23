@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0f5e7e4e20a73f0be99d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d7a1a7346d53e6447ccb"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -2290,22 +2290,25 @@
 	
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (names) {pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EIteration\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EIteration can be done over an array in order to output many of a given template.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EAs you'll see in the \u003Cstrong\u003EUsing Pug\u003C\u002Fstrong\u003E slide, you'll be able to render the template with\nan object representing the context, in which you can include an array.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cpre\u003Eh4 Hello to my following subscribers!\nul\n  each item in names\n    li item\u003C\u002Fpre\u003E\u003Ch4\u003EHello to my following subscribers!\u003C\u002Fh4\u003E\u003Cul\u003E";
 	// iterate names
-	;(function(){
-	  var $$obj = names;
-	  if ('number' == typeof $$obj.length) {
-	      for (var pug_index0 = 0, $$l = $$obj.length; pug_index0 < $$l; pug_index0++) {
-	        var item = $$obj[pug_index0];
+	var pug_obj0 = names;
+	if ('number' == typeof pug_obj0.length) {
+	
+	  for (var pug_index0 = 0, pug_length0 = pug_obj0.length; pug_index0 < pug_length0; pug_index0++) {
+	    var item = pug_obj0[pug_index0];
+	
 	pug_html = pug_html + "\u003Cli\u003E" + (pug.escape(null == (pug_interp = item) ? "" : pug_interp)) + "  \u003C\u002Fli\u003E";
-	      }
-	  } else {
-	    var $$l = 0;
-	    for (var pug_index0 in $$obj) {
-	      $$l++;
-	      var item = $$obj[pug_index0];
-	pug_html = pug_html + "\u003Cli\u003E" + (pug.escape(null == (pug_interp = item) ? "" : pug_interp)) + "  \u003C\u002Fli\u003E";
-	    }
 	  }
-	}).call(this);
+	
+	} else {
+	  var pug_length0 = 0;
+	  for (var pug_index0 in pug_obj0) {
+	    pug_length0++;
+	    var item = pug_obj0[pug_index0];
+	
+	pug_html = pug_html + "\u003Cli\u003E" + (pug.escape(null == (pug_interp = item) ? "" : pug_interp)) + "  \u003C\u002Fli\u003E";
+	  }
+	
+	}
 	
 	pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";}.call(this,"names" in locals_for_with?locals_for_with.names:typeof names!=="undefined"?names:undefined));;return pug_html;};
 	module.exports = template;
@@ -2325,7 +2328,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EMixins\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EMixins are a way to create dynamic templates.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThey are basically function calls with a set of parameters that implementing templates\ncan use to change the behavior of the mixin.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIt's also a convenient way to group several like templates into one file and being able to choose\nwhich portions of that file you'd like to use.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EMixins must be defined prior to usage.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cpre\u003E\u002F\u002F Defining the mixin\nmixin profile(name, age)\n  span Hello, #{name}!\n  span I hear you're #{age}...that is \n  if age \u003E 20\n    span old!\n  else\n    span young!\n\u002F\u002F Using the mixin\n+profile('Evan', 27)\u003C\u002Fpre\u003E\u003Cpre class=\"fragment\"\u003E" + (pug.escape(null == (pug_interp = '<span>Hello, Evan</span>') ? "" : pug_interp)) + (pug.escape(null == (pug_interp = '<span>I hear you\'re 27...that is</span>') ? "" : pug_interp)) + (pug.escape(null == (pug_interp = '<span>old</span>') ? "" : pug_interp)) + "\u003C\u002Fpre\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EMixins\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cp\u003EMixins are a way to create dynamic templates.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EThey are basically function calls with a set of parameters that implementing templates\ncan use to change the behavior of the mixin.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EIt's also a convenient way to group several like templates into one file and being able to choose\nwhich portions of that file you'd like to use.\u003C\u002Fp\u003E\u003Cp class=\"fragment\"\u003EMixins must be defined prior to usage.\u003C\u002Fp\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cpre\u003E\u002F\u002F Defining the mixin\nmixin profile(name, age)\n  span Hello, #{name}!\n  span I hear you're #{age}...that is \n  if age \u003E 20\n    span old!\n  else\n    span young!\n\u002F\u002F Using the mixin\n+profile('Evan', 27)\u003C\u002Fpre\u003E\u003Cspan class=\"fragment\"\u003E\u003Cpre\u003E\u003Ccode class=\"language-html\"\u003E&lt;span&gt;Hello, Evan&lt;\u002Fspan&gt;\n&lt;span&gt;I hear you're 27...that is&lt;\u002Fspan&gt;\n&lt;span&gt;old&lt;\u002Fspan&gt;\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003C\u002Fspan\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
