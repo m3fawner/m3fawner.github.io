@@ -1,0 +1,14 @@
+section
+  section
+    h2 Type Assertions
+  section
+    p.
+      Type assertions are a lot like casting
+    p.fragment.
+      Asserting a type makes it behave as if it were that type
+    pre.fragment.
+      let str: any = 'String';
+      console.log((str as string).length);
+      console.log((&lt;string&gt;str).length);
+    p.fragment.
+      Same behavior using as type or &lt;type&gt;

@@ -1,0 +1,17 @@
+section
+  section
+    h2 Transpilation
+  section
+    p.
+      Types really don't matter
+    p.fragment.
+      Type definitions in the code are not transpiled
+    pre.fragment.
+      // TS
+      const test: Function = (test: number): number => test + 5;
+      // ES6
+      const test = (test) => test + 5;
+      // ES5
+      var test = function(test) {
+        return test + 5;
+      };

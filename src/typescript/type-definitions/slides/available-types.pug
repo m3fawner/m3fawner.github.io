@@ -1,0 +1,78 @@
+section
+  section
+    h2 Available Types
+  section
+    h2 number
+    p.
+      Applies to hex, octal, binary, and integer values
+    pre.fragment.
+      const hex: number = 0xab0;
+      const binary: number = 0b0101;
+      const num: number = 5;
+  section
+    h2 string
+    p.
+      Strings as well as template strings are valid
+    pre.fragment.
+      const str: string = 'String';
+      const templateStr: string = `That was a ${str}, in case you were wondering.`;
+  section
+    h2 Function
+    pre.
+      const func: Function = () => console.log('Hey');
+      const func: Function = function(name) {
+        console.log(`Hello, ${name}.`);
+      }
+  section
+    h2 boolean
+    pre.
+      const tru: boolean = true;
+  section
+    h2 Array
+    p.fragment.
+      Collection of items, you can type arrays (this will come up in the generics video)
+    pre.fragment.
+      const list: Array<string> = ['A', 'B'];
+      const list2: string[] = ['Another', 'definition'];
+  section
+    h2 Tuple
+    p.fragment.
+      Array like, a collection matching a given type order
+    pre.fragment.
+      const tup:[string, number] = ['Test', 5];
+  section
+    h2 enum
+    p.fragment.
+      A way of enumerating options
+    pre.fragment.
+      enum MyEnum {First, Second, Third};
+    p.fragment.
+      You can start the numbering at a different value if you wish
+    pre.fragment.
+      enum MyEnum {First=1, Second, Third};
+      console.log(MyEnum.First); //1
+  section
+    h2 any
+    p.fragment.
+      Used to describe a variable that does not necessarily have a type
+    pre.fragment.
+      let myVar: any;
+      let myString: string = 'A string';
+      myVar = myString; // works just fine
+      myString = myVar; // This does not, however
+  section
+    h2 void
+    p.fragment.
+      This is used only in function declarations.
+    p.fragment.
+      Well...you can technically use it for variables, but they can only be undefined or null! That's not useful to me.
+    pre.fragment.
+      function MyFunc(): void {
+        console.log('Do something');
+      }
+  section
+    h2 null, undefined, never
+    p.fragment.
+      null and undefined are similar to void and don't really serve a purpose outside of function return statements
+    p.fragment.
+      never implies a function never returns

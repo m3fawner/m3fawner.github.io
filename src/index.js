@@ -1,3 +1,5 @@
+import 'index.css';
+
 import HelloWorld from './hello-world/';
 import HelloWorldHTML from './hello-world/index.pug';
 
@@ -36,6 +38,12 @@ import es6ModulesHTML from './es6/modules/index.pug';
 
 import pug from './pug';
 import pugHTML from './pug/index.pug';
+
+import tsIntro from './typescript/intro';
+import tsIntroHTML from './typescript/intro/index.pug';
+
+import tsTypes from './typescript/type-definitions';
+import tsTypesHTML from './typescript/type-definitions/index.pug';
 
 const AVAILABLE_APPS = {
   HelloWorld: {
@@ -92,6 +100,14 @@ const AVAILABLE_APPS = {
     context: {
       names: ['Daniel', 'Jacob', 'Ben']
     }
+  },
+  'ts-intro': {
+    pug: tsIntroHTML,
+    js: tsIntro
+  },
+  'ts-type-definitions': {
+    pug: tsTypesHTML,
+    js: tsTypes
   }
 };
 const getNode = (pug, ...locals) => {

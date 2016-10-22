@@ -1,0 +1,24 @@
+section
+  section
+    h2 Basic Syntax
+  section
+    p.
+      Types are defined following a colon.
+    pre.fragment.
+      const test: string = 'My first type!';
+  section
+    div
+      p.
+        Types can be used to describe variables
+      pre.
+        const test: string = 'Test';
+    .fragment
+      p.
+        They can describe what a function returns
+      pre.
+        const test: Function = (): number => 5
+    .fragment
+      p.
+        They also describe parameters of a function
+      pre.
+        const test: Function = (num: number):number => num + 2;
