@@ -1,0 +1,30 @@
+section
+  section
+    h2 Interfaces
+  section
+    p.
+      Interfaces describe an object, but are not instantiable
+    p.fragment.
+      Useful for describing an object that is not instantiated, such as a server request.
+    p.fragment.
+      Classes can implement an interface to make an instantiable object
+  section
+    pre.
+      interface Point {
+        x: number;
+        y: number;
+      }
+      const point: Point = { 
+        x: 5,
+        y: 10
+      };
+      class TwoDimensionalPoint implements Point {
+        x: number;
+        y: number;
+        constructor(x: number, y: number) {
+          this.x = x;
+          this.y = y;
+        }
+      }
+      const point2 = new TwoDimensionalPoint(5, 10);
+      console.log(point.x === point2.x); // true

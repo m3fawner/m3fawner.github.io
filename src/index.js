@@ -45,6 +45,9 @@ import tsIntroHTML from './typescript/intro/index.pug';
 import tsTypes from './typescript/type-definitions';
 import tsTypesHTML from './typescript/type-definitions/index.pug';
 
+import tsClasses from './typescript/classes';
+import tsClassesHTML from './typescript/classes/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -105,9 +108,13 @@ const AVAILABLE_APPS = {
     pug: tsIntroHTML,
     js: tsIntro
   },
-  'ts-type-definitions': {
+  'ts-types': {
     pug: tsTypesHTML,
     js: tsTypes
+  },
+  'ts-classes': {
+    pug: tsClassesHTML,
+    js: tsClasses
   }
 };
 const getNode = (pug, ...locals) => {

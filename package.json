@@ -1,6 +1,6 @@
 {
   "name": "m3fawner.github.io",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Host for static content related to AngularJS training",
   "main": "index.js",
   "scripts": {

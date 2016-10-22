@@ -1,0 +1,31 @@
+section
+  section
+    h2 Class Level Properties
+  section
+    p.
+      Class level properties are explicit declarations of properties on a class instance
+    p.fragment.
+      This could always be done by just stating #[code this.property = 'Some Value';]
+    p.fragment.
+      Declaring them on the class allows for better tracking of what information is used within the class
+  section
+    pre.
+      class Person {
+        name: string;
+        constructor(name: string) {
+          this.name = name;
+        }
+      }
+    p.
+      The name property can be accessed on the instance of the class after newing up an instance.
+  section
+    p.
+      Class level properties can also be assigned in the constructor
+    p.fragment.
+      If any of the public, private, protected or readonly modifiers are used to describe a constructor parameter,
+      they will be assigned onto the class with the property name matching the parameter name.
+    pre.fragment.
+      class Person {
+        constructor(public name: string) {}
+      }
+      console.log(new Person('Evan Williams').name); // Evan Williams

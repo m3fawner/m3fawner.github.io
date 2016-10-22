@@ -1,0 +1,37 @@
+section
+  section
+    h2 Abstract Classes
+  section
+    p.
+      Abstract classes are used to share functionality between classes
+    p.fragment.
+      Shared functionality can be implemented in the abstract parent, and extended by children
+    p.fragment.
+      Abstract classes can not be directly instantiated, but their implementing children can
+    p.fragment.
+      Abstract modifiers can be used on function declarations, as well. They must be implemented by children classes
+  section
+    pre.
+      abstract class Person {
+        constructor(protected name:string) {}
+        abstract stateAge(): void;
+        greet() {
+          console.log(`Hello there! My name is ${this.name}`);
+        }
+      }
+      class DishonestPerson extends Person {
+        constructor(name: string, private age: number) {
+          super(name);
+        }
+        stateAge() {
+          console.log(`I am ${Math.min(this.age, 30)} years old`);
+        }
+      }
+      class HonestPerson extends Person {
+          constructor(name: string, private age: number) {
+              super(name);
+        }
+        stateAge() {
+          console.log(`I am ${this.age} years old`);
+        }
+      }

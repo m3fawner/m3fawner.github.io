@@ -1,0 +1,60 @@
+section
+  section
+    h2 Property Modifiers
+  section
+    h2 Public
+    p.fragment.
+      Directly accessible via property notations on any instance of the class
+    pre.fragment.
+      class Person {
+        constructor(public name: string) {}
+      }
+      new Person('Evan Williams').name; // Valid
+  section
+    h2 Private
+    p.fragment.
+      Can be accessed from within the instance of the class, but not by code external to the class instance.
+    pre.fragment.
+      class Person {
+        constructor(private name: string) {}
+        get _name(): string {
+          return this.name; // Valid, within the class
+        }
+      }
+      new Person('Evan Williams').name; // Invalid
+      new Person('Evan Williams')._name; // Valid, calls the _name getter
+  section
+    h2 Protected
+    p.fragment.
+      Can be accessed within the instance, or by a child class that extends the class.
+    pre.fragment.
+      class Person {
+        constructor(protected name: string) {}
+      }
+      class LoudPerson extends Person {
+        constructor(name: string) {
+          super(name);
+        }
+        get greeting():string {
+          return `HELLO, MY NAME IS ${this._name}`;
+        }
+        get _name():string {
+          return this.name.toUpperCase();
+        }
+      }
+      console.log(new LoudPerson('Evan Williams').greeting);
+  section
+    h2 Read Only
+    p.fragment.
+      Must be assigned in the constructor or in the declaration of the variable
+    p.fragment.
+      Non-modifiable public property on the class
+    pre.fragment.
+      class Person {
+        readonly greeting:string = 'Hello world!';
+        constructor(readonly name:string) {}
+      }
+      const person = new Person('Evan Williams');
+      console.log(person.name); // Evan Williams
+      console.log(person.greeting) // Hello world!
+      person.name = 'Not Evan Williams!'; // Error, non-assignable
