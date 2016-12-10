@@ -48,6 +48,9 @@ import tsTypesHTML from './typescript/type-definitions/index.pug';
 import tsClasses from './typescript/classes';
 import tsClassesHTML from './typescript/classes/index.pug';
 
+import smartVsDumb from './web-practices/smart-vs-dumb';
+import smartVsDumbHTML from './web-practices/smart-vs-dumb/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -115,6 +118,10 @@ const AVAILABLE_APPS = {
   'ts-classes': {
     pug: tsClassesHTML,
     js: tsClasses
+  },
+  'smart-vs-dumb': {
+    pug: smartVsDumbHTML,
+    js: smartVsDumb
   }
 };
 const getNode = (pug, ...locals) => {
