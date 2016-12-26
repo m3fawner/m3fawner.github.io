@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a7319d4e1b44798c7fab"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "21326345b19b021ba323"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -585,33 +585,31 @@
 
 	'use strict';
 	
-	__webpack_require__(140);
-	
-	var _helloWorld = __webpack_require__(27);
+	var _helloWorld = __webpack_require__(26);
 	
 	var _helloWorld2 = _interopRequireDefault(_helloWorld);
 	
-	var _index = __webpack_require__(86);
+	var _index = __webpack_require__(85);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	var _software = __webpack_require__(29);
+	var _software = __webpack_require__(28);
 	
 	var _software2 = _interopRequireDefault(_software);
 	
-	var _index3 = __webpack_require__(105);
+	var _index3 = __webpack_require__(104);
 	
 	var _index4 = _interopRequireDefault(_index3);
 	
-	var _NPMInit = __webpack_require__(18);
+	var _NPMInit = __webpack_require__(17);
 	
 	var _NPMInit2 = _interopRequireDefault(_NPMInit);
 	
-	var _index5 = __webpack_require__(35);
+	var _index5 = __webpack_require__(34);
 	
 	var _index6 = _interopRequireDefault(_index5);
 	
-	var _webpack = __webpack_require__(34);
+	var _webpack = __webpack_require__(33);
 	
 	var _webpack2 = _interopRequireDefault(_webpack);
 	
@@ -619,107 +617,107 @@
 	
 	var _index8 = _interopRequireDefault(_index7);
 	
-	var _es6Intro = __webpack_require__(21);
+	var _es6Intro = __webpack_require__(20);
 	
 	var _es6Intro2 = _interopRequireDefault(_es6Intro);
 	
-	var _index9 = __webpack_require__(51);
+	var _index9 = __webpack_require__(50);
 	
 	var _index10 = _interopRequireDefault(_index9);
 	
-	var _variableDeclaration = __webpack_require__(26);
+	var _variableDeclaration = __webpack_require__(25);
 	
 	var _variableDeclaration2 = _interopRequireDefault(_variableDeclaration);
 	
-	var _index11 = __webpack_require__(79);
+	var _index11 = __webpack_require__(78);
 	
 	var _index12 = _interopRequireDefault(_index11);
 	
-	var _newMethods = __webpack_require__(23);
+	var _newMethods = __webpack_require__(22);
 	
 	var _newMethods2 = _interopRequireDefault(_newMethods);
 	
-	var _index13 = __webpack_require__(62);
+	var _index13 = __webpack_require__(61);
 	
 	var _index14 = _interopRequireDefault(_index13);
 	
-	var _arrowFunctions = __webpack_require__(19);
+	var _arrowFunctions = __webpack_require__(18);
 	
 	var _arrowFunctions2 = _interopRequireDefault(_arrowFunctions);
 	
-	var _index15 = __webpack_require__(42);
+	var _index15 = __webpack_require__(41);
 	
 	var _index16 = _interopRequireDefault(_index15);
 	
-	var _classes = __webpack_require__(20);
+	var _classes = __webpack_require__(19);
 	
 	var _classes2 = _interopRequireDefault(_classes);
 	
-	var _index17 = __webpack_require__(46);
+	var _index17 = __webpack_require__(45);
 	
 	var _index18 = _interopRequireDefault(_index17);
 	
-	var _parameterDefaults = __webpack_require__(24);
+	var _parameterDefaults = __webpack_require__(23);
 	
 	var _parameterDefaults2 = _interopRequireDefault(_parameterDefaults);
 	
-	var _index19 = __webpack_require__(69);
+	var _index19 = __webpack_require__(68);
 	
 	var _index20 = _interopRequireDefault(_index19);
 	
-	var _promises = __webpack_require__(25);
+	var _promises = __webpack_require__(24);
 	
 	var _promises2 = _interopRequireDefault(_promises);
 	
-	var _index21 = __webpack_require__(72);
+	var _index21 = __webpack_require__(71);
 	
 	var _index22 = _interopRequireDefault(_index21);
 	
-	var _modules = __webpack_require__(22);
+	var _modules = __webpack_require__(21);
 	
 	var _modules2 = _interopRequireDefault(_modules);
 	
-	var _index23 = __webpack_require__(56);
+	var _index23 = __webpack_require__(55);
 	
 	var _index24 = _interopRequireDefault(_index23);
 	
-	var _pug = __webpack_require__(28);
+	var _pug = __webpack_require__(27);
 	
 	var _pug2 = _interopRequireDefault(_pug);
 	
-	var _index25 = __webpack_require__(91);
+	var _index25 = __webpack_require__(90);
 	
 	var _index26 = _interopRequireDefault(_index25);
 	
-	var _intro = __webpack_require__(31);
+	var _intro = __webpack_require__(30);
 	
 	var _intro2 = _interopRequireDefault(_intro);
 	
-	var _index27 = __webpack_require__(115);
+	var _index27 = __webpack_require__(114);
 	
 	var _index28 = _interopRequireDefault(_index27);
 	
-	var _typeDefinitions = __webpack_require__(32);
+	var _typeDefinitions = __webpack_require__(31);
 	
 	var _typeDefinitions2 = _interopRequireDefault(_typeDefinitions);
 	
-	var _index29 = __webpack_require__(120);
+	var _index29 = __webpack_require__(119);
 	
 	var _index30 = _interopRequireDefault(_index29);
 	
-	var _classes3 = __webpack_require__(30);
+	var _classes3 = __webpack_require__(29);
 	
 	var _classes4 = _interopRequireDefault(_classes3);
 	
-	var _index31 = __webpack_require__(109);
+	var _index31 = __webpack_require__(108);
 	
 	var _index32 = _interopRequireDefault(_index31);
 	
-	var _smartVsDumb = __webpack_require__(33);
+	var _smartVsDumb = __webpack_require__(32);
 	
 	var _smartVsDumb2 = _interopRequireDefault(_smartVsDumb);
 	
-	var _index33 = __webpack_require__(124);
+	var _index33 = __webpack_require__(123);
 	
 	var _index34 = _interopRequireDefault(_index33);
 	
@@ -808,7 +806,7 @@
 	  return div.firstChild;
 	};
 	var loadSubApp = function loadSubApp(subApp) {
-	  document.querySelector('container').appendChild(getNode(subApp.pug, subApp.context));
+	  document.querySelector('body').appendChild(getNode(subApp.pug, subApp.context));
 	  subApp.js();
 	};
 	var getQueryVariable = function getQueryVariable(variable) {
@@ -1064,7 +1062,7 @@
 	    throw err;
 	  }
 	  try {
-	    str = str || __webpack_require__(142).readFileSync(filename, 'utf8')
+	    str = str || __webpack_require__(141).readFileSync(filename, 'utf8')
 	  } catch (ex) {
 	    pug_rethrow(err, null, lineno)
 	  }
@@ -1511,7 +1509,7 @@
 	
 	
 	// module
-	exports.push([module.id, "pre {\r\n  font-size: 14px;\r\n}", ""]);
+	exports.push([module.id, "#webpack-logo-1000ft {\r\n  width: 50px;\r\n  height: auto;\r\n}\r\n#webpack-logo-100ft {\r\n  width: 500px;\r\n  height: auto;\r\n}", ""]);
 	
 	// exports
 
@@ -1520,27 +1518,31 @@
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(9)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "#webpack-logo-1000ft {\r\n  width: 50px;\r\n  height: auto;\r\n}\r\n#webpack-logo-100ft {\r\n  width: 500px;\r\n  height: auto;\r\n}", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
 	var pug = __webpack_require__(1);
 	
 	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003ECurrent Order of Typescript Topics\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Col\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-intro\"\u003ETypescript Introduction\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-types\"\u003ETypes\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-classes\"\u003EClasses\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-interfaces\"\u003EInterfaces\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-generics\"\u003EGenerics\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-decorators\"\u003EDecorators\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-misc\"\u003EMisc.\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-definition-files\"\u003ETypescript Definition Files\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"\u002Fdist\u002Findex.html?sub-app=ts-implementation\"\u003EImplementation of Typescript\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Fol\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 17 */,
+/* 16 */,
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _slideShow = __webpack_require__(2);
+	
+	var _slideShow2 = _interopRequireDefault(_slideShow);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _slideShow2.default;
+
+/***/ },
 /* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1697,6 +1699,10 @@
 	var _slideShow = __webpack_require__(2);
 	
 	var _slideShow2 = _interopRequireDefault(_slideShow);
+	
+	var _slides = __webpack_require__(139);
+	
+	var _slides2 = _interopRequireDefault(_slides);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1715,10 +1721,6 @@
 	var _slideShow = __webpack_require__(2);
 	
 	var _slideShow2 = _interopRequireDefault(_slideShow);
-	
-	var _slides = __webpack_require__(139);
-	
-	var _slides2 = _interopRequireDefault(_slides);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1827,7 +1829,9 @@
 	var _slideShow = __webpack_require__(2);
 	
 	var _slideShow2 = _interopRequireDefault(_slideShow);
-
+	
+	__webpack_require__(140);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _slideShow2.default;
@@ -1836,33 +1840,13 @@
 /* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _slideShow = __webpack_require__(2);
-	
-	var _slideShow2 = _interopRequireDefault(_slideShow);
-	
-	__webpack_require__(141);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _slideShow2.default;
-
-/***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
-
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EAnatomy of an NPM \u003Ccode\u003Epackage.json\u003C\u002Fcode\u003E File\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(37).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(41).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(39).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(40).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(38).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EAnatomy of an NPM \u003Ccode\u003Epackage.json\u003C\u002Fcode\u003E File\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(36).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(35).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(40).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(38).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(39).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(37).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 36 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1871,7 +1855,7 @@
 	module.exports = template;
 
 /***/ },
-/* 37 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1880,7 +1864,7 @@
 	module.exports = template;
 
 /***/ },
-/* 38 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1889,7 +1873,7 @@
 	module.exports = template;
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1898,7 +1882,7 @@
 	module.exports = template;
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1907,7 +1891,7 @@
 	module.exports = template;
 
 /***/ },
-/* 41 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1916,16 +1900,16 @@
 	module.exports = template;
 
 /***/ },
-/* 42 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EArrow Functions\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(43).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(44).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(45).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EArrow Functions\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(42).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(43).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(44).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 43 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1934,7 +1918,7 @@
 	module.exports = template;
 
 /***/ },
-/* 44 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1943,7 +1927,7 @@
 	module.exports = template;
 
 /***/ },
-/* 45 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1952,16 +1936,16 @@
 	module.exports = template;
 
 /***/ },
-/* 46 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EES6 Classes\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(48).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(47).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(50).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(49).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EES6 Classes\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(47).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(46).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(49).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(48).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1970,7 +1954,7 @@
 	module.exports = template;
 
 /***/ },
-/* 48 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1979,7 +1963,7 @@
 	module.exports = template;
 
 /***/ },
-/* 49 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1988,7 +1972,7 @@
 	module.exports = template;
 
 /***/ },
-/* 50 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -1997,16 +1981,16 @@
 	module.exports = template;
 
 /***/ },
-/* 51 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EES6 Introduction\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(55).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(52).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(53).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(54).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EES6 Introduction\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(54).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(51).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(52).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(53).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 52 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2015,7 +1999,7 @@
 	module.exports = template;
 
 /***/ },
-/* 53 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2024,7 +2008,7 @@
 	module.exports = template;
 
 /***/ },
-/* 54 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2033,7 +2017,7 @@
 	module.exports = template;
 
 /***/ },
-/* 55 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2042,16 +2026,16 @@
 	module.exports = template;
 
 /***/ },
-/* 56 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EES6 Modules\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(58).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(60).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(57).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(59).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(61).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EES6 Modules\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(57).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(59).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(56).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(58).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(60).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 57 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2060,7 +2044,7 @@
 	module.exports = template;
 
 /***/ },
-/* 58 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2069,7 +2053,7 @@
 	module.exports = template;
 
 /***/ },
-/* 59 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2078,7 +2062,7 @@
 	module.exports = template;
 
 /***/ },
-/* 60 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2087,7 +2071,7 @@
 	module.exports = template;
 
 /***/ },
-/* 61 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2096,16 +2080,16 @@
 	module.exports = template;
 
 /***/ },
-/* 62 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ENew Methods \u002F Misc. Syntax in ES6\u003C\u002Fh2\u003E\u003Cdiv class=\"fragment\"\u003E* But not all of it\u003C\u002Fdiv\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(66).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(64).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(63).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(65).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(67).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(68).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ENew Methods \u002F Misc. Syntax in ES6\u003C\u002Fh2\u003E\u003Cdiv class=\"fragment\"\u003E* But not all of it\u003C\u002Fdiv\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(65).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(63).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(62).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(64).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(66).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(67).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 63 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2114,7 +2098,7 @@
 	module.exports = template;
 
 /***/ },
-/* 64 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2123,7 +2107,7 @@
 	module.exports = template;
 
 /***/ },
-/* 65 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2132,7 +2116,7 @@
 	module.exports = template;
 
 /***/ },
-/* 66 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2141,7 +2125,7 @@
 	module.exports = template;
 
 /***/ },
-/* 67 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2150,7 +2134,7 @@
 	module.exports = template;
 
 /***/ },
-/* 68 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2159,16 +2143,16 @@
 	module.exports = template;
 
 /***/ },
-/* 69 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EDefault Parameters\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(70).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(71).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EDefault Parameters\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(69).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(70).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 70 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2177,7 +2161,7 @@
 	module.exports = template;
 
 /***/ },
-/* 71 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2186,16 +2170,16 @@
 	module.exports = template;
 
 /***/ },
-/* 72 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EPromises\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(75).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(74).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(78).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(77).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(76).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(73).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EPromises\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(74).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(73).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(77).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(76).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(75).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(72).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 73 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2204,7 +2188,7 @@
 	module.exports = template;
 
 /***/ },
-/* 74 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2213,7 +2197,7 @@
 	module.exports = template;
 
 /***/ },
-/* 75 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2222,7 +2206,7 @@
 	module.exports = template;
 
 /***/ },
-/* 76 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2231,7 +2215,7 @@
 	module.exports = template;
 
 /***/ },
-/* 77 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2240,7 +2224,7 @@
 	module.exports = template;
 
 /***/ },
-/* 78 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2249,16 +2233,16 @@
 	module.exports = template;
 
 /***/ },
-/* 79 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EVariable Declaration and Destructuring in ES6\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(80).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(85).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(82).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(81).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(84).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(83).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EVariable Declaration and Destructuring in ES6\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(7).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(79).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(84).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(81).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(80).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(83).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(82).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 80 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2267,7 +2251,7 @@
 	module.exports = template;
 
 /***/ },
-/* 81 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2276,7 +2260,7 @@
 	module.exports = template;
 
 /***/ },
-/* 82 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2285,7 +2269,7 @@
 	module.exports = template;
 
 /***/ },
-/* 83 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2294,7 +2278,7 @@
 	module.exports = template;
 
 /***/ },
-/* 84 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2303,7 +2287,7 @@
 	module.exports = template;
 
 /***/ },
-/* 85 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2312,16 +2296,16 @@
 	module.exports = template;
 
 /***/ },
-/* 86 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EHello, world!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(90).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(87).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(88).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(89).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EHello, world!\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(89).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(86).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(87).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(88).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 87 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2330,7 +2314,7 @@
 	module.exports = template;
 
 /***/ },
-/* 88 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2339,7 +2323,7 @@
 	module.exports = template;
 
 /***/ },
-/* 89 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2348,7 +2332,7 @@
 	module.exports = template;
 
 /***/ },
-/* 90 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2357,16 +2341,16 @@
 	module.exports = template;
 
 /***/ },
-/* 91 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EPug\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(99).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(97).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(103).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(93).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(98).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(95).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(96).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(102).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(92).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(100).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(94).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(101).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(104).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003EPug\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(98).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(96).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(102).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(92).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(97).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(94).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(95).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(101).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(91).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(99).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(93).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(100).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(103).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 92 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2375,7 +2359,7 @@
 	module.exports = template;
 
 /***/ },
-/* 93 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2384,7 +2368,7 @@
 	module.exports = template;
 
 /***/ },
-/* 94 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2393,7 +2377,7 @@
 	module.exports = template;
 
 /***/ },
-/* 95 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2402,7 +2386,7 @@
 	module.exports = template;
 
 /***/ },
-/* 96 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2411,7 +2395,7 @@
 	module.exports = template;
 
 /***/ },
-/* 97 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2420,7 +2404,7 @@
 	module.exports = template;
 
 /***/ },
-/* 98 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2429,7 +2413,7 @@
 	module.exports = template;
 
 /***/ },
-/* 99 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2438,7 +2422,7 @@
 	module.exports = template;
 
 /***/ },
-/* 100 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2466,7 +2450,7 @@
 	module.exports = template;
 
 /***/ },
-/* 101 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2475,7 +2459,7 @@
 	module.exports = template;
 
 /***/ },
-/* 102 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2484,7 +2468,7 @@
 	module.exports = template;
 
 /***/ },
-/* 103 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2493,7 +2477,7 @@
 	module.exports = template;
 
 /***/ },
-/* 104 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2502,16 +2486,16 @@
 	module.exports = template;
 
 /***/ },
-/* 105 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESoftware Being Used\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(106).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(107).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(108).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESoftware Being Used\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(105).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(106).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(107).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 106 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2520,7 +2504,7 @@
 	module.exports = template;
 
 /***/ },
-/* 107 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2529,7 +2513,7 @@
 	module.exports = template;
 
 /***/ },
-/* 108 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2538,16 +2522,16 @@
 	module.exports = template;
 
 /***/ },
-/* 109 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ETypescript Classes\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(16).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(112).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(111).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(114).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(110).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(113).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ETypescript Classes\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(15).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(111).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(110).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(113).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(109).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(112).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 110 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2556,7 +2540,7 @@
 	module.exports = template;
 
 /***/ },
-/* 111 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2565,7 +2549,7 @@
 	module.exports = template;
 
 /***/ },
-/* 112 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2574,7 +2558,7 @@
 	module.exports = template;
 
 /***/ },
-/* 113 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2583,7 +2567,7 @@
 	module.exports = template;
 
 /***/ },
-/* 114 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2592,16 +2576,16 @@
 	module.exports = template;
 
 /***/ },
-/* 115 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ETypescript Introduction\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(16).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(119).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(118).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(116).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(117).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ETypescript Introduction\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(15).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(118).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(117).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(115).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(116).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 116 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2610,7 +2594,7 @@
 	module.exports = template;
 
 /***/ },
-/* 117 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2619,7 +2603,7 @@
 	module.exports = template;
 
 /***/ },
-/* 118 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2628,7 +2612,7 @@
 	module.exports = template;
 
 /***/ },
-/* 119 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2637,16 +2621,16 @@
 	module.exports = template;
 
 /***/ },
-/* 120 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ETypescript Type Definitions\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(16).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(122).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(121).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(123).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ETypescript Type Definitions\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(15).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(121).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(120).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(122).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
-/* 121 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2655,7 +2639,7 @@
 	module.exports = template;
 
 /***/ },
-/* 122 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2664,7 +2648,7 @@
 	module.exports = template;
 
 /***/ },
-/* 123 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
@@ -2673,12 +2657,21 @@
 	module.exports = template;
 
 /***/ },
+/* 123 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pug = __webpack_require__(1);
+	
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESmart vs Dumb Components\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(126).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(125).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(124).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	module.exports = template;
+
+/***/ },
 /* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reveal\"\u003E\u003Cdiv class=\"slides\"\u003E\u003Csection\u003E\u003Csection\u003E\u003Cimg src=\"assets\u002FFull Logo.png\"\u003E\u003Ch2\u003ESmart vs Dumb Components\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E" + (null == (pug_interp = __webpack_require__(126).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(125).call(this, locals)) ? "" : pug_interp) + (null == (pug_interp = __webpack_require__(3).call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EBest Practices\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cul\u003E\u003Cli\u003EEntire applications should be written as a component\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EThe fewer smart components, the better\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ESmart components can be made dumb by breaking it into two components,\na smart \"wrapper\" that binds the results of service calls into a dumb component\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
@@ -6275,32 +6268,6 @@
 
 /***/ },
 /* 141 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(15);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(10)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(true) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept(15, function() {
-				var newContent = __webpack_require__(15);
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 142 */
 /***/ function(module, exports) {
 
 	/* (ignored) */

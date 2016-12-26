@@ -45,8 +45,7 @@ module.exports = {
     proxy: {}
   },
   plugins: [new HtmlWebpackPlugin({
-    title: 'Evan Williams AngularJS Tutorial Site',
-    template: 'src/index.pug'
+    title: 'Evan Williams AngularJS Tutorial Site'
   }), new CopyWebpackPlugin([{
     from: './assets',
     to: './assets/'

@@ -1,5 +1,3 @@
-import 'index.css';
-
 import HelloWorld from './hello-world/';
 import HelloWorldHTML from './hello-world/index.pug';
 
@@ -131,7 +129,7 @@ const getNode = (pug, ...locals) => {
 };
 const loadSubApp = (subApp) => {
   document
-        .querySelector('container')
+        .querySelector('body')
         .appendChild(getNode(subApp.pug, subApp.context));
   subApp.js();
 };
