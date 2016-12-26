@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "21326345b19b021ba323"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b4979ff371ed35411049"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -1134,7 +1134,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EContact Me\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fevan-williams-75485533\"\u003E\u003Cimg src=\".\u002Fassets\u002Flinkedin.png\"\u003E\u003C\u002Fa\u003E\u003Ca href=\"https:\u002F\u002Ftwitter.com\u002Fangular_evan\"\u003E\u003Cimg src=\".\u002Fassets\u002Ftwitter.png\"\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EContact Me\u003C\u002Fh2\u003E\u003Ca href=\"https:\u002F\u002Fwww.linkedin.com\u002Fin\u002Fevan-williams-75485533\"\u003E\u003Cimg src=\".\u002Fassets\u002Flinkedin.png\"\u003E\u003C\u002Fa\u003E\u003Ca href=\"https:\u002F\u002Ftwitter.com\u002Fangular_evan\"\u003E\u003Cimg src=\".\u002Fassets\u002Ftwitter.png\"\u003E\u003C\u002Fa\u003E\u003Ca href=\"http:\u002F\u002Fnot-that-evan-williams.info\"\u003E\u003Ch2\u003EMy Blog\u003C\u002Fh2\u003E\u003C\u002Fa\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
