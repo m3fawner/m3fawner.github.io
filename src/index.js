@@ -52,6 +52,9 @@ import smartVsDumbHTML from './web-practices/smart-vs-dumb/index.pug';
 import pugLightningTalk from './pug-lightning-talk/';
 import pugLightningTalkHTML from './pug-lightning-talk/index.pug';
 
+import yarnLightningTalk from './yarn-lightning-talk';
+import yarnLightningTalkHTML from './yarn-lightning-talk/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -127,6 +130,10 @@ const AVAILABLE_APPS = {
   'pug-lightning-talk': {
     pug: pugLightningTalkHTML,
     js: pugLightningTalk
+  },
+  'yarn-lightning-talk': {
+    pug: yarnLightningTalkHTML,
+    js: yarnLightningTalk
   }
 };
 const getNode = (pug, ...locals) => {

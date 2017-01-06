@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/m3fawner/m3fawner.github.io#readme",
   "dependencies": {
+    "angular": "^1.6.1",
     "reveal": "0.0.4"
   },
   "devDependencies": {

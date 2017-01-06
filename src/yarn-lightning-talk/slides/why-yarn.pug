@@ -1,0 +1,29 @@
+section
+    section
+        h2 Why use Yarn over NPM?
+    section
+        h2 1. It's faster. Much faster.
+        ul
+            li.fragment Higher performing Cache
+            li.fragment Yarn Lock vs NPM Shrinkwrap
+            li.fragment Parallel Processing
+        a.fragment(href="https://yarnpkg.com/en/compare") For specific time comparisons
+        p.fragment NPM only outperforms Yarn in 2 scenarios, and only by a few seconds
+    section
+        h2 2. It builds a lockfile automatically
+        p.fragment.
+            Lock files explicitly state what version is being used by an application that can have varying version numbers.
+        p.fragment.
+            These lock files can be checked into the source repo ten guarantee versions between machines
+        p.fragment.
+            NPM has this ability, but it requires the installation of another package called "NPM Shrinkwrap"
+    section
+        h2 3. Adds security
+        p.fragment.
+            It performs checksums against the registry to ensure package authenticity.
+    section
+        h2 4. Effortless Upgrade
+        p.fragment.
+            As mentioned earlier, yarn can be used in an existing NPM project without any difference.
+    section
+        h2 5. Cleaner output
