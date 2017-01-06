@@ -49,6 +49,9 @@ import tsClassesHTML from './typescript/classes/index.pug';
 import smartVsDumb from './web-practices/smart-vs-dumb';
 import smartVsDumbHTML from './web-practices/smart-vs-dumb/index.pug';
 
+import pugLightningTalk from './pug-lightning-talk/';
+import pugLightningTalkHTML from './pug-lightning-talk/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -120,6 +123,10 @@ const AVAILABLE_APPS = {
   'smart-vs-dumb': {
     pug: smartVsDumbHTML,
     js: smartVsDumb
+  },
+  'pug-lightning-talk': {
+    pug: pugLightningTalkHTML,
+    js: pugLightningTalk
   }
 };
 const getNode = (pug, ...locals) => {

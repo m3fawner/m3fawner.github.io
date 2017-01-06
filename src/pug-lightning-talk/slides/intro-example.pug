@@ -1,0 +1,35 @@
+section
+    section
+        h2 Basic Introduction
+    section
+        h2 Pug, beautiful Pug.
+        pre.
+            .row
+                .column.large-6
+                    account-widget(account-id="1")
+                .column.large-6
+                    customer-remarks
+    section
+        h2 Resulting HTML
+        :markdown-it()
+            ```HTML
+                <div class="row">
+                    <div class="column large-6">
+                        <account-widget account-id="1"></account-widget>
+                    </div>
+                    <div class="column large-6">
+                        <customer-remarks></customer-remarks>
+                    </div>
+                </div>
+            ```
+    section
+        ul
+            li Saves 3 lines (closing tags)
+            li Cuts down characters from 176 to 80
+    section
+        h2 Things you'll notice
+        ul
+            li.fragment.
+                #[code div] tags are automatically added when only a class selector is used
+            li.fragment.
+                Closing tags are automatically added. Pug knows when to add a closing tag and when not to
