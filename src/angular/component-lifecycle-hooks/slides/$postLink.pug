@@ -1,0 +1,13 @@
+section
+  section
+    h2 $postLink
+  section
+    ul
+      li Equivalent to directive's link property
+      li.fragment Gives access to the element after the link has been made (DOM to component)
+  section
+    h2 Warning!
+    p.
+      This is not to be used for directive-like behavior
+    p.fragment.
+      DOM manipulation should be minimal in components and $postLink is most likely not the right approach

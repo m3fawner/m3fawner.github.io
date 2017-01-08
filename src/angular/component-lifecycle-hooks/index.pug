@@ -1,0 +1,12 @@
+extends ../../common/slide-show/slide-show.pug
+block slides
+    include ./slides/topic.pug
+    include ./slides/$onChanges.pug
+    include ./slides/$onInit.pug
+    include ./slides/$doCheck.pug
+    include ./slides/$postLink.pug
+    include ./slides/$onDestroy.pug
+    include ./slides/constructor-vs-onInit.pug
+    include ./slides/onChanges-before-onInit.pug
+    include ./slides/more-info.pug
+    include ../../common/slide-show/contact-me.pug

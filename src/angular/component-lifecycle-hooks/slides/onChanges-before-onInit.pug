@@ -1,0 +1,41 @@
+section
+  section
+    h2 $onChanges fires before $onInit, why?
+  section
+    p.
+      $onInit executing after $onChanges may seem odd...
+    p.fragment.
+      But to me, it makes sense.
+    p.fragment.
+      Why?
+  section
+    p.
+      $onChanges is typically used to manipulate binding data
+    p.fragment.
+      One usually creates a copy of the object and molds it into a given structure that is useful for the component.
+    p.fragment.
+      Component helper functions are expecting this format to have occurred
+  section
+    h2 A practical Example
+    pre.fragment.
+      class {
+        $onInit() {
+          this.user = massageData(this.boundUser);
+        }
+        $onChanges({ boundUser }) {
+          this.user = massageData(boundUser.currentValue);
+        }
+        massageData(data = {}) {
+          return {
+            displayName: `${data.firstName} ${data.lastName}`,
+            age: data.age
+          };
+        }
+      }
+  section
+    p.
+      If $onInit fires first, we have to massage the data to build #[code displayName].
+    p.fragment.
+      However, since $onChanges fires first, #[code this.user] is already set as the response of massageData.
+    p.fragment.
+      Thus, we can eliminate $onInit entirely from the controller.

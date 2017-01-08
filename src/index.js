@@ -55,6 +55,9 @@ import pugLightningTalkHTML from './pug-lightning-talk/index.pug';
 import yarnLightningTalk from './yarn-lightning-talk';
 import yarnLightningTalkHTML from './yarn-lightning-talk/index.pug';
 
+import angularComponentLifecycle from './angular/component-lifecycle-hooks';
+import angularComponentLifecycleHTML from './angular/component-lifecycle-hooks/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -134,6 +137,10 @@ const AVAILABLE_APPS = {
   'yarn-lightning-talk': {
     pug: yarnLightningTalkHTML,
     js: yarnLightningTalk
+  },
+  'angular-component-lifecycle-hooks': {
+    pug: angularComponentLifecycleHTML,
+    js: angularComponentLifecycle
   }
 };
 const getNode = (pug, ...locals) => {

@@ -1,0 +1,27 @@
+section
+  section
+    h2 Constructor vs. $onInit
+  section
+    p.
+      I suggest using #[a(href="https://www.youtube.com/watch?v=uRuP53zTHCQ") ES6 Classes] for #[a(href="http://not-that-evan-williams.info/es6-classes-and-angular/") angular controllers]
+    p.fragment.
+      Constructors are made available to classes, but should not be used for much in Angular controllers
+  section
+    h2 What belongs in the Constructor?
+    ul
+      li.fragment Assignments of Injected objects onto the class instance
+      li.fragment Initialization of any constant values that do not depend on Angular
+  section
+    h2 What belongs in $onInit?
+    ul
+      li.fragment Initialization of values based on values or bindings from Angular
+      li.fragment One time service calls (think fetching of resources)
+      li.fragment Instantiation of display objects and default values for fields
+  section
+    h2 Why does this matter?
+    p.fragment.
+      $onInit ensures that parent components are available at the time the component is added to the DOM
+    p.fragment.
+      This means that components that are #[code require]'d (use of require property) by the component are ready
+    p.fragment.
+      It also cleans up class notation, separating what is required for the controller to function (constructor), and what is required by the view ($onInit)

@@ -1,6 +1,6 @@
 {
   "name": "m3fawner.github.io",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Host for static content related to AngularJS training",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/m3fawner/m3fawner.github.io#readme",
   "dependencies": {
-    "angular": "^1.6.1",
     "reveal": "0.0.4"
   },
   "devDependencies": {

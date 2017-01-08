@@ -1,0 +1,23 @@
+section
+  section
+    h2 $onChanges
+  section
+    ul
+      li Performed when references change for bindings (via one way bindings and literal evaluations)
+      li.fragment Passes change object containing current, previous, and "isFirstChange" function
+      li.fragment Very useful for creating pseudo-immutability
+  section
+    p.
+      Changes objects only contain the properties of those bindings that are changed
+    p.fragment.
+      So if "user" and "application" objects are one way bound, and "user" reference changes, the change object would
+      have only "user".
+  section
+    p.
+      #[code isFirstChange] is a function assigned onto the change object.
+    p.fragment.
+      It will return true when the reference goes from undefined to defined and false then on out.
+  section
+    h2 Helpful Hint
+    p.
+      Create a clone of bindings in $onChanges and ensure it is a deep clone
