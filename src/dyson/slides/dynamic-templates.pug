@@ -1,0 +1,35 @@
+section
+    section
+        h2 Dynamic Responses
+    section
+        p.
+            Dyson allows for highly customizable responses
+    section
+        h2 Dynamic Templates
+        pre.fragment.
+            template: function(pathParams, queryVariables, postBody)
+        p.fragment.
+            Returned object is sent as a response
+        p.fragment.
+            If a promise is returned, the resolved promise value is sent
+    section
+        h2 Path Variables
+        p.fragment.
+            Path variables can be added to the path by adding #[code :variableName] to the path
+        p.fragment.
+            These are portions of the URL that can be changed dynamically and Dyson will still match the URL
+    section
+        h2 Query Variables
+        p.fragment.
+            As with any URL, query parameters are optionally matched by Dyson and are made available to the 
+            dynamic functions in a similar fashion to path variables.
+    section
+        h2 Post Body
+        p.fragment.
+            In post requests, the body of the request is made available, as well
+    section
+        h2 HTTP Headers
+        p.fragment.
+            The raw request and response objects can be accessed via the render property
+        p.fragment.
+            These are the Express objects, so they follow that API

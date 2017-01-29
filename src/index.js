@@ -58,6 +58,9 @@ import yarnLightningTalkHTML from './yarn-lightning-talk/index.pug';
 import angularComponentLifecycle from './angular/component-lifecycle-hooks';
 import angularComponentLifecycleHTML from './angular/component-lifecycle-hooks/index.pug';
 
+import dysonMocks from './dyson';
+import dysonMocksHTML from './dyson/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -141,6 +144,10 @@ const AVAILABLE_APPS = {
   'angular-component-lifecycle-hooks': {
     pug: angularComponentLifecycleHTML,
     js: angularComponentLifecycle
+  },
+  'dyson-mocks': {
+    pug: dysonMocksHTML,
+    js: dysonMocks
   }
 };
 const getNode = (pug, ...locals) => {

@@ -1,0 +1,17 @@
+section
+    section
+        h2 Basic End Point Configuration
+    section
+        p.
+            Each file should have a single #[code module.exports], exporting a configuration object
+        pre.fragment.
+            module.exports = {
+                // Configuration properties
+            };
+    section
+        h2 Configuration properties
+        ul
+            li.fragment path - The URL to be listened to for requests
+            li.fragment template - Function or object to be returned as a response
+        p.fragment.
+            With these two properties, a completely static set of mocks can be made.

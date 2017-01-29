@@ -1,0 +1,20 @@
+section
+    section
+        h2 Folder Structure
+    section
+        p.
+            Generating a new Dyson project is easy!
+        ol
+            li.fragment.
+                Create a directory that you intended to store mocks in
+            li.fragment.
+                Create each of the end points you'll need as directories (GET, DELETE, POST, PUT, OPTIONS)
+            li.fragment.
+                Optionally add a #[code dyson.json] file for configuration of Dyson, more on this later
+    section
+        p.
+            Dyson will generate an end point for each of the exported modules per file
+        p.fragment.
+            The URL defined in those modules will apply to the HTTP verb they are stored in
+        p.fragment.
+            Sub-directories are allowed, and have no impact on the URL/HTTP Verb pair
