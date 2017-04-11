@@ -66,6 +66,9 @@ import dysonMocksHTML from './dyson/index.pug';
 import angularModules from './angular/modules';
 import angularModulesHTML from './angular/modules/index.pug';
 
+import moduleBestPractices from './angular/module-best-practice';
+import moduleBestPracticesHTML from './angular/module-best-practice/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -157,6 +160,10 @@ const AVAILABLE_APPS = {
   'modules': {
     pug: angularModulesHTML,
     js: angularModules
+  },
+  'modules-best-practices': {
+    pug: moduleBestPracticesHTML,
+    js: moduleBestPractices
   }
 };
 const getNode = (pug, ...locals) => {
