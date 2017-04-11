@@ -1,3 +1,5 @@
+import './index.css';
+
 import HelloWorld from './hello-world/';
 import HelloWorldHTML from './hello-world/index.pug';
 
@@ -60,6 +62,9 @@ import angularComponentLifecycleHTML from './angular/component-lifecycle-hooks/i
 
 import dysonMocks from './dyson';
 import dysonMocksHTML from './dyson/index.pug';
+
+import angularModules from './angular/modules';
+import angularModulesHTML from './angular/modules/index.pug';
 
 const AVAILABLE_APPS = {
   HelloWorld: {
@@ -148,6 +153,10 @@ const AVAILABLE_APPS = {
   'dyson-mocks': {
     pug: dysonMocksHTML,
     js: dysonMocks
+  },
+  'modules': {
+    pug: angularModulesHTML,
+    js: angularModules
   }
 };
 const getNode = (pug, ...locals) => {

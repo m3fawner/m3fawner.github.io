@@ -1,0 +1,23 @@
+section
+  section
+    h2 Setter Notation
+  section
+    h4 app.js
+    pre.
+      import Main from './main/';
+      angular.module('ew', [ Main ]);
+    h4 main/index.js
+    pre.
+      import MainComponent from './main.component';
+      import MainConfig from './main.config';
+      import AngularUIRouter from 'angular-ui-router';
+      angular.module('ew.main', [AngularUIRouter])
+        .component('main', MainComponent);
+        .config(MainConfig);
+  section
+    p.
+      When module #[code ew] is bootstrapped, the #[code ew.main] module gets executed.
+    p.fragment.
+      UI-Router, as a dependency, also gets initialized.
+    p.fragment.
+      The config function gets executed, setting up the routes and any additional configuration necessary.

@@ -1,0 +1,31 @@
+section
+  section
+    h2 Bootstrapping
+  section
+    p.
+      Bootstrapping is the act of initializing an angular application
+    p.fragment.
+      Starting with an entry module, it will initialize all dependencies
+    p.fragment.
+      Services and the like get constructed as per their construction behavior
+    p.fragment.
+      ng-app directive, or angular.bootstrap can be used
+  section
+    h2 angular.bootstrap
+    pre.
+      angular.bootstrap(document.querySelector('body'), ['ew']);
+    p.fragment.
+      This will initialize #[code ew] on the body element
+    p.fragment.
+      angular.bootstrap is useful for scenarios where there is some dependency external to 
+      angular that needs to execute prior to bootstrapping
+  section
+    h2 ng-app
+    p.fragment.
+      This directive goes on an HTML element, and will bootstrap to that element
+    pre.fragment.
+      &lt;body ng-app="ew"&gt;
+        ...
+      &lt;/body&gt;
+    p.fragment.
+      ng-app is typically used, as it's a little cleaner and more declarative in the applications views
