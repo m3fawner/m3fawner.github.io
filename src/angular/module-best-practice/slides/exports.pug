@@ -1,0 +1,18 @@
+section
+  section
+    h2 Utilizing ES6 Modules
+  section
+    h4 app.js
+    pre.
+      import ChildDependency from './child';
+
+      angular.module('ew', [ ChildDependency ]);
+    h4 child/index.js
+    pre.
+      export default angular.module('ew.child', [])
+        .name;
+  section
+    ul
+      li Much cleaner code
+      li.fragment Less likely to override modules by using the setter method twice
+      li.fragment Module name exports allow for free refactoring of module names, if necessary
