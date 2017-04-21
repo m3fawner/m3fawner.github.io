@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "08db72803b8c2874b8c4"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5462bd9c0f4cae8f93d8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -2230,7 +2230,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EHow Angular loads Modules\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EPerformed synchrnously\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ECannot override modules asynchronously\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EExecutes services, factories, providers, etc, then performs config and run blocks\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EHow Angular loads Modules\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EPerformed synchronously\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003ECannot override modules asynchronously\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EExecutes services, factories, providers, etc, then performs config and run blocks\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
