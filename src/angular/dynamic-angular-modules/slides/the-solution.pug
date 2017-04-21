@@ -1,0 +1,14 @@
+section
+    section
+        h2 The Solution
+    section
+        h2 The Angular Black Magic
+        ul
+            li.fragment Iterate over modules & dependency modules
+            li.fragment Must construct all services and the like, to ensure providers are available for config/run
+            li.fragment Once the dependency tree has been traversed, and constructs initialized, perform config and run blocks
+    section
+        h2 Our Dependencies
+        ul
+            li.fragment $ngRedux - Required a solution involving replacing the main reducer function
+            li.fragment ui-router - Needed to dynamically determine state based on the path, or the name of the state attempting to be loaded

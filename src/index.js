@@ -69,6 +69,9 @@ import angularModulesHTML from './angular/modules/index.pug';
 import moduleBestPractices from './angular/module-best-practice';
 import moduleBestPracticesHTML from './angular/module-best-practice/index.pug';
 
+import dynamicAngularModules from './angular/dynamic-angular-modules';
+import dynamicAngularModulesHTML from './angular/dynamic-angular-modules/index.pug';
+
 const AVAILABLE_APPS = {
   HelloWorld: {
     pug: HelloWorldHTML,
@@ -164,6 +167,10 @@ const AVAILABLE_APPS = {
   'modules-best-practices': {
     pug: moduleBestPracticesHTML,
     js: moduleBestPractices
+  },
+  'dynamic-angular-modules': {
+    pug: dynamicAngularModulesHTML,
+    js: dynamicAngularModules
   }
 };
 const getNode = (pug, ...locals) => {

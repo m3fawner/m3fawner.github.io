@@ -1,0 +1,28 @@
+section
+    section
+        h2 The Code
+    section
+        h2 Set the Root Application Module
+        ul
+            li.fragment Marks all dependencies as alread initialized
+            li.fragment Keeps a reference to dynamically push dependencies to the root module
+    section
+        h2 Load Module
+        ul
+            li.fragment Push the dependency's Module name to the required collection
+            li.fragment Initialize the module
+            li.fragment Perform all configs/runs of that module and its dependencies
+    section
+        h2 Module Initialization
+        ul
+            li.fragment Iterate over the _invokeQueue and initialize constructs
+            li.fragment Push configs and runs to be executed post-initialization
+            li.fragment Mark it as initialized
+            li.fragment Initialize dependency modules
+    section
+        h2 Constructing Services and the Like
+        pre.fragment.
+            const provider = this.providers[providerName];
+            provider[providerMethod].apply(provider, construct);
+        p.fragment.
+            All providers necessary are required to be assigned onto the class in order for this to work (BRITTLE)

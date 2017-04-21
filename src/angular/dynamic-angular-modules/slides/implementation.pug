@@ -1,0 +1,40 @@
+section
+    section
+        h2 Implementation
+    section
+        h4 Handling cross-module routing
+        pre.
+            $rootScope.$on('$stateNotFound', (event, { to, toParams }) => {
+                event.preventDefault();
+                childDependencyLoader._initializeLoader($injector);
+                if(!childDependencyLoader.hasLoadedDependencyForState(to)) {
+                    childDependencyLoader.loadChildDependencyForState(to, toParams);
+                }
+            });
+    section
+        h4 Handling page refreshes
+        pre.
+            $urlRouterProvider.otherwise(($injector, $location) => {
+                const path = $location.path();
+                childDependencyLoader._initializeLoader($injector);
+                if (path !== '/' && !childDependencyLoader.hasLoadedDependencyForPath(path)) {
+                    childDependencyLoader.loadChildDependencyForPath(path);
+                    return '/loading';
+                }
+                return '/login';
+            });
+    section
+        h4 Performing the actual sub-module loading
+        pre.
+            loadCustomerCare() {
+                return new Promise((resolve) => {
+                    require.ensure(['invision-customercare'], (require) => {
+                        const { InvisionCustomerCareModule, CustomerCareModuleReducers } = require('invision-customercare');
+                        dynamicAngularModuleLoader.loadModule(InvisionCustomerCareModule);
+                        dynamicReducerLoader.injectReducer({
+                            customercare: combineReducers(CustomerCareModuleReducers)
+                        });
+                        resolve();
+                    });
+                });
+            }

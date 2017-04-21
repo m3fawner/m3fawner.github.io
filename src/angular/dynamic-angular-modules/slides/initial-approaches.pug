@@ -1,0 +1,33 @@
+section
+    section
+        h2 Initial Approaches, Problems, Findings
+    section
+        h3 Multiple ng-app directives/bootstraps
+        h5.fragment Pros
+        ul
+            li.fragment Simplistic
+            li.fragment No need for executing internals of angular
+            li.fragment Clean Isolation
+        h5.fragment Cons
+        ul
+            li.fragment Two or more completely disjointed apps
+            li.fragment Must access $injectors and manually copy state from one to another
+    section
+        h3 Removing the DOM element and re-bootstrapping
+        h5.fragment Pros
+        ul
+            li.fragment Can completely rely on angular to initialize the new modules
+            li.fragment Zero additional work compared to the last approach
+        h5.fragment Cons
+        ul
+            li.fragment Resets the application state entirely
+    section
+        h3 Manually Invoking angular Black Magic
+        h5.fragment Pros
+        ul
+            li.fragment No need to do any data transfer or state-recovery
+            li.fragment Rather simplistic code, isolated in one class
+        h5.fragment Cons
+        ul
+            li.fragment Must inject many providers ($compile, $filter, etc) to initialize constructs
+            li.fragment Brittle, as it requires angular to work a specific way
