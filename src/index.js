@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 import HelloWorld from './hello-world/';
 import HelloWorldHTML from './hello-world/index.pug';
@@ -51,11 +51,11 @@ import tsClassesHTML from './typescript/classes/index.pug';
 import smartVsDumb from './web-practices/smart-vs-dumb';
 import smartVsDumbHTML from './web-practices/smart-vs-dumb/index.pug';
 
-import pugLightningTalk from './pug-lightning-talk/';
-import pugLightningTalkHTML from './pug-lightning-talk/index.pug';
+import pugLightningTalk from './lightning-talks/pug';
+import pugLightningTalkHTML from './lightning-talks/pug/index.pug';
 
-import yarnLightningTalk from './yarn-lightning-talk';
-import yarnLightningTalkHTML from './yarn-lightning-talk/index.pug';
+import yarnLightningTalk from './lightning-talks/yarn';
+import yarnLightningTalkHTML from './lightning-talks/yarn/index.pug';
 
 import angularComponentLifecycle from './angular/component-lifecycle-hooks';
 import angularComponentLifecycleHTML from './angular/component-lifecycle-hooks/index.pug';
@@ -71,6 +71,9 @@ import moduleBestPracticesHTML from './angular/module-best-practice/index.pug';
 
 import dynamicAngularModules from './angular/dynamic-angular-modules';
 import dynamicAngularModulesHTML from './angular/dynamic-angular-modules/index.pug';
+
+import hsa from './lightning-talks/hsa_101';
+import hsaHTML from './lightning-talks/hsa_101/index.pug';
 
 const AVAILABLE_APPS = {
   HelloWorld: {
@@ -171,6 +174,10 @@ const AVAILABLE_APPS = {
   'dynamic-angular-modules': {
     pug: dynamicAngularModulesHTML,
     js: dynamicAngularModules
+  },
+  hsa: {
+    pug: hsaHTML,
+    js: hsa
   }
 };
 const getNode = (pug, ...locals) => {
