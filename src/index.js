@@ -175,7 +175,7 @@ const AVAILABLE_APPS = {
     pug: dynamicAngularModulesHTML,
     js: dynamicAngularModules
   },
-  hsa: {
+  'hsa': {
     pug: hsaHTML,
     js: hsa
   }
