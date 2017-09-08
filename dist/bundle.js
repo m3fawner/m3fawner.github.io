@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b4d6c271a483513f6fac"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "65165e77f313d16a8e8a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -2917,7 +2917,7 @@
 
 	var pug = __webpack_require__(1);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EInvesting your HSA\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cul\u003E\u003Cli\u003EMoney in HSAs can typically be invested\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMost HSAs require a minimum cash amount\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003Cli class=\"fragment\"\u003EMost allow for only mutual fund investment options, though limited to only a few options\u003C\u002Fli\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EBenefits\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ETax free growth\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E$6750 at 7% market growth is $89,953 at retirement age (28 to 65)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E$6750 annually at 7% market is $1,118,851 on $249,750 principal\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWord of Caution!\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EIf you view your HSA as an emergency fund, invest it in safer options\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EJust like any investment, you may lose your funds\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Csection\u003E\u003Csection\u003E\u003Ch2\u003EInvesting your HSA\u003C\u002Fh2\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Cul\u003E\u003Cli\u003EMoney in HSAs can typically be invested\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMost HSAs require a minimum cash amount\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EMost allow for only mutual fund investment options, though limited to only a few options\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EBenefits\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003ETax free growth\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E$6750 at 7% market growth is $89,953 at retirement age (28 to 65)\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003E$6750 annually at 7% market is $1,118,851 on $249,750 principal\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003Csection\u003E\u003Ch2\u003EWord of Caution!\u003C\u002Fh2\u003E\u003Cul\u003E\u003Cli class=\"fragment\"\u003EIf you view your HSA as an emergency fund, invest it in safer options\u003C\u002Fli\u003E\u003Cli class=\"fragment\"\u003EJust like any investment, you may lose your funds\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E\u003C\u002Fsection\u003E";;return pug_html;};
 	module.exports = template;
 
 /***/ },
