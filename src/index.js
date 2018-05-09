@@ -1,185 +1,20 @@
 import './index.scss';
+const slideshows = {};
+const context = require.context('./slideshows', true, /index.js/i);
+context.keys().forEach((key) => {
+  const directory = key.match(/\.\/([\/\w\-]+)+\/index.js/)[1];
+  const subAppTitle = directory.replace('/', '-').toLowerCase();
+  slideshows[subAppTitle] = {
+    js: context(key).default
+  };
+});
+const pugContext = require.context('./slideshows', true, /index.pug/i);
+pugContext.keys().forEach((key) => {
+  const directory = key.match(/\.\/([\/\w\-]+)+\/index.pug/)[1];
+  const subAppTitle = directory.replace('/', '-').toLowerCase();
+  slideshows[subAppTitle].pug = pugContext(key);
+});
 
-import HelloWorld from './hello-world/';
-import HelloWorldHTML from './hello-world/index.pug';
-
-import Software from './software/';
-import SoftwareHTML from './software/index.pug';
-
-import NPM from './NPM-init/';
-import NPMHTML from './NPM-init/index.pug';
-
-import Webpack from './webpack/';
-import WebpackHTML from './webpack/index.pug';
-
-import es6intro from './es6/es6-intro';
-import es6introHTML from './es6/es6-intro/index.pug';
-
-import es6VariableDeclaration from './es6/variable-declaration';
-import es6VariableDeclarationHTML from './es6/variable-declaration/index.pug';
-
-import es6NewMethods from './es6/new-methods';
-import es6NewMethodsHTML from './es6/new-methods/index.pug';
-
-import es6ArrowFunctions from './es6/arrow-functions';
-import es6ArrowFunctionsHTML from './es6/arrow-functions/index.pug';
-
-import es6Classes from './es6/classes/';
-import es6ClassesHTML from './es6/classes/index.pug';
-
-import es6Defaults from './es6/parameter-defaults';
-import es6DefaultsHTML from './es6/parameter-defaults/index.pug';
-
-import es6Promises from './es6/promises';
-import es6PromisesHTML from './es6/promises/index.pug';
-
-import es6Modules from './es6/modules';
-import es6ModulesHTML from './es6/modules/index.pug';
-
-import pug from './pug';
-import pugHTML from './pug/index.pug';
-
-import tsIntro from './typescript/intro';
-import tsIntroHTML from './typescript/intro/index.pug';
-
-import tsTypes from './typescript/type-definitions';
-import tsTypesHTML from './typescript/type-definitions/index.pug';
-
-import tsClasses from './typescript/classes';
-import tsClassesHTML from './typescript/classes/index.pug';
-
-import smartVsDumb from './web-practices/smart-vs-dumb';
-import smartVsDumbHTML from './web-practices/smart-vs-dumb/index.pug';
-
-import pugLightningTalk from './lightning-talks/pug';
-import pugLightningTalkHTML from './lightning-talks/pug/index.pug';
-
-import yarnLightningTalk from './lightning-talks/yarn';
-import yarnLightningTalkHTML from './lightning-talks/yarn/index.pug';
-
-import angularComponentLifecycle from './angular/component-lifecycle-hooks';
-import angularComponentLifecycleHTML from './angular/component-lifecycle-hooks/index.pug';
-
-import dysonMocks from './dyson';
-import dysonMocksHTML from './dyson/index.pug';
-
-import angularModules from './angular/modules';
-import angularModulesHTML from './angular/modules/index.pug';
-
-import moduleBestPractices from './angular/module-best-practice';
-import moduleBestPracticesHTML from './angular/module-best-practice/index.pug';
-
-import dynamicAngularModules from './angular/dynamic-angular-modules';
-import dynamicAngularModulesHTML from './angular/dynamic-angular-modules/index.pug';
-
-import hsa from './lightning-talks/hsa_101';
-import hsaHTML from './lightning-talks/hsa_101/index.pug';
-
-const AVAILABLE_APPS = {
-  HelloWorld: {
-    pug: HelloWorldHTML,
-    js: HelloWorld
-  },
-  Software: {
-    pug: SoftwareHTML,
-    js: Software
-  },
-  'NPM-init': {
-    pug: NPMHTML,
-    js: NPM
-  },
-  webpack: {
-    pug: WebpackHTML,
-    js: Webpack
-  },
-  'es6-intro': {
-    pug: es6introHTML,
-    js: es6intro
-  },
-  'es6-variable-declaration': {
-    pug: es6VariableDeclarationHTML,
-    js: es6VariableDeclaration
-  },
-  'es6-new-methods': {
-    pug: es6NewMethodsHTML,
-    js: es6NewMethods
-  },
-  'es6-arrow-functions': {
-    pug: es6ArrowFunctionsHTML,
-    js: es6ArrowFunctions
-  },
-  'es6-classes': {
-    pug: es6ClassesHTML,
-    js: es6Classes
-  },
-  'es6-default-parameters': {
-    pug: es6DefaultsHTML,
-    js: es6Defaults
-  },
-  'es6-promises': {
-    pug: es6PromisesHTML,
-    js: es6Promises
-  },
-  'es6-modules': {
-    pug: es6ModulesHTML,
-    js: es6Modules
-  },
-  'pug': {
-    pug: pugHTML,
-    js: pug,
-    context: {
-      names: ['Daniel', 'Jacob', 'Ben']
-    }
-  },
-  'ts-intro': {
-    pug: tsIntroHTML,
-    js: tsIntro
-  },
-  'ts-types': {
-    pug: tsTypesHTML,
-    js: tsTypes
-  },
-  'ts-classes': {
-    pug: tsClassesHTML,
-    js: tsClasses
-  },
-  'smart-vs-dumb': {
-    pug: smartVsDumbHTML,
-    js: smartVsDumb
-  },
-  'pug-lightning-talk': {
-    pug: pugLightningTalkHTML,
-    js: pugLightningTalk
-  },
-  'yarn-lightning-talk': {
-    pug: yarnLightningTalkHTML,
-    js: yarnLightningTalk
-  },
-  'angular-component-lifecycle-hooks': {
-    pug: angularComponentLifecycleHTML,
-    js: angularComponentLifecycle
-  },
-  'dyson-mocks': {
-    pug: dysonMocksHTML,
-    js: dysonMocks
-  },
-  'modules': {
-    pug: angularModulesHTML,
-    js: angularModules
-  },
-  'modules-best-practices': {
-    pug: moduleBestPracticesHTML,
-    js: moduleBestPractices
-  },
-  'dynamic-angular-modules': {
-    pug: dynamicAngularModulesHTML,
-    js: dynamicAngularModules
-  },
-  'hsa': {
-    pug: hsaHTML,
-    js: hsa
-  }
-};
 const getNode = (pug, ...locals) => {
   const div = document.createElement('div');
   div.innerHTML = pug(...locals);
@@ -203,7 +38,7 @@ const getQueryVariable = (variable) => {
   }).find((param) => param.key === variable);
   return match ? match.value : void 0;
 };
-const toLoad = AVAILABLE_APPS[getQueryVariable('sub-app')];
+const toLoad = slideshows[getQueryVariable('sub-app')];
 if (toLoad) {
   loadSubApp(toLoad);
 }

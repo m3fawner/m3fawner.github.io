@@ -10,7 +10,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    root: [
+    modules: [
       path.resolve('./src'),
       path.resolve('./node_modules')
     ],
@@ -19,7 +19,7 @@ module.exports = {
     }
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.scss$/,
         loader: 'style-loader!css-loader!sass-loader'
@@ -30,18 +30,18 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loader: 'pug'
+        loader: 'pug-loader'
       },
       {
-        test: /\.(es6|js)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loaders: [
-          'babel'
+          'babel-loader'
         ]
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file?name=public/fonts/[name].[ext]'
+        loader: 'file-loader?name=public/fonts/[name].[ext]'
       }
     ]
   },
