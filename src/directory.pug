@@ -1,0 +1,13 @@
+.directory
+    ul
+        each item in directory
+            if typeof item === 'string'
+                li.directory-title
+                    a.route(href="?sub-app=" + item.toLowerCase()) #{item}
+            else
+                li.directory-title
+                    span= item.directory
+                    ul
+                        each page in item.pages
+                            li
+                                a.route(href="?sub-app=" + item.directory + '-' + page.toLowerCase()) #{page}

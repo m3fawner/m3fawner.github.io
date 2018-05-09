@@ -23,3 +23,12 @@ h6 {
 ul {
   width: 85%;
 }
+
+.directory {
+  .directory-title {
+    font-size: 20px;
+  }
+  .route, .directory-title {
+    color: white;
+  }
+}
