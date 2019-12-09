@@ -1,0 +1,80 @@
+section
+    section
+        h2 Key Takeaways
+    section
+        h2 Emphasis on Communication
+    section
+        h4 Communicating progress and expectations was key to delivering features at an acceptable pace.
+    section
+        h4.
+            Asking for help to tackle problems that I was not capable of solving in an effective or speedy matter 
+            allowed somebody else to step in and solve them.
+    section
+        h4.
+            Effectively working cross team requires clear lines of communications, as miscommunication can be costly 
+            in the form of re-work (i.e. new/different legal requirements, copy, etc).
+    section
+        h4.
+            Frequent updates to ensure what is ready for testing and drawing a cut line for what is shippable and documenting 
+            any necessary follow-up tasks when time can be made.
+    section
+        h2 Calculated Risks pay Dividends
+    section
+        h4 Move fast. Think big. 
+        h4 We took calculated risks throughout the process.
+    section
+        h4 Our largest win was being an early adopter of Foundation.
+    section
+        h4.
+            Moving off of Braavos set us up to split Larry &amp; Beth experiences, bundle splitting, SPA to multiple entry points,
+            and identity provider configuration.
+    section
+        h2 Styled Systems Rock
+    section
+        h4 Consistent look and feel across pages
+    section
+        h4 Little maintenance, mostly free upgrades, external support
+    section
+        h4 MLOA Theme
+        pre.
+            const zhl = {
+                sizing: {
+                    contentWidth: '1280px'
+                },
+                zIndexing: {
+                    header: 1
+                },
+                colors: {
+                    ...ThemeFoundationCompat.foundation.colors,
+                    brand100: '#FF4D00',
+                    brand200: '#FF4D09',
+                    linkActive: '#FF4D00',
+                    linkVisited: '#FF4D09'
+                }
+            };
+            const ZHLTheme = Object.assign(ThemeFoundationCompat, {
+                foundation: {
+                    ...ThemeFoundationCompat.foundation,
+                    ...zhl
+                }
+            });
+    section
+        h4 Brand Aligned ZHL Theme
+        pre.
+            const zhl = {
+                sizing: {
+                    contentWidth: '1280px'
+                },
+                zIndexing: {
+                    header: 10001
+                }
+            };
+            const ZHLTheme = {
+                ...ThemeFoundationCompat,
+                ...{
+                    foundation: {
+                        ...ThemeFoundationCompat.foundation,
+                        ...zhl
+                    }
+                }
+            };
